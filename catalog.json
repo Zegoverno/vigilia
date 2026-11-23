@@ -1,0 +1,11 @@
+[
+  {"id":"leituras","title":"Leituras da Missa","summary":"Texto da CNBB com contexto e meditação em separado.","group":"Liturgia","time":"06:00","source":"https://liturgiadiaria.edicoescnbb.com.br/"},
+  {"id":"sao-jose","title":"São José e o trabalho","summary":"Uma oração para oferecer o trabalho do dia.","group":"Oração","time":"09:00","source":"https://www.vatican.va/content/francesco/pt/apost_letters/documents/papa-francesco-lettera-ap_20201208_patris-corde.html"},
+  {"id":"angelus","title":"Ângelus","summary":"Ao meio-dia; Regina Caeli no Tempo Pascal.","group":"Oração","time":"12:00","source":"https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_po.html"},
+  {"id":"exame","title":"Exame de consciência","summary":"Duas perguntas com a indicação de quem as propôs.","group":"Oração","time":"21:00"},
+  {"id":"santos","title":"Santo do dia","summary":"Seleção de datas fixas; não substitui o calendário litúrgico local.","group":"Vida dos santos","time":"07:00","source":"https://www.vaticannews.va/pt/santo-do-dia.html"},
+  {"id":"biblia","title":"Passagem da Bíblia","summary":"Uma referência sorteada por dia de uma seleção para meditação.","group":"Escritura","time":"07:30"},
+  {"id":"salmo","title":"Salmo do dia","summary":"Uma referência sorteada por dia fora do ciclo litúrgico.","group":"Escritura","time":"18:00"},
+  {"id":"novena","title":"Novena a São José","summary":"Nove dias de oração guiada, inspirada em Patris corde. Informe a data de início.","group":"Devoção","time":"19:00","source":"https://www.vatican.va/content/francesco/pt/apost_letters/documents/papa-francesco-lettera-ap_20201208_patris-corde.html"},
+  {"id":"confissao","title":"Guia de confissão","summary":"Como se preparar e o que fazer na confissão. Para ler quando precisar.","group":"Sacramentos","source":"https://www.vatican.va/archive/cathechism_po/index_new/p2s2cap1_1420-1532_po.html"}
+]

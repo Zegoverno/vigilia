@@ -169,14 +169,28 @@ def parse_body(body):
     return readings
 
 
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
 def main():
-    date = sys.argv[1] if len(sys.argv) > 1 else TODAY
+    date = datetime.fromisoformat(sys.argv[1] if len(sys.argv) > 1 else TODAY).date().isoformat()
     req = urllib.request.Request(API.format(date), headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.load(resp)
-    if "content" not in data:
-        raise SystemExit(json.dumps({"error": data}, ensure_ascii=False))
-    c = data["content"]
+    with urllib.request.build_opener(NoRedirect).open(req, timeout=30) as resp:
+        limit = 1024 * 1024
+        payload = resp.read(limit + 1)
+        if len(payload) > limit:
+            raise SystemExit("CNBB: resposta excede 1 MiB.")
+        data = json.loads(payload)
+    c = data.get("content")
+    if not isinstance(c, dict) or str(c.get("date", ""))[:10] != date:
+        raise SystemExit("CNBB: conteúdo ausente ou de outra data.")
+    readings = parse_body(c.get("body", ""))
+    if not {"salmo", "evangelho"} <= {r["kind"] for r in readings if r["text"]} or not any(
+        r["kind"] in {"primeira_leitura", "leitura"} and r["text"] for r in readings
+    ):
+        raise SystemExit("CNBB: leituras incompletas.")
     details = html_text(c.get("details", ""))
     dlines = [l for l in details.split("\n") if l.strip()]
     celebration = ""
@@ -188,14 +202,14 @@ def main():
         if extra:
             season_week = extra
     out = {
-        "date": c.get("date", date),
+        "date": c["date"],
         "weekday_line": dlines[0] if dlines else "",
         "celebration": celebration or c.get("title", ""),
         "season": c.get("title", ""),
         "season_week": season_week,
         "color": c.get("color", ""),
         "source_url": SITE + "/",
-        "readings": parse_body(c.get("body", "")),
+        "readings": readings,
     }
     print(json.dumps(out, ensure_ascii=False, indent=2))
 

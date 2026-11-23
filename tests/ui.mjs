@@ -1,0 +1,78 @@
+import assert from 'node:assert/strict';
+import { createServer } from 'node:http';
+import { mkdir } from 'node:fs/promises';
+import { join } from 'node:path';
+import { chromium } from 'playwright';
+import { fixture } from './fixture.mjs';
+
+const f = await fixture({packed:true});
+const {contents:[{text:html}]} = await f.mcp.readResource({uri:'ui://vigilia/app'});
+const host = `<!doctype html><meta charset=utf-8><body style="margin:0"><iframe sandbox="allow-scripts" style="display:block;border:0;width:100%;height:100vh"></iframe><script>
+const frame = document.querySelector('iframe');
+const send = (method,params) => frame.contentWindow.postMessage({jsonrpc:'2.0',method,params},'*');
+window.calls = [];
+window.setContext = params => send('ui/notifications/host-context-changed',params);
+window.result = structuredContent => send('ui/notifications/tool-result',{structuredContent,content:[]});
+window.zen = send;
+window.addEventListener('message',async e=>{
+ if (e.source !== frame.contentWindow) return;
+ const m = e.data;
+ window.calls.push(m);
+ const reply = result => frame.contentWindow.postMessage({jsonrpc:'2.0',id:m.id,result},'*');
+ if (m.method==='ui/initialize') reply({protocolVersion:'2026-01-26',hostInfo:{name:'Zen test host',version:'0'},hostCapabilities:{serverTools:{},openLinks:{},message:{text:{}}},hostContext:{theme:'dark',zen:{slot:'view',pane:'board'}}});
+ else if (m.method==='tools/call') reply(await window.live(m.params));
+ else if (m.id!==undefined) reply({});
+});
+fetch('/ui').then(r=>r.text()).then(html=>{frame.srcdoc=html});
+</script>`;
+const http = createServer((req,res)=>{
+  res.setHeader('Content-Type','text/html; charset=utf-8');
+  res.end(req.url==='/ui'?html:host);
+});
+await new Promise(r=>http.listen(0,'127.0.0.1',r));
+const browser = await chromium.launch({args:['--no-sandbox']});
+const shots = process.env.SHOTS || 'dist/screenshots';
+await mkdir(shots,{recursive:true});
+try {
+  const page = await browser.newPage({viewport:{width:1100,height:850}});
+  const errors = [];
+  page.on('pageerror',e=>errors.push(String(e)));
+  await page.exposeFunction('live',params=>f.mcp.callTool(params));
+  await page.goto(`http://127.0.0.1:${http.address().port}/`);
+  const ui=page.frameLocator('iframe');
+  await ui.getByRole('button',{name:'Ler nota'}).click();
+  await page.waitForFunction(()=>window.calls.some(m=>m.method==='ui/open-link'));
+  assert.equal(await page.evaluate(()=>window.calls.find(m=>m.method==='ui/open-link').params.url),'zen://open?path='+encodeURIComponent(f.note));
+  await page.screenshot({path:join(shots,'desktop-hoje.png')});
+  await ui.getByRole('button',{name:'Biblioteca',exact:true}).click();
+  await ui.locator('.card').filter({hasText:'Guia de confissão'}).getByRole('button').click();
+  await ui.getByText('Catecismo da Igreja Católica, §§ 1450–1460',{exact:false}).waitFor();
+  const selection = (await f.mcp.callTool({name:'vigilia_open',arguments:{section:'rotinas'}})).structuredContent;
+  await page.evaluate(data=>window.result(data),selection);
+  await ui.getByRole('heading',{name:'Suas rotinas'}).waitFor();
+  await ui.locator('.card').filter({hasText:'Exame de consciência'}).getByRole('button').click();
+  await ui.getByText('Pedido colocado no chat.',{exact:false}).waitFor();
+  const prompt = await page.evaluate(()=>window.calls.find(m=>m.method==='ui/message').params.content[0].text);
+  assert.match(prompt,/exame.*plugin-vigilia-vigilia\/agendar/);
+  const novena = ui.locator('.card').filter({hasText:'Novena a São José'});
+  assert.equal(await novena.getByRole('button').isDisabled(),true);
+  await novena.locator('input').fill('2026-12-08');
+  await novena.getByRole('button').click();
+  assert.match(await page.evaluate(()=>window.calls.filter(m=>m.method==='ui/message').at(-1).params.content[0].text),/2026-12-08/);
+  await page.evaluate(()=>window.zen('zen/command',{id:'biblioteca'}));
+  await ui.getByRole('heading',{name:'Biblioteca'}).waitFor();
+  await page.keyboard.press('Control+k');
+  await page.waitForFunction(()=>window.calls.some(m=>m.method==='zen/key'&&m.params.key==='k'));
+  await page.setViewportSize({width:390,height:850});
+  await page.evaluate(()=>window.setContext({theme:'light'}));
+  await ui.locator('html[data-theme=light]').waitFor();
+  assert.equal(await ui.locator('body').evaluate(b=>b.scrollWidth>innerWidth),false);
+  await page.screenshot({path:join(shots,'mobile-biblioteca.png')});
+  await page.evaluate(path=>window.setContext({zen:{slot:'opener',pane:'board',path}}),f.note);
+  await ui.getByText('Palavra para rezar.').waitFor();
+  assert.equal(await ui.getByRole('link',{name:'Inseguro'}).count(),0);
+  assert.equal(await ui.locator('body').evaluate(()=>window.injected),undefined);
+  await page.screenshot({path:join(shots,'mobile-nota.png')});
+  assert.deepEqual(errors,[]);
+  console.log('Browser: sandboxed app, widget result, theme, keyboard, chat drafts and file opener OK');
+} finally { await browser.close(); await new Promise(r=>http.close(r)); await f.close(); }

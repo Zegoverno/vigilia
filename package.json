@@ -1,0 +1,26 @@
+{
+  "name": "vigilia",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build --config vite.app.config.js && vite build --config vite.server.config.ts",
+    "pack": "bash scripts/pack.sh",
+    "test": "python3 -m unittest discover -s tests && node tests/mcp.mjs",
+    "test:e2e": "node tests/ui.mjs",
+    "check": "npm run build && npm run pack && python3 tests/archive.py && npm test && npm run test:e2e"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.7.5",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "dompurify": "^3.3.0",
+    "marked": "^17.0.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1",
+    "vite": "^8.3.5",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}

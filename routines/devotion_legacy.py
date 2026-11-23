@@ -17,7 +17,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 HERE = Path(__file__).resolve().parent
-TEXTS = HERE / "texts"
+TEXTS = HERE / "data" / "texts"
 WEEKDAY = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
 
 

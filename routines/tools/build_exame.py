@@ -37,7 +37,7 @@ def label(url):
 
 def main():
     areas = {}
-    for f in sorted((HERE / "sources").glob("*.json")):
+    for f in sorted((HERE.parent / "data" / "exame" / "sources").glob("*.json")):
         qs = json.loads(f.read_text(encoding="utf-8"))["questions"]
         for i, q in enumerate(qs):
             if i in EXCLUDE.get(f.name, ()):
@@ -48,7 +48,7 @@ def main():
             areas.setdefault(q["area"], []).append({"q": text, "fonte": label(q["url"])})
     out = {"_about": "Gerado por build_exame.py a partir de sources/ (texto literal das fontes)."}
     out.update(dict(sorted(areas.items())))
-    (HERE / "texts" / "exame.json").write_text(
+    (HERE.parent / "data" / "texts" / "exame.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print({k: len(v) for k, v in areas.items()}, sum(len(v) for v in areas.values()))
 
