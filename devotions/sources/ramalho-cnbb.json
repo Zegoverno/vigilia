@@ -1,0 +1,451 @@
+{
+ "sources": [
+  {
+   "title": "EXAME DE CONSCIÊNCIA – Aplicativo – Fé com Virtudes",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/",
+   "author": "Pe. Paulo M. Ramalho (Fé com Virtudes)"
+  },
+  {
+   "title": "Exame de consciência e confissão: oportunidade de vivenciar a misericórdia de Deus na última semana da Quaresma (30 perguntas do livreto “Guarde o coração”, Papa Francisco, 2015)",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/",
+   "author": "CNBB (Portal da CNBB, por Luiz Lopes Jr, 08/04/2025)"
+  },
+  {
+   "title": "Roteiro para Confissão (Quaresma 2026)",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf",
+   "author": "CNBB Regional Sul 1 (texto: Pe. Luis Fernando da Silva)"
+  }
+ ],
+ "questions": [
+  {
+   "q": "O que fiz de bom hoje",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "O que fiz de ruim",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "O que posso fazer amanhã para melhorar",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho colocado Deus em primeiro lugar na minha vida?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "Deus é meu primeiro amor?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho rezado diariamente?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "com que frequência tenho rezado durante o dia? tenho um plano de orações?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho ido à missa todo domingo?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho procurado fazer a sua vontade em todos os momentos?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho amado a Deus com todo o meu coração, com toda a minha alma, com toda a minha força, com todo o meu entendimento?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "procuro me comportar como Jesus se comportaria em todas as minhas ações?",
+   "area": "deus",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "o que poderia fazer para aumentar meu amor a meus pais?",
+   "area": "familia",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "o que poderia fazer para aumentar meu amor a meus irmãos?",
+   "area": "familia",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "estou tendo dificuldade de relacionamento com alguém?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho mágoas de alguém?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tem alguém que não estou disposto a perdoar?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho perdido a paciência? com quem?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "onde tenho o coração: em mim ou no próximo?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho me esforçado para ser menos egoísta e pensar mais nos outros?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "vivo servindo aos demais?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho sido muito crítico com os outros? ao invés de criticar tenho procurado rezar e ajudar as pessoas a saírem do erro?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho preocupação apostólica: preocupação de aproximar as pessoas a Deus?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho rezado pelos meus pais, familiares, amigos, conhecidos e inclusive pessoas que já me fizeram o mal?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho feito algo para ajudar as pessoas mais necessitadas? contribuo com dinheiro e com tempo, se possível, com alguma instituição de caridade?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho sido um bom estudante ou um bom profissional?",
+   "area": "trabalho",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho cumprido com esmero os meus deveres do cuidado da casa: limpeza, ordem, consertos etc?",
+   "area": "familia",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "pais: tenho me dedicado com generosidade à educação dos filhos?",
+   "area": "familia",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho procurado crescer sempre profissionalmente?",
+   "area": "trabalho",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho trabalhado mais tempo do que o previsto, deixando de lado obrigações importantes?",
+   "area": "trabalho",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho procurado lutar contra todos os meus defeitos? qual é o meu defeito dominante hoje? tenho lutado contra ele?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho cuidado da minha saúde? tenho praticado esporte?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "sou uma pessoa ansiosa? tenho procurado combater a ansiedade?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "sou uma pessoa perfeccionista? tenho lutado contra este defeito sabendo que o ótimo é inimigo do bom?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "há alguma tarefa que tenho adiado constantemente?",
+   "area": "trabalho",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho me deixado levar pelo consumismo? luto contra ele?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho comido mais do que o necessário? tenho lutado contra isto?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho dormido as horas necessárias?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho me deixado dominar pelo mau humor?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "tenho me deixado levar pelo pessimismo, pelo negativismo?",
+   "area": "si_mesmo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "estou sendo omisso em ajudar alguém?",
+   "area": "proximo",
+   "url": "https://app.fecomvirtudes.com.br/exame-de-consciencia/"
+  },
+  {
+   "q": "Dirijo-me a Deus somente em caso de necessidade?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Participo na Missa dominical e nos dias de preceito?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Começo e termino o meu dia com a oração?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Invoquei em vão o nome de Deus, de Maria e dos Santos?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Envergonho-me de me apresentar como cristão?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "O que faço para crescer espiritualmente, como e quando o faço?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Revolto-me diante dos desígnios de Deus?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Pretendo que seja Ele a cumprir a minha vontade?",
+   "area": "deus",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Sei perdoar, partilhar, ajudar o próximo?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Julgo sem piedade, tanto em pensamento quando com palavras?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Caluniei, roubei, desprezei os pequenos e indefesos?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Sou invejoso, colérico, parcial?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Tomo conta dos pobres e dos doentes?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Envergonho-me da carne do meu irmão ou da minha irmã?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Sou honesto e justo com todos ou alimento a “cultura do descartável”?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Instiguei os outros a fazer o mal?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Observo a moral conjugal e familiar que o Evangelho ensina?",
+   "area": "familia",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Como vivo as responsabilidades educativas para com os meus filhos?",
+   "area": "familia",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Honro e respeito os meus pais?",
+   "area": "familia",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Respeito o ambiente?",
+   "area": "proximo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Sou um pouco mundano e pouco crente?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Exagero em comer, beber, fumar e divertir-me?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Preocupo-me em excesso com a saúde física, com os meus bens?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Como uso o meu tempo?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Sou preguiçoso? Procuro ser servido?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Amo e cultivo a pureza de coração, de pensamentos e de ações?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Nutro vinganças, alimento rancores?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Sou manso, humilde, construtor de paz?",
+   "area": "si_mesmo",
+   "url": "https://www.cnbb.org.br/exame-de-consciencia-e-confissao-misericordia-de-deus/"
+  },
+  {
+   "q": "Creio verdadeiramente que Cristo é o centro da minha vida e fundamento da minha fé, ou busco seguranças em mim mesmo, em ideologias ou em pessoas?",
+   "area": "deus",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Tenho dado tempo diário para oração, leitura da Palavra e adoração, ou deixo que outras ocupações tomem o lugar de Deus?",
+   "area": "deus",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Procuro viver segundo o Espírito Santo ou deixo que as paixões, o orgulho e o egoísmo guiem minhas escolhas?",
+   "area": "deus",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Reconheço meus limites e pecados diante de Deus, ou me comparo aos outros julgando-me melhor?",
+   "area": "si_mesmo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Dou glória a mim mesmo pelas minhas boas obras e serviços, ou reconheço que tudo é graça de Deus?",
+   "area": "si_mesmo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Tenho caído na vaidade espiritual, usando a fé ou a Igreja para ser reconhecido ou admirado?",
+   "area": "si_mesmo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Vejo a Igreja como Corpo vivo de Cristo ou apenas como uma instituição humana?",
+   "area": "deus",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Participo da vida comunitária com espírito de serviço ou critico, divido e desanimo os outros?",
+   "area": "proximo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Tenho rezado pelos pastores da Igreja — o Papa, os bispos, padres e diáconos — ou apenas reclamo de suas falhas?",
+   "area": "deus",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Tenho amado concretamente os irmãos, especialmente os pobres, sofredores e excluídos?",
+   "area": "proximo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Vivo o Evangelho no trabalho, na família e nas relações sociais, ou minha fé fica apenas dentro da Igreja?",
+   "area": "trabalho",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Minha vida transmite a alegria do Espírito Santo ou muitas vezes passo dureza, frieza e pessimismo?",
+   "area": "familia",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Procuro colaborar para uma sociedade mais justa ou fecho-me apenas em meus interesses pessoais?",
+   "area": "proximo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Tenho atitudes ou palavras que reforçam o desprezo, o preconceito ou a exclusão social?",
+   "area": "proximo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "No uso dos bens e recursos que possuo, penso também no bem comum e nos que mais precisam?",
+   "area": "proximo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Permito que o Espírito Santo me transforme ou resisto por medo de mudar?",
+   "area": "si_mesmo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Reconheço atitudes que preciso converter (orgulho, egoísmo, falta de perdão, apego aos bens)?",
+   "area": "si_mesmo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  },
+  {
+   "q": "Creio que a santidade é possível para mim ou acabo vivendo na mediocridade espiritual?",
+   "area": "si_mesmo",
+   "url": "https://cnbbsul1.org.br/wp-content/uploads/2026/02/Roteiro-para-Confissao_RegionalSul1_CNBB.pdf"
+  }
+ ]
+}

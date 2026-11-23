@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-13",
+  "weekday_line": "Terça-feira, 13 de Outubro de 2026",
+  "celebration": "28ª Semana do Tempo Comum",
+  "season": "Tempo Comum",
+  "season_week": "Ano Par (II)",
+  "color": "verde",
+  "source_url": "https://liturgiadiaria.edicoescnbb.com.br/",
+  "readings": [
+    {
+      "kind": "primeira_leitura",
+      "reference": "Leitura da Carta de São Paulo aos Gálatas 5,1-6",
+      "text": "Irmãos,\n\n[1] É para a liberdade que Cristo nos libertou.\nFicai pois firmes\ne não vos deixeis amarrar de novo ao jugo da escravidão.\n\n[2] Eis que eu, Paulo, vos digo que\nCristo não será de nenhum proveito para vós,\nse vos deixardes circuncidar.\n\n[3] Mais uma vez, atesto a todo homem circuncidado\nque ele está obrigado a observar toda a Lei.\n\n[4] Vós que procurais a vossa justificação na Lei,\nrompestes com Cristo, decaístes da graça.\n\n[5] Quanto a nós,\nque nos deixamos conduzir pelo Espírito,\né da fé que aguardamos a justificação,\nobjeto de nossa esperança.\n\n[6] Com efeito, em Jesus Cristo,\no que vale é a fé agindo pela caridade;\nobservar ou não a circuncisão\n\nnão tem valor algum.\nPalavra do Senhor.",
+      "summary": "Observar ou não a circuncisão não tem valor algum; o que vale é a fé agindo pela caridade."
+    },
+    {
+      "kind": "salmo",
+      "reference": "Sl 118(119),41.43.44.45.47.48 (R. 41a)",
+      "text": "R. Senhor, que desça sobre mim a vossa graça!\n\n[41] Senhor, que desça sobre mim a vossa graça *\ne a vossa salvação que prometestes! R.\n\n[43] Não retireis vossa verdade de meus lábios, *\npois eu confio em vossos justos julgamentos! R.\n\n[44] Cumprirei constantemente a vossa lei; *\npara sempre, eternamente a cumprirei! R.\n\n[45] É amplo e agradável meu caminho, *\nporque busco e pesquiso as vossas ordens. R.\n\n[47] Muito me alegro com os vossos mandamentos, *\nque eu amo, amo tanto, mais que tudo! R.\n\n[48] Elevarei as minhas mãos para louvar-vos *\ne com prazer meditarei vossa vontade. R.",
+      "refrain": "Senhor, que desça sobre mim a vossa graça!"
+    },
+    {
+      "kind": "aclamacao",
+      "reference": "Hb 4,12",
+      "text": "R. Aleluia, Aleluia, Aleluia.\nV. A palavra do Senhor é viva e eficaz:\n\nela julga os pensamentos e as intenções do coração."
+    },
+    {
+      "kind": "evangelho",
+      "reference": "Proclamação do Evangelho de Jesus Cristo segundo Lucas 11,37-41",
+      "text": "Naquele tempo,\n\n[37] enquanto Jesus falava,\num fariseu convidou-o para jantar com ele.\nJesus entrou e pôs-se à mesa.\n\n[38] O fariseu ficou admirado\nao ver que Jesus não tivesse lavado as mãos\nantes da refeição.\n\n[39] O Senhor disse ao fariseu:\n\"Vós fariseus,\n\nlimpais o copo e o prato por fora,\nmas o vosso interior está cheio de roubos e maldades.\n\n[40] Insensatos!\n\nAquele que fez o exterior\nnão fez também o interior?\n\n[41] Antes, dai esmola do que vós possuís\ne tudo ficará puro para vós\".\nPalavra da Salvação.",
+      "summary": "Dai esmola do que vós possuís e tudo ficará puro para vós."
+    }
+  ]
+}

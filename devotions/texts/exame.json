@@ -1,0 +1,657 @@
+{
+ "_about": "Gerado por build_exame.py a partir de sources/ (texto literal das fontes).",
+ "deus": [
+  {
+   "q": "Lembrei-me de Deus durante o dia oferecendo-Lhe o meu trabalho, dando-Lhe graças, recorrendo a Ele com confiança de filho?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Deixei-me vencer pelos respeitos humanos em algum momento?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Fiz as minhas orações pausadamente com atenção e devoção?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Recorri a Deus para que aumente em mim todas as virtudes e, especialmente, a fé, a esperança e a caridade?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Recusei-me a defender a minha fé ou fiquei envergonhado dela?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Recebi a Comunhão sem agradecimento ou sem a devida reverência?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Entrego os meus medos a Jesus para que Ele possa vencê-los?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Onde está o meu coração?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Onde eu estava quando não estava com o Senhor?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Estou verdadeiramente arrependido dos meus pecados e luto para não voltar a cometê-los?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Li alguma coisa, ouvi alguma música ou assisti a algum programa contra Deus, contra a Igreja ou contra a moral católica?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Desesperei da salvação, achando que os meus pecados eram maiores que a misericórdia de Deus?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Pequei por presunção, esperando que alcançaria a salvação sem ter que fugir do pecado e guardar os Mandamentos?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Fiz uma promessa a Deus e depois não a cumpri?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Tenho contribuído para as necessidades materiais da Igreja segundo as minhas possibilidades?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Tenho colocado Deus em primeiro lugar na minha vida?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Deus é meu primeiro amor?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho rezado diariamente?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Com que frequência tenho rezado durante o dia? tenho um plano de orações?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho ido à missa todo domingo?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho procurado fazer a sua vontade em todos os momentos?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho amado a Deus com todo o meu coração, com toda a minha alma, com toda a minha força, com todo o meu entendimento?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Procuro me comportar como Jesus se comportaria em todas as minhas ações?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Dirijo-me a Deus somente em caso de necessidade?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Participo na Missa dominical e nos dias de preceito?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Começo e termino o meu dia com a oração?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Invoquei em vão o nome de Deus, de Maria e dos Santos?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Envergonho-me de me apresentar como cristão?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "O que faço para crescer espiritualmente, como e quando o faço?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Revolto-me diante dos desígnios de Deus?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Pretendo que seja Ele a cumprir a minha vontade?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Creio verdadeiramente que Cristo é o centro da minha vida e fundamento da minha fé, ou busco seguranças em mim mesmo, em ideologias ou em pessoas?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Tenho dado tempo diário para oração, leitura da Palavra e adoração, ou deixo que outras ocupações tomem o lugar de Deus?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Procuro viver segundo o Espírito Santo ou deixo que as paixões, o orgulho e o egoísmo guiem minhas escolhas?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Vejo a Igreja como Corpo vivo de Cristo ou apenas como uma instituição humana?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Tenho rezado pelos pastores da Igreja — o Papa, os bispos, padres e diáconos — ou apenas reclamo de suas falhas?",
+   "fonte": "CNBB Sul 1"
+  }
+ ],
+ "familia": [
+  {
+   "q": "Se sou casado, procuro amar o meu cônjuge mais do que a qualquer outra pessoa?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Coloco meu casamento em primeiro lugar?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Tenho uma atitude aberta para novos filhos?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Qual é a minha parte de culpa no mal-estar familiar?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Quantas vezes rezamos por eles?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Sabemos dizer “Por favor”?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Sabemos ceder o melhor lugar na sala para assistir à televisão?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Sabemos escolher o pior pedaço nas refeições?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Sabemos apressar-nos no banho, para não fazer esperar outros?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Sabemos agradecer, dizendo “Obrigado, muito obrigado, já percebi que você se lembrou de me comprar tal coisa”?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Nunca rezo pelos meus pais?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Entristeci gravemente os meus pais com palavras, gestos ou ações?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Zombei, xinguei, maltratei ou ameacei o meu cônjuge? Impedi que o meu cônjuge cumprisse seus deveres religiosos?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Deixei de sustentar os meus filhos?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Deixei de corrigir os vícios e pecados graves dos meus filhos?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Castiguei os meus filhos com ódio no coração?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Fui mau exemplo para os meus filhos, dando-lhes ocasião de imitarem meus pecados graves ou de se escandalizarem com eles?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "O que poderia fazer para aumentar meu amor a meus pais?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "O que poderia fazer para aumentar meu amor a meus irmãos?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho cumprido com esmero os meus deveres do cuidado da casa: limpeza, ordem, consertos etc?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Pais: tenho me dedicado com generosidade à educação dos filhos?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Observo a moral conjugal e familiar que o Evangelho ensina?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Como vivo as responsabilidades educativas para com os meus filhos?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Honro e respeito os meus pais?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Minha vida transmite a alegria do Espírito Santo ou muitas vezes passo dureza, frieza e pessimismo?",
+   "fonte": "CNBB Sul 1"
+  }
+ ],
+ "proximo": [
+  {
+   "q": "Tratei com dureza ou desprezo os demais?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Tive a preocupação de ajudar os que me rodeiam, fazendo-lhes, além disso, a vida mais agradável?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Fiz algum apostolado?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Caí na murmuração?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Sei perdoar?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Rezei pelas pessoas que de algum modo me preocupam?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Guardei ressentimentos ou relutei em perdoar?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Fui violento nas palavras ou ações com outros?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Tive ódio ou juízos críticos, em pensamentos ou ações?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Olhei os outros com desprezo?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Falei mal dos outros, transformando o assunto em fofoca?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Deixei de ajudar os pobres e os necessitados?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Disse mentiras?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Preferi a comodidade ao invés do serviço aos demais?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Descuidei a minha responsabilidade de aproximar de Deus os outros, com o meu exemplo e a minha palavra?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Faço-me sentir próximo das pessoas que estão mais isoladas e que estão a sofrer mais?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Reparei as injustiças que cometi?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Desejei o mal a alguém? Desejei a doença ou a desgraça a alguém? Desejei o Inferno a alguém?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Ofendi alguém, xingando, amaldiçoando, zombando? Escandalizei outras pessoas com tais ofensas?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Alimentei pensamentos de vingança?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Conheço alguém que está em pecado mortal ou perto de cometê-lo e não o corrigi?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Recusei-me a pagar alguma dívida? Recusei-me a devolver alguma coisa emprestada?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Recusei-me a ajudar alguém que estava em extrema necessidade, embora fosse possível fazê-lo?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Contei mentiras que causaram grave dano a uma pessoa ou aos seus bens? Tenho o hábito de dizer mentiras?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Fiz julgamentos temerários a respeito de alguém?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Falei dos pecados ou defeitos graves de uma pessoa sem necessidade? Tenho o hábito de falar mal dos outros?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Revelei algum segredo importante, sendo que a pessoa esperava que eu guardasse sigilo? Tenho o hábito de revelar os segredos das pessoas?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Provoquei intrigas para criar inimizades entre as pessoas?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Estou tendo dificuldade de relacionamento com alguém?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho mágoas de alguém?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tem alguém que não estou disposto a perdoar?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho perdido a paciência? com quem?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Onde tenho o coração: em mim ou no próximo?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho me esforçado para ser menos egoísta e pensar mais nos outros?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Vivo servindo aos demais?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho sido muito crítico com os outros? ao invés de criticar tenho procurado rezar e ajudar as pessoas a saírem do erro?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho preocupação apostólica: preocupação de aproximar as pessoas a Deus?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho rezado pelos meus pais, familiares, amigos, conhecidos e inclusive pessoas que já me fizeram o mal?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho feito algo para ajudar as pessoas mais necessitadas? contribuo com dinheiro e com tempo, se possível, com alguma instituição de caridade?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Estou sendo omisso em ajudar alguém?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Sei perdoar, partilhar, ajudar o próximo?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Julgo sem piedade, tanto em pensamento quanto com palavras?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Caluniei, roubei, desprezei os pequenos e indefesos?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Sou invejoso, colérico, parcial?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Tomo conta dos pobres e dos doentes?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Envergonho-me da carne do meu irmão ou da minha irmã?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Sou honesto e justo com todos ou alimento a “cultura do descartável”?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Instiguei os outros a fazer o mal?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Respeito o ambiente?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Participo da vida comunitária com espírito de serviço ou critico, divido e desanimo os outros?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Tenho amado concretamente os irmãos, especialmente os pobres, sofredores e excluídos?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Procuro colaborar para uma sociedade mais justa ou fecho-me apenas em meus interesses pessoais?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Tenho atitudes ou palavras que reforçam o desprezo, o preconceito ou a exclusão social?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "No uso dos bens e recursos que possuo, penso também no bem comum e nos que mais precisam?",
+   "fonte": "CNBB Sul 1"
+  }
+ ],
+ "si_mesmo": [
+  {
+   "q": "Lutei pela minha própria santificação?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Deixei-me levar por sentimentos de orgulho, vaidade, sensualidade?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Esforcei-me por arrancar o meu defeito dominante?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Fui impaciente, fiquei irritado ou fui invejoso?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Fui orgulhoso ou egoísta em meus pensamentos e ações?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Gastei dinheiro com o meu conforto e luxo pessoal, esquecendo as minhas responsabilidades para com os outros e para com a Igreja?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Cedi à preguiça?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Há alguma coisa na tua vida que não corresponda à tua condição de cristão e que te leve a não quereres purificar-te?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Em que pensamos habitualmente? Em quem pensamos?",
+   "fonte": "Pe. Francisco Faus"
+  },
+  {
+   "q": "Consenti em pensamentos, desejos ou olhares contra a castidade?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Fiquei triste ou com raiva por ver que uma pessoa tinha algum bem material que eu não possuía?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Fiquei triste ou com raiva por ver que uma pessoa tinha algum bem espiritual que eu não possuía?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Dei mais valor aos bens materiais do que à minha salvação eterna?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Tenho procurado lutar contra todos os meus defeitos? qual é o meu defeito dominante hoje? tenho lutado contra ele?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho cuidado da minha saúde? tenho praticado esporte?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Sou uma pessoa ansiosa? tenho procurado combater a ansiedade?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Sou uma pessoa perfeccionista? tenho lutado contra este defeito sabendo que o ótimo é inimigo do bom?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho me deixado levar pelo consumismo? luto contra ele?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho comido mais do que o necessário? tenho lutado contra isto?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho dormido as horas necessárias?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho me deixado dominar pelo mau humor?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho me deixado levar pelo pessimismo, pelo negativismo?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Sou um pouco mundano e pouco crente?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Exagero em comer, beber, fumar e divertir-me?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Preocupo-me em excesso com a saúde física, com os meus bens?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Como uso o meu tempo?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Sou preguiçoso? Procuro ser servido?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Amo e cultivo a pureza de coração, de pensamentos e de ações?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Nutro vinganças, alimento rancores?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Sou manso, humilde, construtor de paz?",
+   "fonte": "CNBB · Papa Francisco"
+  },
+  {
+   "q": "Reconheço meus limites e pecados diante de Deus, ou me comparo aos outros julgando-me melhor?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Dou glória a mim mesmo pelas minhas boas obras e serviços, ou reconheço que tudo é graça de Deus?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Tenho caído na vaidade espiritual, usando a fé ou a Igreja para ser reconhecido ou admirado?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Permito que o Espírito Santo me transforme ou resisto por medo de mudar?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Reconheço atitudes que preciso converter (orgulho, egoísmo, falta de perdão, apego aos bens)?",
+   "fonte": "CNBB Sul 1"
+  },
+  {
+   "q": "Creio que a santidade é possível para mim ou acabo vivendo na mediocridade espiritual?",
+   "fonte": "CNBB Sul 1"
+  }
+ ],
+ "trabalho": [
+  {
+   "q": "Trabalho de modo desordenado, ocupando tempo e energias que deveria dedicar à minha família e aos amigos?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Fui honesto e diligente no meu trabalho?",
+   "fonte": "Opus Dei"
+  },
+  {
+   "q": "Trabalhei aos domingos e dias santos de guarda? Obriguei outras pessoas a trabalharem aos domingos e dias santos de guarda?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Obtive algum bem ou vantagem por meio de fraude ou enganação?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Lesei o meu patrão, não trabalhando honestamente como é dever de um funcionário?",
+   "fonte": "Pe. Paulo Ricardo"
+  },
+  {
+   "q": "Tenho sido um bom estudante ou um bom profissional?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho procurado crescer sempre profissionalmente?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Tenho trabalhado mais tempo do que o previsto, deixando de lado obrigações importantes?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Há alguma tarefa que tenho adiado constantemente?",
+   "fonte": "Pe. Paulo Ramalho"
+  },
+  {
+   "q": "Vivo o Evangelho no trabalho, na família e nas relações sociais, ou minha fé fica apenas dentro da Igreja?",
+   "fonte": "CNBB Sul 1"
+  }
+ ]
+}
