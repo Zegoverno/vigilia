@@ -3,6 +3,13 @@ import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import catalog from '../catalog.json';
 import data from '../content.json';
+import angelusText from '../routines/data/texts/angelus.md?raw';
+import reginaText from '../routines/data/texts/regina-caeli.md?raw';
+import joseText from '../routines/data/texts/sao-jose-trabalho.md?raw';
+import exameQuestions from '../routines/data/texts/exame.json';
+import opusSources from '../routines/data/exame/sources/opusdei-faus.json';
+import ricardoSources from '../routines/data/exame/sources/padre-paulo-ricardo.json';
+import ramalhoSources from '../routines/data/exame/sources/ramalho-cnbb.json';
 import './style.css';
 
 const app = new App({name:'Vigília',version:'0.1.0'});
@@ -85,16 +92,17 @@ function library(item) {
 function prayer(item) {
   const n = el('div',null,{class:'stack'});
   const text = {
-    'sao-jose':'Ofereça a Deus o trabalho de hoje. Peça a São José que o ajude a servir com paciência e atenção a quem depende do seu trabalho.',
-    angelus:'Ao meio-dia, pare para rezar o Ângelus. No Tempo Pascal, reze a Regina Caeli. Os textos estão nas Orações Comuns do Compêndio, no link abaixo.',
+    'sao-jose':joseText,
+    angelus:angelusText + '\n\n---\n\n## No Tempo Pascal\n\n' + reginaText,
     confissao:data.confissao,novena:data.novena.map((p,i)=>`**Dia ${i+1}** · ${p}`).join('\n\n'),
-    exame:'A rotina escolhe duas perguntas de áreas diferentes, mantendo os créditos. Faça silêncio, peça luz ao Espírito Santo e reveja o dia com sinceridade.',
+    exame:Object.entries(exameQuestions).filter(([area])=>!area.startsWith('_')).map(([area,questions])=>'## '+area.replaceAll('_',' ')+'\n\n'+questions.map(q=>'- '+q.q+' — **'+q.fonte+'**').join('\n')).join('\n\n'),
     biblia:data.biblia.map(([ref,chapter])=>`- [${ref}](https://bible.usccb.org/bible/${chapter})`).join('\n'),
     salmo:data.salmo.map(([ref,chapter])=>`- [${ref}](https://bible.usccb.org/bible/${chapter})`).join('\n'),
     santos:Object.entries(data.santos).map(([date,name])=>`- ${date.slice(3)}/${date.slice(0,2)} · ${name}`).join('\n'),
   }[item.id];
   if (text) n.append(markdown(text));
-  if (item.id === 'exame') n.append(source('Opus Dei · Exame de consciência','https://opusdei.org/pt-br/article/o-exame-de-consciencia-diario/'));
+  if (item.id === 'exame') for (const s of [...opusSources.sources,...ricardoSources.sources,...ramalhoSources.sources]) n.append(source(s.author+' · '+s.title,s.url));
+  if (item.id === 'confissao') n.append(source('Manual de Confissão · Padre Paulo Ricardo',ricardoSources.sources[0].url));
   if (item.source) n.append(source('Consultar fonte',item.source));
   return n;
 }

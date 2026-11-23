@@ -2,8 +2,7 @@
 
 A licença MIT cobre o código e o material original do Vigília, **não** os textos de terceiros
 ou suas traduções. As permissões de redistribuição do material legado abaixo estão **pendentes** de confirmação;
-não se presume licença, domínio público da tradução ou endosso. O arquivo do plugin não
-embute os textos abaixo; o checkout preserva os dados legados para uso existente.
+não se presume licença, domínio público da tradução ou endosso. O checkout preserva os dados legados; a biblioteca do plugin inclui as orações tradicionais e as perguntas com seus créditos e links. A amostra CNBB permanece apenas no checkout, não no arquivo do plugin.
 
 | Material | Crédito / origem | Situação |
 | --- | --- | --- |

@@ -58,6 +58,7 @@ try {
   assert.equal(await novena.getByRole('button').isDisabled(),true);
   await novena.locator('input').fill('2026-12-08');
   await novena.getByRole('button').click();
+  await page.waitForFunction(()=>window.calls.some(m=>m.method==='ui/message' && m.params.content[0].text.includes('2026-12-08')));
   assert.match(await page.evaluate(()=>window.calls.filter(m=>m.method==='ui/message').at(-1).params.content[0].text),/2026-12-08/);
   await page.evaluate(()=>window.zen('zen/command',{id:'biblioteca'}));
   await ui.getByRole('heading',{name:'Biblioteca'}).waitFor();
