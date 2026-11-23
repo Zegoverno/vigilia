@@ -4,6 +4,8 @@ from pathlib import Path, PurePosixPath
 import tarfile
 
 manifest = json.loads(Path("plugin.json").read_text())
+if "views" in manifest.get("contributes", {}):
+    raise ValueError("Vigília must open inline in sessions, not contribute a tab")
 required = {
     "plugin.json", "package.json", "LICENSE", "CREDITS.md", "README.md",
     "THIRD-PARTY-NOTICES.txt", "mcp/dist/server.js", "ui/dist/index.html",

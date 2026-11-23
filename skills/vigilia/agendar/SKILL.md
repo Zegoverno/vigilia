@@ -7,16 +7,17 @@ description: Prepare ou agende rotinas católicas do Vigília com os jobs comuns
 
 Localize um checkout do Vigília (o plugin instalado **não** é o checkout). Rode
 `python3 -I vigilia.py catalog` no checkout para obter IDs e horários sugeridos; consulte
-`zen jobs list` para evitar duplicatas. Confirme com o usuário a rotina, horário, fuso, sessão
+`zen jobs` para evitar duplicatas. Confirme com o usuário a rotina, horário, fuso, sessão
 de destino, caminho absoluto do cofre e URL web (opcional). Apresente o plano antes de
-criar, alterar, habilitar, desabilitar, executar ou remover jobs. Um clique no painel apenas
+criar, alterar, habilitar, desabilitar, executar ou remover jobs. Um clique no widget da sessão apenas
 preenche o chat; nunca é autorização. Não altere os jobs legados para migrar sem aprovação.
 
-Use `zen jobs add NOME --schedule 'CRON' --tz America/Sao_Paulo --dir CHECKOUT --report-file out/NOME.md --post-to SESSAO`
+Use `zen jobs add NOME --plugin vigilia --schedule 'CRON' --tz America/Sao_Paulo --dir CHECKOUT --report-file out/NOME.md --post-to SESSAO`
 com **um** dos parâmetros abaixo, depois de substituir os campos por valores reais e escapar
 argumentos para shell. Omita `--post-to` se o usuário não quiser postar. Nomes: `vigilia-ID`
 e, para a novena, `vigilia-novena-AAAA-MM-DD`. Para alterar jobs, leia `zen jobs --help`.
 Não execute `run` como teste sem aprovação; valide a CLI com arquivos temporários.
+Se usar a ferramenta `schedule` em vez da CLI, inclua `"plugin": "vigilia"` ao criar o job.
 
 ## Sem LLM: --command
 

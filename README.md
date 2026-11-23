@@ -39,17 +39,17 @@ npm ci
 npm run build
 npm run pack
 # Instalação local, opcional:
-zen plugins add ./dist/vigilia-0.1.0.tgz
+zen plugins add ./dist/vigilia-0.1.1.tgz
 ```
 
-O pacote é independente de node_modules. Use a aba Vigília ou `/vigilia [hoje|biblioteca|rotinas]`
+O pacote é independente de node_modules. Na sessão, use `/vigilia [hoje|biblioteca|rotinas]`
 (`!vigilia` no Matrix; a interface visual requer um host compatível). O leitor de `*.vigilia.md` usa o contexto do arquivo no host. Para que os links abram
 diretamente nele, selecione **Vigília** como leitor padrão de `*.vigilia.md` nas configurações
 do zenbot; sem essa seleção, o host usa o leitor embutido. **Hoje** lista as saídas de hoje no cofre;
 a Biblioteca não exige nenhum job. A única permissão é `files:read` para abrir essas notas
 e verificar quais saídas existem; o servidor não pede rede, IA nem gravação. Não há telemetria.
 O plugin propõe agendamentos via chat; a [skill](skills/vigilia/agendar/SKILL.md) documenta
-os comandos e o prompt exato para jobs comuns. Nada é agendado ou enviado automaticamente
+os comandos e o prompt exato para jobs comuns, identificados pelo selo `vigilia` em Routines. Nada é agendado ou enviado automaticamente
 na instalação. O checkout com Python é necessário para rodar os jobs.
 
 ## Verificação
