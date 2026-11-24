@@ -1,4 +1,4 @@
-import { mkdtemp, mkdir, rm, writeFile, symlink } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, rm, writeFile, symlink } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -20,7 +20,8 @@ export async function fixture({packed = false} = {}) {
   execFileSync('mkfifo',[join(vault,'fifo.vigilia.md')]);
   let cwd = process.cwd();
   if (packed) {
-    const archive = join(cwd,'dist/vigilia-0.1.0.tgz');
+    const {version} = JSON.parse(await readFile(join(cwd,'plugin.json'),'utf8'));
+    const archive = join(cwd,`dist/vigilia-${version}.tgz`);
     cwd = join(temp,'plugin');
     await mkdir(cwd);
     execFileSync('tar',['-xzf',archive,'-C',cwd]);

@@ -36,3 +36,17 @@ a {color:var(--green);text-underline-offset:3px}
 .schedule,label {display:grid;gap:8px}
 .schedule span,label {color:var(--muted);font-size:.84rem}
 input {background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px}
+/* The Home card (slot "widget"): compact, no masthead or sections. */
+.widget {padding:4px 6px 10px}
+.widget h2 {font-size:1.15rem;margin:6px 0 8px}
+.widget .prose,.widget .stack {margin:8px 0;padding:12px;max-width:none;font-size:.92rem}
+.widget .stack .prose {padding:0;border:0;background:transparent}
+.wlist {list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.wrow {width:100%;display:flex;flex-direction:column;gap:2px;padding:9px 12px;border-radius:10px;color:var(--ink);font-weight:600}
+.wt {font-family:Georgia,serif;font-size:1rem}
+.wd {color:var(--muted);font-size:.8rem;font-weight:500}
+.wd.bad {color:#b5543c}
+.whead {display:flex;gap:6px;justify-content:space-between}
+.whead button {padding:5px 10px;font-size:.82rem}
+.wmeta {font-size:.85rem}
+.widget .prose h1 {font-size:1.35rem;letter-spacing:-.01em}

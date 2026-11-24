@@ -1,6 +1,6 @@
 {
   "name": "vigilia",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "title": "Vigília",
   "description": "Leituras, orações e rotinas católicas para o dia.",
   "author": "José Governo Pais Neto",
@@ -9,6 +9,7 @@
   "server": { "command": "node", "args": ["mcp/dist/server.js"] },
   "contributes": {
     "openers": [{ "id": "vigilia", "title": "Vigília", "mode": "read", "patterns": ["*.vigilia.md"], "ui": "ui://vigilia/app" }],
+    "widgets": [{ "id": "rotinas", "title": "Vigília", "description": "Suas rotinas ativas; toque numa para ler o texto.", "ui": "ui://vigilia/app", "size": 1 }],
     "commands": [{ "name": "vigilia", "tool": "vigilia_open", "args": "[section]", "description": "Abrir Vigília: hoje, biblioteca ou rotinas." }]
   },
   "skills": "skills/",

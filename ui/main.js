@@ -20,6 +20,9 @@ const day = () => new Intl.DateTimeFormat('pt-BR', {
 }).format(new Date());
 let section = 'hoje', selected, connection = window.parent === window ? 'standalone' : 'connecting';
 let notePath, today, notice, target, startDate, todayError;
+// The Home card (zen host context `slot: "widget"`): the routines zenbot runs for Vigília, given as
+// `zen.routines` (only this plugin's jobs), and the text of the one opened.
+let widget = false, routines = [], zone = 'America/Sao_Paulo', opened = null;
 const top = () => root.querySelector('h1')?.focus();
 
 function el(tag, text, attrs = {}) {
@@ -106,8 +109,72 @@ function prayer(item) {
   if (item.source) n.append(source('Consultar fonte',item.source));
   return n;
 }
+/** The catalog entry a job runs: `vigilia-ID` (the skill's names), `ID-…`, or a known older name. */
+const older = {'daily-readings':'leituras', readings:'leituras'};
+function routineItem(name) {
+  const n = String(name).replace(/^vigilia-/,'');
+  const id = older[n] ?? [...catalog].sort((a,b)=>b.id.length-a.id.length).find(i=>n===i.id||n.startsWith(i.id+'-'))?.id;
+  return catalog.find(i=>i.id===id) ?? null;
+}
+const dayKey = d => new Intl.DateTimeFormat('sv-SE',{timeZone:zone}).format(d);
+function when(iso) {
+  const d = iso ? new Date(iso) : null;
+  if (!d || isNaN(+d)) return null;
+  const hm = new Intl.DateTimeFormat('pt-BR',{timeZone:zone,hour:'2-digit',minute:'2-digit'}).format(d);
+  const k = dayKey(d), now = Date.now();
+  if (k === dayKey(new Date(now))) return 'hoje, ' + hm;
+  if (k === dayKey(new Date(now + 864e5))) return 'amanhã, ' + hm;
+  if (k === dayKey(new Date(now - 864e5))) return 'ontem, ' + hm;
+  return new Intl.DateTimeFormat('pt-BR',{timeZone:zone,day:'numeric',month:'short'}).format(d) + ', ' + hm;
+}
+async function openRoutine(r) {
+  const item = routineItem(r.name);
+  const note = item && today?.notes?.find(n=>n.id===item.id);
+  opened = {r, item, note, text:null, error:null};
+  render();
+  if (!note) return;
+  try { opened.text = result(await app.callServerTool({name:'vigilia_read',arguments:{path:note.path}})).markdown; }
+  catch (e) { opened.error = e.message; }
+  if (opened?.r === r) render();
+}
+function renderWidget() {
+  root.classList.add('widget');
+  if (opened) {
+    const {r, item, note, text, error} = opened;
+    const head = el('div',null,{class:'whead'});
+    head.append(button('← Rotinas',()=>{opened=null;render();root.querySelector('.wrow')?.focus();},{class:'quiet'}));
+    if (note) head.append(button('Abrir nota',()=>app.openLink({url:'zen://open?path='+encodeURIComponent(note.path)}).catch(()=>{}),{class:'quiet'}));
+    root.append(head, el('h2',item?.title || r.name,{tabindex:'-1'}));
+    if (note && typeof text === 'string') root.append(markdown(text));
+    else if (note) root.append(el('p',error || 'Abrindo a nota de hoje…',{role:'status'}));
+    else {
+      const last = when(r.last_run_at);
+      root.append(el('p',(r.next ? 'A nota de hoje chega ' + when(r.next) + '.' : 'Ainda não há nota de hoje.') + (last ? ' Última: ' + last + '.' : ''),{class:'wmeta'}));
+      if (item) root.append(prayer(item));
+    }
+    root.querySelector('h2')?.focus();
+    return;
+  }
+  const active = routines.filter(r=>r.state==='active');
+  if (!active.length) {
+    root.append(el('p',connection==='ready' ? 'Nenhuma rotina ativa. Peça no chat para agendar uma.' : 'Abrindo…',{class:'wmeta'}));
+    return;
+  }
+  const list = el('ul',null,{class:'wlist','aria-label':'Rotinas ativas'});
+  for (const r of active.sort((a,b)=>String(a.next).localeCompare(String(b.next)))) {
+    const item = routineItem(r.name);
+    const hasNote = item && today?.notes?.some(n=>n.id===item.id);
+    const row = button('',()=>openRoutine(r),{class:'wrow'});
+    const next = when(r.next);
+    const state = r.last==='error' ? ' · falhou' : hasNote ? ' · nota de hoje' : '';
+    row.append(el('span',item?.title || r.name,{class:'wt'}),el('span',(next ? 'próxima ' + next : r.when || '') + state,{class:'wd' + (r.last==='error' ? ' bad' : '')}));
+    const li = el('li'); li.append(row); list.append(li);
+  }
+  root.append(list);
+}
 function render() {
   root.replaceChildren();
+  if (widget) return renderWidget();
   const header = el('header',null,{class:'mast'});
   header.append(el('span','VIGÍLIA',{class:'brand'}), el('span',day(),{class:'date'}));
   root.append(header);
@@ -185,6 +252,12 @@ function result(r) {
 }
 function context(ctx) {
   if (ctx?.theme) document.documentElement.dataset.theme = ctx.theme;
+  const was = widget, before = JSON.stringify(routines);
+  widget = ctx?.zen?.slot === 'widget';
+  if (Array.isArray(ctx?.zen?.routines)) routines = ctx.zen.routines.filter(r=>r && typeof r.name === 'string');
+  if (typeof ctx?.timeZone === 'string') zone = ctx.timeZone;
+  // Size and theme changes come often: redraw the card only when it or its routines change.
+  if (widget) { if (!was || before !== JSON.stringify(routines)) render(); return; }
   const path = ctx?.zen?.slot === 'opener' ? ctx.zen.path : null;
   if (path !== notePath) {
     notePath = path;
@@ -225,7 +298,7 @@ if (connection === 'connecting') {
     render();
     if (notePath) read(notePath);
     else {
-      send('zen/commands',{commands:Object.entries(sections).map(([id,title])=>({id,title,ring:true}))});
+      if (!widget) send('zen/commands',{commands:Object.entries(sections).map(([id,title])=>({id,title,ring:true}))});
       try {today = result(await app.callServerTool({name:'vigilia_today',arguments:{}}));}
       catch {todayError = true;}
       render();
