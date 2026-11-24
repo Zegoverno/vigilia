@@ -74,6 +74,28 @@ try {
   assert.equal(await ui.getByRole('link',{name:'Inseguro'}).count(),0);
   assert.equal(await ui.locator('body').evaluate(()=>window.injected),undefined);
   await page.screenshot({path:join(shots,'mobile-nota.png')});
+  // The Home card: only active routines, each opening today's note or else its text.
+  const soon = new Date(Date.now()+3600e3).toISOString();
+  await page.setViewportSize({width:420,height:360});
+  await page.evaluate(next=>window.setContext({zen:{slot:'widget',pane:'board',path:null,routines:[
+    {name:'angelus',when:'Daily at 12:00',state:'active',next,last:'ok',last_run_at:null},
+    {name:'exame-consciencia',when:'Daily at 21:00',state:'active',next,last:'error',last_run_at:null},
+    {name:'vigilia-novena-2026-12-08',when:'Paused',state:'paused',next:null,last:'none',last_run_at:null},
+  ]}}),soon);
+  const rows = ui.locator('.wrow');
+  await rows.first().waitFor();
+  assert.deepEqual(await ui.locator('.wrow .wt').allInnerTexts(),['Ângelus','Exame de consciência']);
+  assert.match(await rows.nth(1).innerText(),/falhou/);
+  assert.equal(await ui.locator('nav').count(),0,'the card has no sections');
+  await page.screenshot({path:join(shots,'card-rotinas.png')});
+  await rows.first().click();
+  await ui.getByText('Palavra para rezar.').waitFor();
+  await page.screenshot({path:join(shots,'card-nota.png')});
+  await ui.getByRole('button',{name:'← Rotinas'}).click();
+  await ui.locator('.wrow').nth(1).click();
+  await ui.getByRole('heading',{name:'Exame de consciência'}).waitFor();
+  await ui.getByText('A nota de hoje chega',{exact:false}).waitFor();
+  assert.ok((await ui.locator('.stack').innerText()).length > 200,'the examen text shows when there is no note today');
   assert.deepEqual(errors,[]);
-  console.log('Browser: sandboxed app, widget result, theme, keyboard, chat drafts and file opener OK');
+  console.log('Browser: sandboxed app, widget result, theme, keyboard, chat drafts, file opener and Home card OK');
 } finally { await browser.close(); await new Promise(r=>http.close(r)); await f.close(); }
