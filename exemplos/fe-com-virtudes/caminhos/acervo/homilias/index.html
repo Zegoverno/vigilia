@@ -1,0 +1,44 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Homilias e vídeos · Fé com Virtudes</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f8f5e9;color:#243634;font:16px/1.5 system-ui}main,header{width:min(100% - 2rem,70rem);margin:auto}header{padding:1rem 0}a{color:inherit;text-underline-offset:.2em}.hero{background:#244b56;color:#fff6de;padding:clamp(1.2rem,5vw,3rem);border-top:4px solid #d6ae63;border-radius:.8rem}h1,h2{font-family:Georgia,serif;line-height:1.1;margin:.2em 0}.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:normal}.hero p{margin:.65rem 0 0}.controls{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:.75rem;margin:1.35rem 0 .85rem}.controls label{font-weight:750;min-width:0}input,select{display:block;width:100%;font:inherit;padding:.63rem .55rem;border:1px solid #91a7a7;border-radius:.45rem;background:#fffdf6;color:#243634;min-height:44px}.bar{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin:0 0 1rem}button{font:inherit;cursor:pointer;background:#fffdf6;border:1px solid #91a7a7;border-radius:.4rem;padding:.45rem .65rem;color:inherit}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,15.5rem),1fr));gap:1rem;padding-bottom:2rem}.card{background:#fffdf6;border:1px solid #c8d4ce;border-radius:.65rem;overflow:hidden;display:flex;flex-direction:column}.art{display:grid;place-items:center;aspect-ratio:16/9;position:relative;background:#dce9e6;color:#244b56;font:700 1.2rem Georgia;overflow:hidden}.art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.art[data-platform=Spotify]{background:#193f33;color:#d8f2c8}.art[data-platform=YouTube]{background:#66333a;color:#fff6de}.card-body{padding:.9rem;display:flex;flex-direction:column;flex:1}.kind{margin:0;color:#425f5e;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}.card h2{font-size:1.3rem;margin:.3rem 0 .5rem}.tags{display:flex;flex-wrap:wrap;gap:.3rem;margin:.35rem 0 1rem}.tags button{font-size:.76rem;background:#edf3ef;padding:.22rem .46rem}.open{display:block;margin-top:auto;font-weight:750;color:#244b56}.empty{padding:1rem;background:#fffdf6;border-radius:.5rem}:focus-visible{outline:2px solid #99641e;outline-offset:3px}@media(max-width:710px){.controls{grid-template-columns:1fr 1fr}.controls label:first-child{grid-column:1/-1}}
+</style><header><a href="../">← Acervo</a></header><main><section class="hero"><h1>Homilias e vídeos</h1><p>Índice pesquisável de Homilia Diária. Cada item abre na edição original.</p></section>
+<div class="controls"><label>Buscar<input id="q" type="search" placeholder="Ex.: Missa, família, virtudes"></label><label>Tema<select id="theme"><option value="">Todos</option></select></label><label>Formato<select id="kind"><option value="">Todos</option></select></label><label>Plataforma<select id="platform"><option value="">Todas</option></select></label></div><div class="bar"><span id="count" role="status">Carregando acervo…</span><button id="reset" type="button">Limpar filtros</button></div><div id="cards" class="cards"></div><button type="button" id="more" hidden>Mostrar mais</button></main>
+<script type="module">
+const $=s=>document.querySelector(s), q=$('#q'), theme=$('#theme'), kind=$('#kind'), platform=$('#platform'), count=$('#count'), cards=$('#cards');
+const norm=s=>s.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
+const current=new URLSearchParams(location.search);
+function el(n,cls,text){const a=document.createElement(n);if(cls)a.className=cls;if(text)a.textContent=text;return a}
+try{
+const response=await fetch('catalogo.json');if(!response.ok)throw Error('Acervo indisponível');
+const data=await response.json();
+for(const [key,field,values] of [['tema',theme,data.flatMap(x=>x.tags)],['formato',kind,data.map(x=>x.kind)],['plataforma',platform,data.map(x=>x.platform)]]){
+ for(const x of [...new Set(values)].sort((a,b)=>a.localeCompare(b,'pt-BR')))field.add(new Option(x,x));
+ if([...field.options].some(o=>o.value===current.get(key)))field.value=current.get(key);
+}
+q.value=current.get('busca')||'';
+let limit=36;
+function render(reset=true){
+ if(reset)limit=36;
+ const terms=norm(q.value).trim().split(/\s+/).filter(Boolean);
+ const entries=data.filter(d=>(!theme.value||d.tags.includes(theme.value))&&(!kind.value||d.kind===kind.value)&&(!platform.value||d.platform===platform.value)&&terms.every(t=>norm([d.title,d.platform,...d.tags,...d.aliases].join(' ')).includes(t)));
+ const params=new URLSearchParams();for(const [k,v] of [['busca',q.value],['tema',theme.value],['formato',kind.value],['plataforma',platform.value]])if(v)params.set(k,v);
+ const url=location.pathname+(params.size?'?'+params:'');if(url!==location.pathname+location.search)history.replaceState(null,'',url);
+ $('#more').hidden=entries.length<=limit;
+ count.textContent=entries.length+' '+(entries.length===1?'item':'itens');
+ cards.replaceChildren();
+ if(!entries.length){cards.append(el('p','empty','Nenhum item encontrado. Experimente outro tema ou termo.'));return;}
+ for(const d of entries.slice(0,limit)){
+  const a=el('article','card'),art=el('div','art',d.platform);art.dataset.platform=d.platform;art.setAttribute('aria-hidden','true');
+  if(d.img){const i=el('img');i.alt='';i.loading='lazy';i.addEventListener('error',()=>i.remove());i.src=d.img;art.append(i);}
+  const body=el('div','card-body'), tags=el('div','tags'), link=el('a','open',d.url.startsWith('/')?'Abrir no app →':'Abrir em '+d.platform+' ↗');link.href=d.url;
+  if(d.aliases.length)link.title=[d.title,...d.aliases].join(' · ');
+  for(const t of d.tags){const b=el('button','',t);b.type='button';b.onclick=()=>{theme.value=t;render();theme.focus()};tags.append(b)}
+  body.append(el('p','kind',d.kind+' · '+d.date),el('h2','',d.title),tags,link);a.append(art,body);cards.append(a);
+ }
+}
+q.addEventListener('input',render);for(const f of [theme,kind,platform])f.addEventListener('change',render);
+$('#more').onclick=()=>{limit+=36;render(false)};
+$('#reset').onclick=()=>{q.value=theme.value=kind.value=platform.value='';render();q.focus()};
+render();
+}catch(e){count.textContent='Não foi possível carregar o acervo.';}
+</script></html>

@@ -1,0 +1,797 @@
+[
+  {
+    "title": "Site de homilias",
+    "url": "https://homilias.fecomvirtudes.com.br/",
+    "platform": "Fé com Virtudes",
+    "kind": "Portal / comunidade",
+    "tags": [
+      "Homilias"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/homilias"
+    ]
+  },
+  {
+    "title": "Comunidade Homilias — Padre Paulo M. Ramalho",
+    "url": "https://chat.whatsapp.com/D98JKwAIA8l6MZ4UsU03cC",
+    "platform": "WhatsApp",
+    "kind": "Portal / comunidade",
+    "tags": [
+      "Homilias"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/homilias"
+    ]
+  },
+  {
+    "title": "Vídeos recentes",
+    "url": "https://www.youtube.com/user/responsorio1/videos",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Homilias diárias",
+    "url": "https://www.youtube.com/watch?v=3zkrPVOWjm8&list=PL9pnZMVyWSpiTea9HZIprdGWo4SWv8m_h",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Homilias"
+    ],
+    "img": "https://i.ytimg.com/vi/3zkrPVOWjm8/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Homilias por temas",
+    "url": "https://www.youtube.com/watch?v=3zkrPVOWjm8&list=PL9pnZMVyWSpgoiW5wFBSPxPkc9Us7aDXf",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Homilias"
+    ],
+    "img": "https://i.ytimg.com/vi/3zkrPVOWjm8/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Meditações",
+    "url": "https://www.youtube.com/watch?v=12wZPS0dDiI&list=PL9pnZMVyWSpgoj9Lsw0c96MuI-uUGZHhW",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração"
+    ],
+    "img": "https://i.ytimg.com/vi/12wZPS0dDiI/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Curso de Doutrina Católica",
+    "url": "https://www.youtube.com/watch?v=6rRjTfcZBF0&list=PL9pnZMVyWSpi-YI_otQiq3VPYDnrkWqeu",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/6rRjTfcZBF0/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Curso Bíblico",
+    "url": "https://www.youtube.com/watch?v=dL0XrSJJcsQ&list=PL9pnZMVyWSpiHPHgDjxkhs52zREZQWDTb",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Bíblia"
+    ],
+    "img": "https://i.ytimg.com/vi/dL0XrSJJcsQ/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Curso de Noivos e Casal Aprofundado",
+    "url": "https://www.youtube.com/watch?v=9WQCYMwDf9Y&list=PL9pnZMVyWSpgwkhKZmXB1hwSImzEHew4m",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Família e namoro"
+    ],
+    "img": "https://i.ytimg.com/vi/9WQCYMwDf9Y/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Curso de Relacionamento",
+    "url": "https://www.youtube.com/watch?v=FobQoKVBRIw&list=PL9pnZMVyWSpgsQc3AisNDCAuANhdq8n0b",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Família e namoro"
+    ],
+    "img": "https://i.ytimg.com/vi/FobQoKVBRIw/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Curso para aprender a fazer “Oração Mental” ou “Meditação”",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpi4cNzd7akViMQDM3O5a-cL",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Curso de Antropologia da moda",
+    "url": "https://www.youtube.com/watch?v=thejRYDEGn8&list=PL9pnZMVyWSpjMLy-AJnElSMyIGY5wPX_A",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "https://i.ytimg.com/vi/thejRYDEGn8/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Conversões",
+    "url": "https://www.youtube.com/watch?v=XntxsIasn8U&list=PL9pnZMVyWSphsrOYyUgQKW2p_5tAcHliZ",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Testemunhos"
+    ],
+    "img": "https://i.ytimg.com/vi/XntxsIasn8U/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Defesa da vida",
+    "url": "https://www.youtube.com/watch?v=x31Ccsdgvi0&list=PL9pnZMVyWSpiNJNWfAxEjuTD5n7giKCZ3",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "https://i.ytimg.com/vi/x31Ccsdgvi0/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Demonstração racional da existência de Deus",
+    "url": "https://www.youtube.com/watch?v=Do4eYOnTLWk&list=PL9pnZMVyWSpi8rud8fsz3FEh4_5e7D8d0",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/Do4eYOnTLWk/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Esperança",
+    "url": "https://www.youtube.com/watch?v=VRm3GeNqYYA&list=PL9pnZMVyWSpjP-sjAnBXo7DfergQi7bta&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Virtudes"
+    ],
+    "img": "https://i.ytimg.com/vi/VRm3GeNqYYA/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Fé (como crescer na fé)",
+    "url": "https://www.youtube.com/watch?v=WdPIsafcwWA&list=PL9pnZMVyWSpgIWATFe-Y5Sxi8-jIiOfqQ&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/WdPIsafcwWA/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Fim dos tempos",
+    "url": "https://www.youtube.com/watch?v=UY-FuKVcqsk&list=PL9pnZMVyWSphN1Ke23WdXMS77TE80btId",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/UY-FuKVcqsk/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Matrimônio e família",
+    "url": "https://www.youtube.com/watch?v=HX5XdRehmpM&list=PL9pnZMVyWSpi-087D6aD_Eexq-72Nm7rO",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Família e namoro"
+    ],
+    "img": "https://i.ytimg.com/vi/HX5XdRehmpM/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Namoro santo",
+    "url": "https://www.youtube.com/watch?v=UQ0AkePKbXI&list=PL9pnZMVyWSpjhRAiR9eHttaMbn6vp_7m0",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Família e namoro"
+    ],
+    "img": "https://i.ytimg.com/vi/UQ0AkePKbXI/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Nossa Senhora de Guadalupe",
+    "url": "https://www.youtube.com/watch?v=WnOL4ELm3PQ&list=PL9pnZMVyWSpjpwP2aHc1_RQSvQf3KydnF",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Nossa Senhora"
+    ],
+    "img": "https://i.ytimg.com/vi/WnOL4ELm3PQ/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Providência divina",
+    "url": "https://www.youtube.com/watch?v=y2o9bNHhnrQ&list=PL9pnZMVyWSpjH1odfMakJ8JevzMNSDZY-&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/y2o9bNHhnrQ/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Purgatório",
+    "url": "https://www.youtube.com/watch?v=k9TxXRAft3w&list=PL9pnZMVyWSpi2z_THfxrVC7hnkW6X8c4Q&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/k9TxXRAft3w/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Inferno",
+    "url": "https://www.youtube.com/watch?v=zhZyDDuc8f0&list=PL9pnZMVyWSphuG7HkMdnBr9h3NoBYfUwW&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/zhZyDDuc8f0/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Céu",
+    "url": "https://www.youtube.com/watch?v=iPqz51SwtiE&list=PL9pnZMVyWSpicadsKLbPKd_UbmkyfMOTh&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "https://i.ytimg.com/vi/iPqz51SwtiE/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Santa Missa",
+    "url": "https://www.youtube.com/watch?v=HkvvCEyYus8&list=PL9pnZMVyWSphQtzlSVVlFKViHWDaEEGbf&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Missa e Eucaristia"
+    ],
+    "img": "https://i.ytimg.com/vi/HkvvCEyYus8/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Temas espirituais",
+    "url": "https://www.youtube.com/watch?v=WpR1hw9hycw&list=PL9pnZMVyWSpjQkkz_WZG79LaZgc-G2RS7",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "https://i.ytimg.com/vi/WpR1hw9hycw/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Testemunhos",
+    "url": "https://www.youtube.com/watch?v=_pBfVj8ElbQ&list=PL9pnZMVyWSpgtG47kWuY4mfS2GAIkls1C",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Testemunhos"
+    ],
+    "img": "https://i.ytimg.com/vi/_pBfVj8ElbQ/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Virtudes da caridade",
+    "url": "https://www.youtube.com/watch?v=07fg2rFMHHY&list=PL9pnZMVyWSpi56RVUDhGoB0q88wBYxVHl&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Virtudes"
+    ],
+    "img": "https://i.ytimg.com/vi/07fg2rFMHHY/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Virtudes cristãs",
+    "url": "https://www.youtube.com/watch?v=ORUQJGYgNqk&list=PL9pnZMVyWSpj22YyvllyL5Enf3d5MJ7gd&pp=sAgC",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Virtudes"
+    ],
+    "img": "https://i.ytimg.com/vi/ORUQJGYgNqk/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Recolhimento",
+    "url": "https://www.youtube.com/watch?v=4nRxgYcL-fs&list=PL9pnZMVyWSph_gJuOdGPuEQciwAf4Oec0",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração"
+    ],
+    "img": "https://i.ytimg.com/vi/4nRxgYcL-fs/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Retiro espiritual",
+    "url": "https://www.youtube.com/watch?v=8W_M2LX1DtQ&list=PL9pnZMVyWSpjCjoL-JF6v3_rk2_1D10bN",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração"
+    ],
+    "img": "https://i.ytimg.com/vi/8W_M2LX1DtQ/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/youtube"
+    ]
+  },
+  {
+    "title": "Milagre através da intercessão de Nossa Senhora Aparecida",
+    "url": "https://drive.google.com/file/d/1r9-wuVmhr0YaFeI8EuXtOc-8yplDZiXR/view?usp=sharing",
+    "platform": "Google Drive",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Nossa Senhora",
+      "Testemunhos"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/videos-2"
+    ]
+  },
+  {
+    "title": "O mistério da missa (animação baseada nas revelações de Catalina Rivas)",
+    "url": "https://drive.google.com/file/d/1XvWlu5dD34dVjAwSl7FbeEu5rrULIHox/view?usp=sharing",
+    "platform": "Google Drive",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Missa e Eucaristia"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/videos-2"
+    ]
+  },
+  {
+    "title": "Marcelinho, pão e vinho (filme)",
+    "url": "https://drive.google.com/file/d/1KtRGZmCFnbU5b6FPuxKV_45TSxnQ5V28/view?usp=sharing",
+    "platform": "Google Drive",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Missa e Eucaristia"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/videos-2"
+    ]
+  },
+  {
+    "title": "Canal Youtube",
+    "url": "https://www.youtube.com/user/responsorio1/playlists",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/videos"
+    ]
+  },
+  {
+    "title": "Vídeos onedrive",
+    "url": "https://1drv.ms/f/s!ArJ5VW_PMBCIg_wFC0gEUn18iet-dg",
+    "platform": "OneDrive",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/videos"
+    ]
+  },
+  {
+    "title": "Fátima, o último mistério",
+    "url": "https://photos.app.goo.gl/YdVPLIvLAp940Q893",
+    "platform": "Google Fotos",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Nossa Senhora"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/videos"
+    ]
+  },
+  {
+    "title": "Meditações",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpgoj9Lsw0c96MuI-uUGZHhW",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Oração"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "Catecismo Católico – resumo",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpgGg8byH9G6vD5I5oo28nGZ",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "Dúvidas de fé – alguns temas",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpghzT13wP3BoKc2k2XQyIoQ",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Doutrina e fé"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "Livros espirituais",
+    "url": "https://drive.google.com/drive/folders/1tpLTXhh3K0V92v8S8y7EGFgyMvAL8w3E?usp=sharing",
+    "platform": "Google Drive",
+    "kind": "Áudio",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "São Mateus",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpiUsxtJtLR2kKO2IzTBAtum",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Bíblia"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "São Marcos",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSphn4UUQ2w7p0INLvPN2fDLh",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Bíblia"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "São Lucas",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSphj86yqJe6CL2ZKycAvU5l-",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Bíblia"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "São João",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpgCC-v2Xh3bRN9DihnYHdc6",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Bíblia"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "Terço",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpiN6K_dtzzFmstUN_XFGuSX",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Oração",
+      "Nossa Senhora"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "Marido e mulher",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpi-087D6aD_Eexq-72Nm7rO",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Família e namoro"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "Temas espirituais",
+    "url": "https://www.youtube.com/playlist?list=PL9pnZMVyWSpjQkkz_WZG79LaZgc-G2RS7",
+    "platform": "YouTube",
+    "kind": "Áudio",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/audio-catolico"
+    ]
+  },
+  {
+    "title": "Meditações",
+    "url": "https://open.spotify.com/show/3HFNBP6Y6yNLjDRoNoRXHj",
+    "platform": "Spotify",
+    "kind": "Áudio",
+    "tags": [
+      "Oração"
+    ],
+    "img": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f24e6547ef2b36a147307c980",
+    "aliases": [
+      "Purgatório 2026"
+    ],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/"
+    ]
+  },
+  {
+    "title": "Terço",
+    "url": "https://www.youtube.com/watch?v=SDot_xWIus4&list=PL9pnZMVyWSpiN6K_dtzzFmstUN_XFGuSX",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração",
+      "Nossa Senhora"
+    ],
+    "img": "https://i.ytimg.com/vi/SDot_xWIus4/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/"
+    ]
+  },
+  {
+    "title": "Terço",
+    "url": "/vigilia/exemplos/fe-com-virtudes/caminhos/terco/",
+    "platform": "Fé com Virtudes",
+    "kind": "No app",
+    "tags": [
+      "Oração",
+      "Nossa Senhora"
+    ],
+    "img": "",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/"
+    ]
+  },
+  {
+    "title": "Terço em vídeo 1",
+    "url": "https://www.youtube.com/watch?v=P0_K6WoUyV8",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração",
+      "Nossa Senhora"
+    ],
+    "img": "https://i.ytimg.com/vi/P0_K6WoUyV8/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/terco"
+    ]
+  },
+  {
+    "title": "Terço em vídeo 2",
+    "url": "https://www.youtube.com/watch?v=lVzWLsSRQfk",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração",
+      "Nossa Senhora"
+    ],
+    "img": "https://i.ytimg.com/vi/lVzWLsSRQfk/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/terco"
+    ]
+  },
+  {
+    "title": "Terço em vídeo 3",
+    "url": "https://www.youtube.com/watch?v=uOZKMOoO8Xk",
+    "platform": "YouTube",
+    "kind": "Vídeo / playlist",
+    "tags": [
+      "Oração",
+      "Nossa Senhora"
+    ],
+    "img": "https://i.ytimg.com/vi/uOZKMOoO8Xk/mqdefault.jpg",
+    "aliases": [],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/terco"
+    ]
+  },
+  {
+    "title": "Canal no Spotify",
+    "url": "https://open.spotify.com/show/033FG83f7bjiyAAT2bReeH",
+    "platform": "Spotify",
+    "kind": "Áudio",
+    "tags": [
+      "Outros temas"
+    ],
+    "img": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f6d1a71be4562d46211f1f4a7",
+    "aliases": [
+      "01 - Visita"
+    ],
+    "sources": [
+      "https://app.fecomvirtudes.com.br/"
+    ]
+  }
+]

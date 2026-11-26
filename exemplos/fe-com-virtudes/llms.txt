@@ -1,0 +1,34 @@
+# Fé com Virtudes
+
+> Demonstração não oficial de redesign. Textos e recursos reunidos a partir dos sites do Pe. Paulo Ramalho.
+
+URLs relativas à raiz desta demonstração. Os catálogos JSON contêm os itens individuais. O blog oferece leitura local; o índice de homilias aponta para o portal original.
+
+## Começar
+
+- [Página inicial](./)
+- [Biblioteca](caminhos/biblioteca/)
+- [Blog do Pe. Paulo](caminhos/blog/)
+- [Mais leituras](caminhos/leituras/)
+
+## Rezar
+
+- [Orações](caminhos/oracoes/)
+- [Terço](caminhos/terco/)
+- [Ordinário da Missa](caminhos/missa/)
+- [Milagres eucarísticos](caminhos/missa/milagres/)
+- [Acervo de vídeos e áudios](caminhos/acervo/)
+- [Índice de homilias](caminhos/acervo/homilias/)
+
+## Praticar
+
+- [Exame para a confissão](caminhos/confissao/)
+- [Exame de consciência diário](caminhos/confissao/exame-diario/)
+- [Plano de santidade](caminhos/plano-de-santidade/)
+- [Roteiro para a Direção Espiritual](caminhos/direcao-espiritual/)
+
+## Dados estruturados
+
+- [Catálogo do blog](caminhos/blog/catalogo.json)
+- [Catálogo de mídia](caminhos/acervo/catalogo.json)
+- [Catálogo de homilias](caminhos/acervo/homilias/catalogo.json)
