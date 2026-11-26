@@ -119,3 +119,13 @@ section:before{content:"";top:-11px;width:12px;height:20px;padding:0 11px;box-si
 @media(max-width:760px){.marcos{grid-template-columns:1fr;gap:24px;margin-left:5px;padding-left:22px;border-left:1px solid #b29874}.marcos li{border-top:0;padding-top:0}.marcos li:before{top:9px;left:-27.5px}}
 @media(max-width:710px){body{font-size:19px}.virtues{grid-template-columns:1fr}.saint-image img{width:min(62%,210px)}.historia-lead{font-size:20px}}
 .historia-fecho{font-style:italic;font-size:21px;color:#652f35;margin:0 0 14px}
+
+/* Keep the quick links visible without covering anchor destinations. */
+html{scroll-padding-top:80px}
+#como-chegar{scroll-margin-top:0}
+body>nav{position:sticky;top:0;z-index:10;background:#f8f3e9}
+@media(max-width:760px){
+  html{scroll-padding-top:120px}
+  body>nav{padding:8px 12px;gap:2px 16px}
+  body>nav a{line-height:1.3}
+}
