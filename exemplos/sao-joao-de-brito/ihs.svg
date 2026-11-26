@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+<title>IHS — monograma do nome de Jesus</title>
+<g fill="none" stroke="#9c7035">
+<circle cx="80" cy="80" r="49" stroke-width="1"/><circle cx="80" cy="80" r="54" stroke-width="1.6"/>
+<path id="rays" d="M80 5l3 16-3-3-3 3zM117.5 15l-5 16-1-4-4 1zM145 42.5l-12 11 1-4-4-1z" fill="#9c7035"/>
+<use href="#rays" transform="rotate(90 80 80)"/><use href="#rays" transform="rotate(180 80 80)"/><use href="#rays" transform="rotate(270 80 80)"/>
+<path d="M80 42v21m-7-14h14M70 103l7 14m3-16v16m10-14-7 14" stroke-width="2"/>
+</g><text x="80" y="95" text-anchor="middle" fill="#652f28" font-family="Georgia,serif" font-size="32" letter-spacing="2">IHS</text>
+</svg>
