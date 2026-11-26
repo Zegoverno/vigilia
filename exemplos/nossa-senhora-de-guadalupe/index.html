@@ -2,110 +2,201 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paróquia Nossa Senhora de Guadalupe · Proposta Vigília</title>
-<meta name="description" content="Paróquia Nossa Senhora de Guadalupe, no Campo Belo: missas, confissões, agenda, sacramentos e história.">
-<meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#2b4b60">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b4b60'/%3E%3Cpath d='M16 5v22M9.5 12h13' stroke='%23f1d08a' stroke-width='3'/%3E%3C/svg%3E">
-<link rel="preload" href="fonts/ebgaramond-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="broadsheet.css">
+<title>Paróquia Nossa Senhora de Guadalupe · Campo Belo · Proposta Vigília</title>
+<meta name="description" content="Paróquia Nossa Senhora de Guadalupe, no Campo Belo: missas, confissões, agenda, sacramentos, história e a padroeira.">
+<meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#1f4b59">
+
+<link rel="preload" href="fonts/alegreya-normal-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="guadalupe.css">
 </head>
 <body>
-<a class="skip-link" href="#conteudo">Ir para o conteúdo</a><aside>Proposta Vigília · Demonstração não oficial</aside>
-<nav aria-label="Navegação principal"><strong>Nossa Senhora de Guadalupe</strong><div><a href="#horarios">Horários</a><a href="#agenda">Agenda</a><a href="#sacramentos">Sacramentos</a><a href="#igreja">História</a><a href="#padroeiro">Padroeira</a><a href="#secretaria">Secretaria</a></div></nav>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<aside class="demo">Proposta Vigília · Demonstração não oficial</aside>
+<nav class="menu" aria-label="Navegação principal">
+<a class="marca" href="#topo"><strong>Nossa Senhora de Guadalupe<small>Campo Belo</small></strong></a>
+<ul><li><a href="#horarios">Horários</a></li><li><a href="#agenda">Agenda</a></li><li><a href="#sacramentos">Sacramentos</a></li><li><a href="#historia">História</a></li><li><a href="#padroeira">Padroeira</a></li><li><a href="#secretaria">Secretaria</a></li></ul>
+</nav>
 <main id="conteudo">
-<header>
-<div class="chant"><button id="chant-toggle" type="button" aria-pressed="false">♪ Ouvir e rezar</button><span class="chant-credit"><cite>Salve Regina</cite></span><audio id="chant-audio" preload="none" src="salve-regina.mp3" loop></audio><p id="chant-status" role="status" hidden>Não foi possível tocar o canto.</p></div>
-<div><small>Campo Belo · Diocese de Santo Amaro</small><h1>Paróquia Nossa Senhora de Guadalupe</h1><p class="hero-lead">Venha celebrar a Missa ou passar um tempo em oração.</p><p class="hero-address">Rua República do Iraque, 1839 · Campo Belo</p><div class="hero-actions"><a class="button" href="#horarios">Horários das missas</a><a href="#como-chegar">Como chegar</a></div></div>
-<figure class="temple"><img src="fachada.jpg" width="1024" height="606" alt="Fachada azul e clara da Paróquia Nossa Senhora de Guadalupe, no Campo Belo"></figure><span class="caption">Igreja matriz · Paróquia fundada em 1955</span>
+
+<header class="abertura" id="topo">
+
+<div class="cartao"><div class="wrap">
+
+<div>
+<h1><small>Diocese de Santo Amaro · Campo Belo</small>Paróquia Nossa Senhora de Guadalupe</h1>
+<p class="frase">«Não estou Eu aqui, que sou tua Mãe?»</p>
+<p class="frase-fonte">Nossa Senhora a Juan Diego · Nican Mopohua</p>
+<div class="acoes"><a class="botao" href="#horarios">Horários das missas</a><a class="botao vazado" href="#como-chegar">Como chegar</a><button class="botao ocre" id="chant-toggle" type="button" aria-pressed="false">♪ Ouvir a Guadalupana</button></div>
+<audio id="chant-audio" preload="none" src="canto-guadalupana.mp3" loop></audio>
+<p class="canto-nota" id="chant-status">Canto à Guadalupana, Mazatlán (México) · gravação da comunidade</p>
+</div></div></div>
 </header>
-<section id="horarios" aria-labelledby="horarios-titulo"><h2 id="horarios-titulo">Horários da semana</h2><p id="semana-datas" hidden></p><div class="grid">
-<article><h3>Missas</h3><dl id="missas-semana"><dt>Segunda-feira</dt><dd>7h30*</dd><dt>Terça a sábado</dt><dd>8h</dd><dt>Domingo</dt><dd>8h, 10h e 18h</dd></dl><p class="schedule-note">* A Missa de segunda-feira consta no site paroquial, mas não na ficha da diocese. Confirme com a secretaria antes de ir.</p><p class="schedule-note">A Eucaristia é a fonte e o ápice da vida cristã (CIC 1324).</p></article>
-<article><h3>Confissões</h3><p>De terça a sábado, após a Missa das 8h.</p><p class="schedule-note">Na Reconciliação, recebemos o perdão de Deus e nos reconciliamos com a Igreja (CIC 1422).</p></article>
-</div><p class="source">Horários habituais: <a href="https://paroquiansguadalupe.com.br/nossos-horarios">site paroquial</a> e <a href="https://diocesedesantoamaro.org.br/paroquias-da-diocese-de-santo-amaro/paroquiansradeguadalupe/">Diocese de Santo Amaro</a>, páginas sem data de atualização, consultadas em 26/11/2026. Confirme possíveis alterações com a <a href="#secretaria">secretaria</a>.</p></section>
-<section id="agenda" aria-labelledby="agenda-titulo"><small>Participe</small><h2 id="agenda-titulo">Agenda da paróquia</h2><div class="agenda-columns">
-<div><h3>Próximos eventos</h3><p>A festa litúrgica da padroeira é em 12 de dezembro. A programação local ainda não foi confirmada nesta agenda. Acompanhe o <a href="https://www.instagram.com/paroquiansraguadalupe/">Instagram da paróquia</a> para saber mais.</p></div>
-<div id="comunidade"><h3>Eventos anteriores</h3><details><summary>Ver arquivo de encontros</summary><div class="local-life">
-<article><small>Junho de 2026 · Campo Belo</small><h4>Festa Junina</h4><p>A paróquia convidou o bairro para sua festa tradicional nos quatro fins de semana de junho. <a href="https://www.instagram.com/paroquiansraguadalupe/reel/DZFoaa_REqc/">Convite da paróquia</a>.</p></article>
-<article><small>7 de fevereiro de 2026 · Vida paroquial</small><h4>Retiro das pastorais</h4><p>Antes de retomar as atividades do ano, as pastorais se reuniram em retiro para rezar e renovar seu compromisso de serviço. <a href="https://paroquiansguadalupe.com.br/vida-paroquial">Registro da paróquia</a>.</p></article>
-<article><small>9 a 12 de dezembro de 2023 · Padroeira</small><h4>Tríduo e quermesse</h4><p>A comunidade anunciou um tríduo, quermesse e Missa solene para a festa da padroeira. <a href="https://www.facebook.com/paroquiansraguadalupe/videos/festa-de-nossa-senhora-de-guadalupe-2023de-9-a-12-de-dezembro-celebraremos-a-nos/1290817454937881/">Convite da paróquia</a>.</p></article>
-</div></details></div></div></section>
-<section id="sacramentos" aria-labelledby="sacramentos-titulo"><h2 id="sacramentos-titulo">Batismo e matrimônio</h2>
-<div class="grid"><article><h3>Batismo</h3><p>No Batismo, nascemos para a vida em Cristo e somos acolhidos na Igreja (CIC 1213). Para batizar seu filho, pergunte à secretaria sobre a preparação de pais e padrinhos, os documentos e as datas.</p></article>
-<article><h3>Matrimônio</h3><p>No Matrimônio, os esposos firmam uma aliança para toda a vida. Entre batizados, essa aliança é sacramento (CIC 1601). Se vocês vão se casar na Igreja, a secretaria pode orientar sobre a preparação e os documentos.</p></article></div>
-<a class="button" href="#secretaria">Falar com a secretaria</a></section>
-<section id="igreja" aria-labelledby="igreja-titulo"><small>Nossa história · desde 1955</small><h2 id="igreja-titulo">Da garagem à igreja</h2>
-<p class="historia-lead">Antes de ter igreja, a comunidade do Campo Belo celebrava a Missa na garagem da casa dos pais do Pe. Newton José Crippa, seu primeiro vigário.</p>
-<ol class="marcos">
-<li><time datetime="1955-08-15">15 de agosto de 1955</time><h3>A pedra fundamental</h3><p>Dom Paulo Rolim Loureiro, bispo auxiliar de São Paulo, abençoa a pedra fundamental. Uma semana depois, Frei Mojica celebra no terreno a primeira Missa em honra da Virgem de Guadalupe.</p></li>
-<li><time datetime="1956">1956</time><h3>A primeira igreja</h3><p>A comunidade inaugura a igreja construída pelo paroquiano Antonio Rosa de Mendonça. Junto dela se ergue a torre doada por Giovanni Adamo.</p></li>
-<li><time datetime="1970">1970</time><h3>O incêndio e a reconstrução</h3><p>Um incêndio destrói a primeira igreja. A torre, a pia batismal e o ícone de Guadalupe são preservados. Com o Pe. Paulo Homero Gozzi, os moradores erguem outra igreja no mesmo terreno.</p></li>
-<li><time datetime="2025">2025</time><h3>Setenta anos no bairro</h3><p>A paróquia completa 70 anos. Em seu site, a comunidade apresenta um projeto de ampliação que prevê preservar a torre.</p></li>
+
+<section class="faixa ceu" id="horarios" aria-labelledby="horarios-titulo"><div class="wrap">
+<span class="rotulo">Venha celebrar</span>
+<h2 id="horarios-titulo">Horários da semana</h2>
+<p id="semana-datas" class="nota" hidden></p>
+<ol class="semana" id="missas-semana">
+<li class="dia"><h3>Segunda</h3><p class="linha">Missa<b>7h30</b></p><p class="linha">Confissão<b class="sem">consulte a secretaria</b></p></li>
+<li class="dia"><h3>Terça</h3><p class="linha">Missa<b>8h</b></p><p class="linha">Confissão<b>após a Missa</b></p></li>
+<li class="dia"><h3>Quarta</h3><p class="linha">Missa<b>8h</b></p><p class="linha">Confissão<b>após a Missa</b></p></li>
+<li class="dia"><h3>Quinta</h3><p class="linha">Missa<b>8h</b></p><p class="linha">Confissão<b>após a Missa</b></p></li>
+<li class="dia"><h3>Sexta</h3><p class="linha">Missa<b>8h</b></p><p class="linha">Confissão<b>após a Missa</b></p></li>
+<li class="dia"><h3>Sábado</h3><p class="linha">Missa<b>8h</b></p><p class="linha">Confissão<b>após a Missa</b></p></li>
+<li class="dia"><h3>Domingo</h3><p class="linha">Missa<b>8h · 10h · 18h</b></p><p class="linha">Confissão<b class="sem">consulte a secretaria</b></p></li>
 </ol>
-<p class="historia-fecho">A torre guarda a memória da primeira igreja.</p>
-<p>O acervo paroquial conserva uma foto da igreja antiga e registros da torre e da pia batismal que sobreviveram ao incêndio.</p>
-<div class="photo-triptych">
-<figure><a href="primeira-igreja.jpg"><img src="primeira-igreja.jpg" width="1100" height="741" alt="Foto antiga em preto e branco da primeira igreja e de sua torre" loading="lazy"></a><figcaption>A primeira igreja</figcaption></figure>
-<figure><a href="torre.jpg"><img src="torre.jpg" width="600" height="799" alt="Torre do sino no jardim da paróquia" loading="lazy"></a><figcaption>A torre do sino</figcaption></figure>
-<figure><a href="pia-batismal.jpg"><img src="pia-batismal.jpg" width="900" height="751" alt="Pia batismal de pedra no jardim da paróquia" loading="lazy"></a><figcaption>A pia batismal</figcaption></figure>
+<div class="horarios-extra">
+<article><h3>Confissões</h3><p>De terça a sábado, depois da Missa das 8h. Na Reconciliação recebemos o perdão de Deus e nos reconciliamos com a Igreja.</p></article>
+<article><h3>Ângelus no sino da torre</h3><p>O sino da torre, restaurado, volta a tocar todos os dias às 12h e às 18h, na hora do Ângelus.</p></article>
+<article><h3>Eucaristia</h3><p>A Eucaristia é a fonte e o ápice da vida cristã. Chegue um pouco antes e reze com a comunidade.</p></article>
 </div>
-<p class="source">História e fotografias: <a href="https://paroquiansguadalupe.com.br/nossa-historia">Nossa História</a> e <a href="https://paroquiansguadalupe.com.br/reforma">Reforma</a>, do site paroquial.</p>
-</section>
-<section id="padroeiro" class="virtues" aria-labelledby="virtudes">
-<figure class="saint-image"><img src="guadalupe.jpg" width="788" height="1226" loading="lazy" alt="Nossa Senhora de Guadalupe de mãos postas, com manto azul estrelado, rodeada de raios dourados"><figcaption>Imagem de Nossa Senhora de Guadalupe no manto de São Juan Diego</figcaption></figure>
-<div class="virtue-body"><small>Nossa padroeira · Festa em 12 de dezembro</small><h2 id="virtudes">Nossa Senhora de Guadalupe</h2>
-<div class="virtue-tabs" aria-label="Passagens da tradição de Guadalupe" hidden>
-<button type="button" aria-controls="virt-1">01</button><button type="button" aria-controls="virt-2">02</button><button type="button" aria-controls="virt-3">03</button><button type="button" aria-controls="virt-4">04</button></div>
-<div class="virtue-pages">
-<article id="virt-1"><small>Tepeyac · 9 de dezembro de 1531</small><h3>Humildade para escutar</h3><p>Segundo o relato de Guadalupe, Maria chama Juan Diego pelo nome e lhe confia uma missão. Ela o escuta e conta com ele, mesmo quando ele se julga pequeno demais. Essa atenção aos pequenos lembra o <a href="https://bible.usccb.org/bible/luke/1#50001046">Magnificat (Lc 1,46–55)</a>.</p><p><strong>Como imitá-la:</strong> Escute alguém que costuma passar despercebido. Dê tempo para que conte o que pensa, sem completar a resposta por ele.</p></article>
-<article id="virt-2"><small>Tepeyac · O pedido de um templo</small><h3>Caridade que acolhe</h3><p>Maria pede um templo onde os aflitos possam encontrar consolo. É o mesmo cuidado de quem, no Evangelho, vai ao encontro de Isabel e fica com ela por cerca de três meses (<a href="https://bible.usccb.org/bible/luke/1#50001039">Lc 1,39–56</a>).</p><p><strong>Como imitá-la:</strong> Visite nesta semana alguém que esteja sozinho. Pergunte de que ajuda precisa e combine algo que você possa fazer.</p></article>
-<article id="virt-3"><small>Tepeyac · O tio enfermo</small><h3>Esperança na aflição</h3><p>Juan Diego sai à procura de um sacerdote para seu tio doente. Maria vai ao seu encontro e o consola. Em Caná, ela também percebe a necessidade dos outros e a leva a Jesus (<a href="https://bible.usccb.org/bible/john/2">Jo 2,1–11</a>).</p><p><strong>Como imitá-la:</strong> Reze por uma pessoa doente pelo nome. Depois, ligue para ela ou ofereça ajuda a quem cuida dela.</p></article>
-<article id="virt-4"><small>Tepeyac · 12 de dezembro de 1531</small><h3>Confiança diante da dúvida</h3><p>O bispo pede um sinal. Maria envia Juan Diego com rosas colhidas na colina. Segundo o relato, ao abrir o manto diante do bispo, ele revela a imagem da Virgem. Ao enviá-lo, Maria mostra confiança. No Evangelho, Isabel a chama de bem-aventurada por crer na palavra de Deus (<a href="https://bible.usccb.org/bible/luke/1#50001045">Lc 1,45</a>).</p><p><strong>Como imitá-la:</strong> Retome em oração uma boa decisão que você adiou por medo. Escolha um primeiro passo e dê esse passo hoje.</p></article>
-</div>
-<blockquote class="voz-paroquia"><p>«Paróquia é a casa, por excelência, de todos os fiéis, onde eles devem encontrar o Cristo Ressuscitado.»</p><cite><a href="https://paroquiansguadalupe.com.br/paroquia">Site da paróquia</a></cite></blockquote>
-<p class="patron-notes"><a href="https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20020731_juan-diego_po.html">Leia o relato de Guadalupe na biografia de São Juan Diego, na Santa Sé</a>. A Igreja venera Maria de modo distinto da adoração devida somente a Deus (CIC 971).</p>
-<p class="invocacao"><em>Nossa Senhora de Guadalupe, rogai por nós.</em></p>
+<p class="nota">Horários habituais. Em feriados e festas, confirme com a <a href="#secretaria">secretaria</a>.</p>
 </div></section>
-<section id="secretaria" aria-labelledby="secretaria-titulo"><h2 id="secretaria-titulo">Secretaria paroquial</h2><p>Rua República do Iraque, 1839 · Campo Belo, São Paulo · CEP 04611-004<br>Terça a sexta, 8h–12h e 14h–18h · Sábado, 8h–12h</p><a class="button" href="https://wa.me/551150419829">WhatsApp da secretaria</a><p><a href="tel:+551150419829">(11) 5041-9829</a> · <a href="mailto:nsdeguadalupe@santoamaro.org.br">nsdeguadalupe@santoamaro.org.br</a></p><p class="source">Expediente do <a href="https://paroquiansguadalupe.com.br/nossos-horarios">site paroquial</a>, consultado em 26/11/2026. A ficha diocesana não indica o intervalo de almoço; confirme antes de ir nesse período.</p></section>
-<section id="como-chegar" aria-labelledby="mapa-titulo"><h2 id="mapa-titulo">Como chegar</h2><p>Rua República do Iraque, 1839 · Campo Belo, São Paulo</p><iframe class="parish-map" title="Mapa da Paróquia Nossa Senhora de Guadalupe no Campo Belo" src="https://maps.google.com/maps?q=Rua%20Rep%C3%BAblica%20do%20Iraque%2C%201839%2C%20Campo%20Belo%2C%20S%C3%A3o%20Paulo&amp;z=16&amp;output=embed" loading="lazy"></iframe><p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Rep%C3%BAblica%20do%20Iraque%2C%201839%2C%20Campo%20Belo%2C%20S%C3%A3o%20Paulo">Traçar rota no Google Maps</a></p></section>
+
+<section class="faixa creme" id="agenda" aria-labelledby="agenda-titulo"><div class="wrap">
+<span class="rotulo">Participe</span>
+<h2 id="agenda-titulo">Agenda da paróquia</h2>
+<div class="agenda">
+<div><h3 class="col">Próximos encontros e avisos</h3>
+<article class="evento"><div class="data"><b>12</b><span>Dezembro</span></div><div><small>Festa da padroeira</small><h4>Nossa Senhora de Guadalupe</h4><p>A Igreja celebra a festa em 12 de dezembro. A programação local deste ano ainda não foi divulgada; acompanhe o <a href="https://www.instagram.com/paroquiansraguadalupe/">Instagram da paróquia</a>.</p></div></article>
+<article class="evento"><div class="data"><b>Ter</b><span>19h30</span></div><div><small>Aviso sem data · confirme na secretaria</small><h4>Terço dos Homens</h4><p>«Homem em oração, família em transformação.» <a href="#secretaria">Confirmar com a secretaria</a>.</p></div></article>
+<article class="evento"><div class="data"><b>Qui</b><span>após as 8h</span></div><div><small>Aviso sem data · confirme na secretaria</small><h4>Adoração Eucarística</h4><p>Depois da Missa das 8h, adoração ao Santíssimo. <a href="#secretaria">Confirmar com a secretaria</a>.</p></div></article>
+<article class="evento"><div class="data"><b>Sáb</b><span>7h30</span></div><div><small>Aviso sem data · confirme na secretaria</small><h4>Laudes</h4><p>A oração da manhã da Liturgia das Horas, antes da Missa das 8h. <a href="#secretaria">Confirmar com a secretaria</a>.</p></div></article>
+</div>
+<div id="comunidade"><h3 class="col">Eventos anteriores</h3>
+<article class="evento antes"><div class="data"><b>Jun</b><span>2026</span></div><div><small>Campo Belo</small><h4>Festa Junina</h4><p>A paróquia convidou o bairro para a festa tradicional, nos quatro fins de semana de junho, das 17h às 22h. <a href="https://www.instagram.com/paroquiansraguadalupe/reel/DZFoaa_REqc/">Convite da paróquia</a>.</p></div></article>
+<article class="evento antes"><div class="data"><b>7</b><span>Fev 2026</span></div><div><small>Vida paroquial</small><h4>Retiro das pastorais</h4><p>Antes de retomar o ano, as pastorais se reuniram para rezar e renovar o serviço à comunidade. <a href="https://paroquiansguadalupe.com.br/vida-paroquial">Álbum da paróquia</a>.</p></div></article>
+<article class="evento antes"><div class="data"><b>9–12</b><span>Dez 2023</span></div><div><small>Padroeira</small><h4>Tríduo e quermesse</h4><p>Tríduo, quermesse e Missa solene para a festa de Nossa Senhora de Guadalupe. <a href="https://www.facebook.com/paroquiansraguadalupe/videos/festa-de-nossa-senhora-de-guadalupe-2023de-9-a-12-de-dezembro-celebraremos-a-nos/1290817454937881/">Convite da paróquia</a>.</p></div></article>
+</div>
+</div>
+</div></section>
+
+<section class="faixa petroleo vida" aria-labelledby="vida-titulo"><div class="wrap">
+<div class="titulo"><span class="rotulo">Vida paroquial</span><h2 id="vida-titulo" style="font-size:clamp(2.1rem,4.2vw,3.3rem);margin:0 0 .5rem">Servir com amor e alegria</h2></div>
+
+<p class="legenda-geral">No retiro de 7 de fevereiro de 2026, as pastorais se reuniram para retomar o ano. <a href="https://paroquiansguadalupe.com.br/vida-paroquial">Veja o álbum no site paroquial</a>.</p>
+</div></section>
+
+<section class="faixa papel" id="sacramentos" aria-labelledby="sacramentos-titulo"><div class="wrap">
+<span class="rotulo">Sacramentos</span>
+<h2 id="sacramentos-titulo">Batismo e matrimônio</h2>
+<div class="duas">
+<article class="sacramento"><div><h3>Batismo</h3><p>No Batismo nascemos para a vida em Cristo e somos acolhidos na Igreja. Para batizar seu filho, pergunte à secretaria sobre a preparação de pais e padrinhos, os documentos e as datas.</p><p class="cred">A pia da primeira igreja, no jardim</p><a class="botao vazado" href="#secretaria">Falar com a secretaria</a></div></article>
+<article class="sacramento"><div><h3>Matrimônio</h3><p>No Matrimônio os esposos firmam uma aliança para toda a vida. Entre batizados, essa aliança é sacramento. Se vocês vão se casar na Igreja, a secretaria orienta sobre a preparação e os documentos.</p><p class="cred">A nave da igreja, com o quadro de Guadalupe</p><a class="botao vazado" href="#secretaria">Falar com a secretaria</a></div></article>
+</div>
+</div></section>
+
+<section class="faixa ceu" id="historia" aria-labelledby="historia-titulo"><div class="wrap">
+<span class="rotulo">Nossa história · desde 1955</span>
+<h2 id="historia-titulo">Da garagem à igreja</h2>
+<div class="historia-lead">
+<div><p>No começo eram poucas casas e pequenas chácaras, gente simples e de muita fé. A Missa era celebrada na garagem da casa dos pais do Pe. Newton José Crippa, o primeiro vigário, e uma imagem de Nossa Senhora Aparecida passava de casa em casa para o terço.</p>
+<div class="pessoas">
+
+<figure class="pessoa"><img src="img/frei-mojica.jpg" width="516" height="715" alt="Retrato em preto e branco de Frei José Guadalupe Mojica, de hábito" loading="lazy"><figcaption>Frei Mojica, 1955</figcaption></figure>
+</div></div>
+
+</div>
+<ol class="marcos">
+<li class="marco"><time datetime="1955-08-15">1955<small>15 de agosto</small></time><div><h3>A pedra fundamental</h3><p>Dom Paulo Rolim Loureiro, bispo auxiliar de São Paulo, abençoa a pedra fundamental diante de uma multidão de fiéis. Uma semana depois, o frade mexicano José Francisco de Guadalupe Mojica, ex-ator famoso, celebra no terreno a primeira Missa em honra da Virgem de Guadalupe.</p></div></li>
+<li class="marco"><time datetime="1956">1956<small>A primeira igreja</small></time><div><h3>Uma igrejinha aconchegante</h3><p>A comunidade inaugura a igreja construída pelo paroquiano Antonio Rosa de Mendonça. Ao lado dela se ergue a torre, doada por Giovanni Adamo. O ícone de Guadalupe, presente dos atletas brasileiros dos Jogos Pan-Americanos de 1955, está dentro.</p></div></li>
+<li class="marco"><time datetime="1970">1970<small>O incêndio</small></time><div><h3>Da cinza, a torre</h3><p>A primeira igreja pega fogo. Foram salvos o Santíssimo Sacramento, o ícone de Guadalupe, os livros de registro, a cruz de madeira, a torre e a pia batismal. Com o Pe. Paulo Homero Gozzi, os moradores constroem outra igreja no mesmo terreno.</p></div></li>
+<li class="marco"><time datetime="2005">2005<small>Jubileu de Ouro</small></time><div><h3>Cinquenta anos de paróquia</h3><p>Uma placa de bronze guarda a data: Paróquia N. S. de Guadalupe, 1955–2005. O bairro cresceu, os filhos aumentaram e a Casa da Mãe, como a comunidade a chama, continua acolhendo.</p></div></li>
+<li class="marco"><time datetime="2025">2025<small>Setenta anos</small></time><div><h3>A ampliação</h3><p>Em 2019, na visita pastoral, Dom José Negri pediu que a igreja, já pequena, fosse ampliada. Em 2025 a paróquia completou 70 anos e apresenta um projeto de nova igreja que prevê preservar a torre.</p><p><a href="https://paroquiansguadalupe.com.br/reforma">Conheça a campanha da Reforma</a>.</p></div></li>
+</ol>
+<div class="igreja-hoje">
+
+
+</div>
+<p class="fecho">A torre guarda a memória da primeira igreja.</p>
+</div></section>
+
+<section class="faixa manto" id="padroeira" aria-labelledby="padroeira-titulo"><div class="wrap">
+<div class="padroeira-topo">
+<figure><img src="img/tilma.jpg" width="788" height="1226" alt="Nossa Senhora de Guadalupe, de mãos postas, manto turquesa com estrelas e raios dourados" loading="lazy"><figcaption>A imagem do Tepeyac</figcaption></figure>
+<div><span class="rotulo">Nossa padroeira · Festa em 12 de dezembro</span><h2 id="padroeira-titulo">Nossa Senhora de Guadalupe</h2>
+<p>Em dezembro de 1531, no Tepeyac, no México, Maria apareceu ao índio Juan Diego e lhe pediu um templo, onde mostraria seu amor, compaixão, socorro e proteção. Seu povo a invoca como Mãe dos pequenos. O relato mais antigo é o <em>Nican Mopohua</em> («Aqui se conta»), que a paróquia publica em sua página.</p>
+<p class="frase">«Não estou Eu aqui que sou tua Mãe?»</p><p class="frase-fonte">Nican Mopohua · tradução do site da paróquia</p>
+<p style="margin-top:1.4rem"><a class="botao ocre" href="https://paroquiansguadalupe.com.br/virgem-de-guadalupe">Ler o relato completo</a></p></div>
+<figure class="jd"><img src="img/juan-diego-cabrera.jpg" width="434" height="661" alt="Pintura antiga de Juan Diego, de túnica branca, segurando a tilma, com a Virgem de Guadalupe no alto" loading="lazy"><figcaption>Juan Diego · Miguel Cabrera, séc. XVIII</figcaption></figure>
+</div>
+<ol class="virtudes">
+<li class="virtude v1"><header><span class="n">Tepeyac · 1ª aparição</span><h3>Humildade para escutar</h3></header>
+<blockquote>«Juanito, o mais humilde dos meus filhos, aonde vais?»<cite>Nican Mopohua</cite></blockquote>
+<div class="corpo"><p>Maria chama Juan Diego pelo nome, pergunta aonde ele vai e o escuta. Conta com ele mesmo quando ele se julga pequeno demais. Essa atenção aos pequenos lembra o <a href="https://bible.usccb.org/bible/luke/1#50001046">Magnificat (Lc 1,46–55)</a>.</p></div>
+<div class="imitar"><strong>Como imitá-la</strong><p>Escute alguém que costuma passar despercebido. Dê tempo para que conte o que pensa, sem completar a resposta por ele.</p></div></li>
+<li class="virtude v2"><header><span class="n">Tepeyac · o templo</span><h3>Caridade que acolhe</h3></header>
+<blockquote>«Ouço todos os seus lamentos e remedio todas as suas misérias, aflições e dores.»<cite>Nican Mopohua</cite></blockquote>
+<div class="corpo"><p>Maria pede um templo onde os aflitos encontrem consolo. É o mesmo cuidado de quem, no Evangelho, vai ao encontro de Isabel e fica com ela por cerca de três meses (<a href="https://bible.usccb.org/bible/luke/1#50001039">Lc 1,39–56</a>).</p></div>
+<div class="imitar"><strong>Como imitá-la</strong><p>Visite nesta semana alguém que esteja sozinho. Pergunte de que ajuda precisa e combine algo que você possa fazer.</p></div></li>
+<li class="virtude v3"><header><span class="n">Tepeyac · o tio doente</span><h3>Esperança na aflição</h3></header>
+<blockquote>«Não estou Eu aqui que sou tua Mãe?»<cite>Nican Mopohua</cite></blockquote>
+<div class="corpo"><p>Juan Diego procura um sacerdote para seu tio, gravemente doente. Maria vai ao seu encontro e o consola. Em Caná, ela também percebe a necessidade dos outros e a leva a Jesus (<a href="https://bible.usccb.org/bible/john/2">Jo 2,1–11</a>).</p></div>
+<div class="imitar"><strong>Como imitá-la</strong><p>Reze por uma pessoa doente pelo nome. Depois, ligue para ela ou ofereça ajuda a quem cuida dela.</p></div></li>
+<li class="virtude v4"><header><span class="n">Tepeyac · 12/12/1531</span><h3>Confiança diante da dúvida</h3></header>
+<blockquote>«Aqui estão elas. Recebe-as.»<cite>Juan Diego ao bispo · Nican Mopohua</cite></blockquote>
+<div class="corpo"><p>O bispo pede um sinal. Maria envia Juan Diego colher rosas na colina. Segundo o relato, ao abrir a tilma diante do bispo, a imagem da Virgem aparece. No Evangelho, Isabel a chama de bem-aventurada por crer na palavra do Senhor (<a href="https://bible.usccb.org/bible/luke/1#50001045">Lc 1,45</a>).</p></div>
+<div class="imitar"><strong>Como imitá-la</strong><p>Retome em oração uma boa decisão que você adiou por medo. Escolha um primeiro passo e dê esse passo hoje.</p></div></li>
+</ol>
+<p class="invocacao">Nossa Senhora de Guadalupe, rogai por nós.</p>
+<p class="padroeira-notas">A Igreja venera Maria de modo distinto da adoração devida somente a Deus. As sugestões de como imitá-la são reflexões desta página, não palavras do relato.</p>
+</div></section>
+
+<section class="faixa ceu" id="secretaria" aria-labelledby="secretaria-titulo"><div class="wrap">
+<span class="rotulo">Fale conosco</span>
+<h2 id="secretaria-titulo">Secretaria paroquial</h2>
+<div class="secretaria">
+<div class="cartao-contato"><h3>Casa paroquial</h3>
+<p>Rua República do Iraque, 1839 · Campo Belo, São Paulo · CEP 04611-004<br>Pároco: Pe. Jésus Manoel da Silva</p>
+<dl class="horas"><dt>Terça a sexta</dt><dd>8h–12h e 14h–18h</dd><dt>Sábado</dt><dd>8h–12h</dd></dl>
+<div class="acoes"><a class="botao" href="https://wa.me/551150419829">WhatsApp da secretaria</a></div>
+<p><a href="tel:+551150419829">(11) 5041-9829</a> · <a href="mailto:nsdeguadalupe@santoamaro.org.br">nsdeguadalupe@santoamaro.org.br</a></p>
+<p class="nota" style="margin:0">A ficha da diocese não indica o intervalo de almoço; confirme antes de ir nesse horário.</p></div>
+<div class="mapa" id="como-chegar"><h3>Como chegar</h3>
+<iframe class="parish-map" title="Mapa da Paróquia Nossa Senhora de Guadalupe no Campo Belo" src="https://maps.google.com/maps?q=Rua%20Rep%C3%BAblica%20do%20Iraque%2C%201839%2C%20Campo%20Belo%2C%20S%C3%A3o%20Paulo&amp;z=16&amp;output=embed" loading="lazy"></iframe>
+<p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Rep%C3%BAblica%20do%20Iraque%2C%201839%2C%20Campo%20Belo%2C%20S%C3%A3o%20Paulo">Traçar rota no Google Maps</a></p></div>
+</div>
+</div></section>
 </main>
-<footer>Proposta por Vigília · Fotografias do acervo paroquial, para avaliação
-<p>Canto: <a href="https://commons.wikimedia.org/wiki/File:Gregorian_Chant_-_Salve_Regina.webm">Salve Regina</a> — freshaintdead, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Áudio extraído, convertido em mono e atenuado.</p>
-<details class="fontes"><summary>Fontes das notas de fé e da história paroquial</summary>
+
+<footer><div class="wrap">
+
+<div>
+<h2>Créditos e fontes</h2>
+<p>Proposta por Vigília · demonstração não oficial, sem vínculo com a paróquia. Fotografias e imagens da paróquia usadas para avaliação, com direitos de republicação pendentes.</p>
 <ul>
-<li><a href="https://www.vatican.va/archive/cathechism_po/index_new/indice_po.html">Catecismo da Igreja Católica</a> · §§ 971, 1213, 1324, 1422 e 1601.</li>
-<li>Escritura: <a href="https://bible.usccb.org/bible/luke/1">Lc 1,39–56</a> e <a href="https://bible.usccb.org/bible/john/2">Jo 2,1–11</a>.</li>
-<li><a href="https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20020731_juan-diego_po.html">Santa Sé, biografia de São Juan Diego (2002)</a> · relato de Guadalupe. As sugestões de como imitar Maria são reflexões desta página, não citações do relato.</li>
-<li><a href="https://arquisp.org.br/santo-do-dia/nossa-senhora-de-guadalupe/">Arquidiocese de São Paulo</a> · memória litúrgica de 12 de dezembro.</li>
-<li><a href="https://diocesedesantoamaro.org.br/paroquias-da-diocese-de-santo-amaro/paroquiansradeguadalupe/">Diocese de Santo Amaro</a> · fundação, horários habituais e contatos.</li>
-<li>Acervo paroquial: fachada na página <a href="https://paroquiansguadalupe.com.br/reforma">Reforma</a>; primeira igreja, torre e pia batismal em <a href="https://paroquiansguadalupe.com.br/nossa-historia">Nossa História</a>. Direitos de republicação não confirmados.</li>
-<li><a href="https://commons.wikimedia.org/wiki/File:Virgen_de_guadalupe1.jpg">Reprodução da imagem no manto de Juan Diego</a> · século XVI, domínio público, via Wikimedia Commons.</li>
-</ul></details></footer>
+<li>Site da paróquia, <a href="https://paroquiansguadalupe.com.br/nossa-historia">Nossa História</a>, <a href="https://paroquiansguadalupe.com.br/reforma">Reforma</a>, <a href="https://paroquiansguadalupe.com.br/vida-paroquial">Vida Paroquial</a> (retiro de 07/02/2026), <a href="https://paroquiansguadalupe.com.br/">Início</a> e <a href="https://paroquiansguadalupe.com.br/nossos-horarios">Nossos Horários</a>: logotipo, fotografias da igreja, da torre, da pia, da placa, da primeira igreja, do Pe. Newton, do retiro, o desenho do projeto e os cartazes do Terço dos Homens, da Adoração e dos Laudes.</li>
+<li><a href="https://diocesedesantoamaro.org.br/paroquias-da-diocese-de-santo-amaro/paroquiansradeguadalupe/">Diocese de Santo Amaro</a>: endereço, contatos, fundação e horários habituais. <a href="https://www.instagram.com/paroquiansraguadalupe/">Instagram da paróquia</a>: horários das Missas, Festa Junina.</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Canto_a_la_Guadalupana,_Mazatl%C3%A1n,_12_de_diciembre_de_2023.ogg">Canto a la Guadalupana, Mazatlán, 12/12/2023</a> · DogeGamer2015MZT · CC0 (convertido em mono e com entrada e saída suaves).</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Virgen_de_guadalupe1.jpg">Imagem de Guadalupe no manto de Juan Diego</a> · séc. XVI, domínio público. <a href="https://commons.wikimedia.org/wiki/File:MIguel_Cabrera_-_Fiel_retrato_do_vener%C3%A1vel_Juan_Diego.jpg">Retrato de Juan Diego</a>, Miguel Cabrera, séc. XVIII, domínio público.</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Jos%C3%A9_de_Guadalupe_Mojica.jpg">Retrato de Frei José de Guadalupe Mojica</a> · Romanuspontifex · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+<li><a href="https://www.vatican.va/archive/cathechism_po/index_new/indice_po.html">Catecismo da Igreja Católica</a> §§ 971, 1213, 1324, 1422, 1601 · Escritura: <a href="https://bible.usccb.org/bible/luke/1">Lc 1</a>, <a href="https://bible.usccb.org/bible/john/2">Jo 2</a> · <a href="https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20020731_juan-diego_po.html">Santa Sé, biografia de São Juan Diego</a> · <a href="https://arquisp.org.br/santo-do-dia/nossa-senhora-de-guadalupe/">Arquidiocese de São Paulo</a>, festa de 12 de dezembro.</li>
+<li>Tipos: Alegreya e Alegreya Sans, SIL OFL 1.1.</li>
+</ul>
+<p class="aviso">Citações do <em>Nican Mopohua</em> conforme a tradução publicada na página «Virgem de Guadalupe» do site da paróquia. Os horários são os habituais, sem data de atualização nas fontes; confirme com a secretaria.</p>
+</div></div></footer>
+
 <script>
 const dates=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
-const datePart=(key)=>Number(dates.find(p=>p.type===key).value);
+const datePart=(k)=>Number(dates.find(p=>p.type===k).value);
 const today=new Date(Date.UTC(datePart('year'),datePart('month')-1,datePart('day')));
 const monday=new Date(today);monday.setUTCDate(today.getUTCDate()-(today.getUTCDay()+6)%7);
 const dayAt=(n)=>new Date(monday.getTime()+n*86400000);
 const shortDate=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',day:'2-digit',month:'2-digit'});
-const weekday=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',weekday:'long'});
-const masses=['7h30*','8h','8h','8h','8h','8h','8h, 10h e 18h'];
 const weekLabel=document.getElementById('semana-datas');
-weekLabel.textContent=shortDate.format(monday)+' a '+shortDate.format(dayAt(6))+' · Horário habitual';
+weekLabel.textContent='Semana de '+shortDate.format(monday)+' a '+shortDate.format(dayAt(6))+' · horário habitual';
 weekLabel.hidden=false;
-const list=document.getElementById('missas-semana');
-list.replaceChildren(...masses.flatMap((hours,i)=>{const day=dayAt(i), label=document.createElement('dt'), value=document.createElement('dd');label.textContent=weekday.format(day)+' · '+shortDate.format(day);value.textContent=hours;if(+day===+today){label.className=value.className='schedule-today';label.setAttribute('aria-current','date');}return[label,value];}));
-
-const virtueTabs=document.querySelector('.virtue-tabs'), virtueButtons=[...virtueTabs.querySelectorAll('button')], virtuePanels=virtueButtons.map(b=>document.getElementById(b.getAttribute('aria-controls')));
-virtueButtons.forEach((b,i)=>{const virtue=virtuePanels[i].querySelector('h3').textContent;b.textContent=virtue.split(' ')[0];b.setAttribute('aria-label',virtue);b.addEventListener('click',()=>showVirtue(i));});
-function showVirtue(n){virtueButtons.forEach((b,i)=>{b.setAttribute('aria-pressed',String(i===n));virtuePanels[i].hidden=i!==n;});document.querySelector('.virtues').dataset.scene=n;}
-showVirtue(0);virtueTabs.hidden=false;
-
+[...document.querySelectorAll('#missas-semana .dia')].forEach((li,i)=>{
+  const day=dayAt(i), h=li.querySelector('h3'), span=document.createElement('span');
+  span.textContent=shortDate.format(day);h.appendChild(span);
+  if(+day===+today){li.classList.add('hoje');li.setAttribute('aria-current','date');}
+});
 const chant=document.getElementById('chant-audio'), chantToggle=document.getElementById('chant-toggle'), chantStatus=document.getElementById('chant-status');
-function updateChant(){chantToggle.setAttribute('aria-pressed',String(!chant.paused));chantToggle.textContent=chant.paused?'♪ Ouvir e rezar':'Ⅱ Pausar o canto';}
-chant.addEventListener('playing',updateChant);
-chant.addEventListener('pause',updateChant);
-chant.addEventListener('error',()=>{chantStatus.hidden=false;updateChant();});
-chantToggle.addEventListener('click',async()=>{chantStatus.hidden=true;if(!chant.paused){chant.pause();return;}try{await chant.play();}catch(e){if(e.name!=='AbortError')chantStatus.hidden=false;updateChant();}});
+const chantText=chantStatus.textContent;
+function updateChant(){chantToggle.setAttribute('aria-pressed',String(!chant.paused));chantToggle.textContent=chant.paused?'♪ Ouvir a Guadalupana':'Ⅱ Pausar o canto';}
+chant.addEventListener('playing',updateChant);chant.addEventListener('pause',updateChant);
+chant.addEventListener('error',()=>{chantStatus.textContent='Não foi possível tocar o canto.';updateChant();});
+chantToggle.addEventListener('click',async()=>{chantStatus.textContent=chantText;if(!chant.paused){chant.pause();return;}try{await chant.play();}catch(e){if(e.name!=='AbortError')chantStatus.textContent='Não foi possível tocar o canto.';updateChant();}});
 </script>
 </body>
 </html>

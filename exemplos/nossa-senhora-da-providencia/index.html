@@ -4,121 +4,193 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paróquia Nossa Senhora da Providência · Proposta Vigília</title>
-<meta name="description" content="Paróquia Nossa Senhora da Providência, no Real Parque, Diocese de Campo Limpo: horários, agenda, sacramentos e história.">
+<meta name="description" content="Paróquia Nossa Senhora da Providência e Santa Marta, no Real Parque, Diocese de Campo Limpo: horários, agenda, sacramentos e história.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#253d59">
-<link rel="icon" href="data:,">
-<link rel="preload" href="fonts/ebgaramond-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="broadsheet.css">
+<meta name="theme-color" content="#c9a04a">
+
+<link rel="preload" href="fonts/barlowcondensed-normal-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/sourceserif4-normal-400-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="providencia.css">
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 <aside>Proposta Vigília · Demonstração não oficial</aside>
-<nav aria-label="Navegação principal"><strong>Nossa Senhora da Providência</strong><div><a href="#horarios">Horários</a><a href="#agenda">Agenda</a><a href="#sacramentos">Sacramentos</a><a href="#igreja">História</a><a href="#padroeiro">Padroeira</a><a href="#secretaria">Secretaria</a></div></nav>
+<nav aria-label="Navegação principal">
+  <a class="brand" href="#topo"><strong><span>Paróquia</span>Nossa Senhora da Providência</strong></a>
+  <div class="nav-links"><a href="#horarios">Horários</a><a href="#agenda">Agenda</a><a href="#sacramentos">Sacramentos</a><a href="#igreja">História</a><a href="#padroeiro">Padroeiras</a><a href="#secretaria">Secretaria</a></div>
+</nav>
 <main id="conteudo">
-<header>
-  <div><small>Real Parque · Diocese de Campo Limpo</small>
-    <h1>Paróquia Nossa Senhora da Providência</h1>
+<header class="hero" id="topo">
+  <div class="hero-text">
+
+    <span class="kicker">Real Parque · Diocese de Campo Limpo</span>
+    <h1>Paróquia Nossa Senhora da Providência<em>e Santa Marta</em></h1>
     <p class="hero-lead">Venha celebrar a Missa, confessar-se ou rezar conosco.</p>
     <p class="hero-address">Rua Visconde de Nacar, 46 · Real Parque</p>
-    <div class="hero-actions"><a class="button" href="#horarios">Horários das missas</a><a href="#como-chegar">Como chegar</a></div>
+    <div class="hero-actions"><a class="button" href="#horarios">Horários das missas</a><a class="button ghost" href="#como-chegar">Como chegar</a></div>
   </div>
-  <figure class="temple"><img src="fachada.jpg" width="1500" height="1000" alt="Fachada da matriz no Real Parque, com cruz azul e portas de madeira sob a marquise branca"></figure>
-  <span class="caption">Igreja matriz · Paróquia criada em 1960</span>
+
 </header>
+
 <section id="horarios" aria-labelledby="horarios-titulo">
-<h2 id="horarios-titulo">Horários da semana</h2><p id="semana-datas" hidden></p>
-<div class="grid">
-  <article><h3>Missas na matriz</h3>
-    <dl id="missas-semana"><dt>Segunda</dt><dd>Não consta</dd><dt>Terça a sexta</dt><dd>19h</dd><dt>Sábado</dt><dd>18h</dd><dt>Domingo</dt><dd>9h, 11h e 18h30</dd></dl>
-    <p class="schedule-note">No primeiro sábado do mês, também há Missa do Imaculado Coração de Maria às 11h. Na <a href="https://dcl.org.br/comunidades/comunidade-pio-xii">Comunidade Pio XII</a>, a Missa de domingo é às 10h.</p>
-    <p class="schedule-note">A Eucaristia é a fonte e o ápice da vida cristã (CIC 1324).</p>
-  </article>
-  <article><h3>Confissões</h3>
-    <dl id="confissoes-semana"><dt>Quinta e sexta</dt><dd>14h30–17h</dd></dl>
-    <p class="schedule-note">Consulte a secretaria sobre a necessidade de agendamento.</p>
-    <p><strong>Adoração ao Santíssimo</strong><br>Quinta, das 14h às 18h, com bênção solene.</p>
-    <p class="schedule-note">Na Reconciliação, recebemos o perdão de Deus e nos reconciliamos com a Igreja (CIC 1422).</p>
-  </article>
+<div class="wrap">
+  <div class="sec-head"><span class="kicker">Venha rezar</span><h2 id="horarios-titulo">Horários da semana</h2></div>
+  <p id="semana-datas" class="week-label" hidden></p>
+  <div class="grid2">
+    <article class="coffer walnut"><h3>Missas na matriz</h3>
+      <dl id="missas-semana"><dt>Segunda</dt><dd>Não consta</dd><dt>Terça a sexta</dt><dd>19h</dd><dt>Sábado</dt><dd>18h</dd><dt>Domingo</dt><dd>9h, 11h e 18h30</dd></dl>
+      <p class="note">No primeiro sábado do mês, também há Missa do Imaculado Coração de Maria às 11h. Na <a href="https://dcl.org.br/comunidades/comunidade-pio-xii">Comunidade Pio XII</a>, a Missa de domingo é às 10h.</p>
+    </article>
+    <article class="coffer navy"><h3>Confissões</h3>
+      <dl id="confissoes-semana"><dt>Quinta e sexta</dt><dd>14h30–17h</dd></dl>
+      <p class="note">Consulte a secretaria sobre a necessidade de agendamento.</p>
+      <div class="adoracao"><strong>Adoração ao Santíssimo</strong><p>Quinta, das 14h às 18h, com bênção solene.</p></div>
+    </article>
+  </div>
+  <p class="source">Horários publicados pela <a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Diocese de Campo Limpo</a> · consultados em <time datetime="2026-11-26">26/11/2026</time>. Para mudanças e feriados, confirme com a <a href="#secretaria">secretaria</a>.</p>
 </div>
-<p class="source">Horários publicados pela <a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Diocese de Campo Limpo</a> · consultados em <time datetime="2026-11-26">26/11/2026</time>. Para mudanças e feriados, confirme com a <a href="#secretaria">secretaria</a>.</p>
 </section>
-<section id="agenda" aria-labelledby="agenda-titulo">
-<small>Participe</small><h2 id="agenda-titulo">Agenda da paróquia</h2>
-<div class="agenda-columns">
-  <div><h3>Próximos eventos</h3><p>Nenhum evento especial confirmado nesta demonstração. Para avisos e celebrações, consulte o <a href="https://www.facebook.com/nsprovidenciarealparque/">Facebook da paróquia</a> ou <a href="#secretaria">fale com a secretaria</a>.</p></div>
-  <div id="comunidade"><h3>Eventos anteriores</h3><details><summary>Ver arquivo de encontros</summary>
-    <div class="local-life">
-      <article><small>30 de maio de 2026</small><h4>Visita pastoral de Dom Valdir</h4><p>O bispo ouviu os paroquianos, visitou enfermos e presidiu a Missa na matriz. <a href="https://dcl.org.br/noticias/diocese/paroquias/dom-valdir-realiza-visita-pastoral-as-paroquias-da-forania-morumbi-e-empossa-novo-paroco-da-nossa-senhora-de-guadalupe">Relato da Diocese</a>.</p></article>
-      <article><small>17 de maio de 2025</small><h4>Envio da Pastoral da Saúde</h4><p>Os primeiros agentes foram enviados durante a Missa na matriz. <a href="https://dcl.org.br/noticias/diocese/paroquias/paroquia-nossa-senhora-da-providencia-implanta-pastoral-da-saude">Relato da Diocese</a>.</p></article>
-      <article><small>Abril de 2023</small><h4>Semana Santa</h4><p>O antigo site paroquial reuniu a programação da Semana Santa daquele ano. <a href="https://web.archive.org/web/20231211064522/https://nossasenhoradaprovidencia.org.br/2023/04/04/programe/">Ver o registro arquivado</a>.</p></article>
+
+<section id="agenda" class="on-ochre" aria-labelledby="agenda-titulo">
+<div class="wrap">
+  <div class="sec-head"><span class="kicker">Participe</span><h2 id="agenda-titulo">Agenda da paróquia</h2></div>
+  <div class="agenda">
+    <div><h3>Próximos eventos</h3>
+      <p class="vazio">Nenhum evento especial confirmado nesta demonstração. Para avisos e celebrações, consulte o <a href="https://www.facebook.com/nsprovidenciarealparque/">Facebook da paróquia</a> ou <a href="#secretaria">fale com a secretaria</a>.</p>
     </div>
-  </details></div>
+    <div id="comunidade"><h3>Eventos anteriores</h3>
+      <article class="event"><time datetime="2026-05-30">30 de maio de 2026</time><h4>Visita pastoral de Dom Valdir</h4><p>O bispo ouviu os paroquianos, visitou enfermos e presidiu a Missa na matriz. <a href="https://dcl.org.br/noticias/diocese/paroquias/dom-valdir-realiza-visita-pastoral-as-paroquias-da-forania-morumbi-e-empossa-novo-paroco-da-nossa-senhora-de-guadalupe">Relato da Diocese</a>.</p></article>
+      <article class="event"><time datetime="2025-05-17">17 de maio de 2025</time><h4>Envio da Pastoral da Saúde</h4><p>Os primeiros agentes foram enviados durante a Missa na matriz. <a href="https://dcl.org.br/noticias/diocese/paroquias/paroquia-nossa-senhora-da-providencia-implanta-pastoral-da-saude">Relato da Diocese</a>.</p></article>
+      <article class="event"><time datetime="2023-04">Abril de 2023</time><h4>Semana Santa</h4><p>O antigo site paroquial reuniu a programação da Semana Santa daquele ano. <a href="https://web.archive.org/web/20231211064522/https://nossasenhoradaprovidencia.org.br/2023/04/04/programe/">Ver o registro arquivado</a>.</p></article>
+    </div>
+  </div>
 </div>
 </section>
+
 <section id="sacramentos" aria-labelledby="sacramentos-titulo">
-<h2 id="sacramentos-titulo">Batismo e matrimônio</h2>
-<div class="grid">
-  <article><h3>Batismo</h3><p>Pelo Batismo, renascemos como filhos de Deus e somos incorporados à Igreja (CIC 1213). A Diocese informa que há curso de Batismo na paróquia. Pergunte à secretaria sobre a preparação, os documentos e as datas.</p></article>
-  <article><h3>Matrimônio</h3><p>O Matrimônio é uma aliança para toda a vida que Cristo elevou, entre batizados, à dignidade de sacramento (CIC 1601). Se vocês vão se casar na Igreja, peçam à secretaria as orientações sobre preparação, documentos e datas.</p></article>
-</div>
-<a class="button" href="#secretaria">Falar com a secretaria</a>
-</section>
-<section id="igreja" aria-labelledby="igreja-titulo">
-<small>Nossa história · desde 1960</small><h2 id="igreja-titulo">Uma paróquia no Real Parque</h2>
-<p class="historia-lead">No antigo site, a comunidade se apresenta como Nossa Senhora da Providência e Santa Marta. Sua história passa pela chegada dos Pavonianos a um Real Parque que ainda tinha poucas casas.</p>
-<ol class="marcos">
-  <li><time datetime="1960-10-30">30 de outubro de 1960</time><h3>Criação da paróquia</h3><p>É a data oficial de criação registrada pela <a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Diocese</a>.</p></li>
-  <li><time datetime="1965">1965</time><h3>Chegam os Pavonianos</h3><p>Já presentes na região do Brooklin, os religiosos assumem a missão no Real Parque, segundo a <a href="https://web.archive.org/web/20231211060804/https://nossasenhoradaprovidencia.org.br/paroquia/">memória paroquial</a>.</p></li>
-  <li><time datetime="1983">1983–2000</time><h3>Dezessete anos de serviço</h3><p>Pe. Roberto Camilatto foi pároco durante um período de grandes mudanças no bairro. Ele lembrava da convivência entre paroquianos ricos e pobres.</p></li>
-  <li><time datetime="2025-05-17">17 de maio de 2025</time><h3>Pastoral da Saúde</h3><p>O envio dos primeiros agentes dá início à <a href="https://dcl.org.br/noticias/diocese/paroquias/paroquia-nossa-senhora-da-providencia-implanta-pastoral-da-saude">Pastoral da Saúde</a> na comunidade.</p></li>
-</ol>
-<p class="historia-fecho">«Aqui é a casa de Nossa Senhora e através dela você pode encontrar o seu filho, Jesus.» — <a href="https://web.archive.org/web/20231211060804/https://nossasenhoradaprovidencia.org.br/paroquia/">Antigo site da paróquia</a></p>
-<div class="photo-triptych photo-pair">
-  <figure><a href="visita.jpg"><img src="visita.jpg" width="1500" height="1000" loading="lazy" alt="Paroquianos reunidos dentro da matriz diante do altar, na visita pastoral"></a><figcaption>A comunidade na visita pastoral de 2026</figcaption></figure>
-  <figure><a href="pastoral.jpg"><img src="pastoral.jpg" width="1500" height="1000" loading="lazy" alt="Maria Benícia Russo fala ao microfone ao lado do clero, diante do altar da matriz"></a><figcaption>Envio da Pastoral da Saúde, em 2025</figcaption></figure>
-</div>
-<p class="source">Fotografias: <a href="https://dcl.org.br/noticias/diocese/paroquias/dom-valdir-realiza-visita-pastoral-as-paroquias-da-forania-morumbi-e-empossa-novo-paroco-da-nossa-senhora-de-guadalupe">Diocese de Campo Limpo</a> e <a href="https://dcl.org.br/noticias/diocese/paroquias/paroquia-nossa-senhora-da-providencia-implanta-pastoral-da-saude">Pastoral da Saúde, via Diocese</a>.</p>
-</section>
-<section id="padroeiro" class="virtues" aria-labelledby="virtudes">
-<figure class="saint-image"><img src="padroeira.jpg" width="675" height="900" loading="lazy" alt="Maria abraça o Menino Jesus na pintura de Scipione Pulzone"><figcaption><cite>Mãe da Divina Providência</cite>, Scipione Pulzone, c. 1580</figcaption></figure>
-<div class="virtue-body">
-<small>Nossa padroeira · Festa paroquial em 20 de novembro</small><h2 id="virtudes">Nossa Senhora da Providência</h2>
-<div class="virtue-tabs" aria-label="Passagens da vida de Maria" hidden>
-<button type="button" aria-controls="virt-1">01</button><button type="button" aria-controls="virt-2">02</button><button type="button" aria-controls="virt-3">03</button><button type="button" aria-controls="virt-4">04</button>
-</div>
-<div class="virtue-pages">
-<article id="virt-1"><small>Anunciação</small><h3>Fé para dizer sim</h3><p>Maria acolhe o anúncio do anjo e se põe à disposição de Deus. A fé aqui toma a forma de uma resposta, mesmo sem conhecer todo o caminho. (<a href="https://bible.usccb.org/bible/luke/1">Lc 1,26–38</a>).</p><p><strong>Como imitá-la:</strong> Antes de uma decisão, reze e pergunte qual é o primeiro passo fiel que você pode dar hoje.</p></article>
-<article id="virt-2"><small>Visitação</small><h3>Caridade que toma a iniciativa</h3><p>Ao saber da gravidez de Isabel, Maria parte apressadamente e vai à sua casa. A caridade não espera que o outro venha pedir ajuda. (<a href="https://bible.usccb.org/bible/luke/1">Lc 1,39–56</a>).</p><p><strong>Como imitá-la:</strong> Ligue para alguém que está passando por uma mudança e ofereça uma ajuda concreta.</p></article>
-<article id="virt-3"><small>Bodas de Caná</small><h3>Atenção que se faz oração</h3><p>Maria percebe a falta do vinho, leva a necessidade a Jesus e orienta os serventes a fazer o que ele disser. (<a href="https://bible.usccb.org/bible/john/2">Jo 2,1–11</a>).</p><p><strong>Como imitá-la:</strong> Reze por uma necessidade que alguém lhe contou e veja como pode ajudar sem chamar a atenção para si.</p></article>
-<article id="virt-4"><small>Aos pés da cruz</small><h3>Fidelidade na dor</h3><p>Maria permanece junto à cruz. Ali, Jesus confia sua mãe ao discípulo amado e o discípulo à sua mãe. (<a href="https://bible.usccb.org/bible/john/19">Jo 19,25–27</a>).</p><p><strong>Como imitá-la:</strong> Faça companhia a alguém que sofre, mesmo quando não houver nada que você possa resolver.</p></article>
-</div>
-<p class="patron-notes">O título de Mãe da Providência está ligado à devoção dos Barnabitas em Roma. <a href="https://web.archive.org/web/20231211053530/https://nossasenhoradaprovidencia.org.br/2018/03/30/santa-marta-e-a-vida-de-contemplacao/">Leia sobre a devoção no antigo site paroquial</a>.</p>
-<p class="invocacao"><em>Nossa Senhora da Providência, rogai por nós.</em></p>
+<div class="wrap">
+  <div class="sec-head"><span class="kicker">Para a vida toda</span><h2 id="sacramentos-titulo">Sacramentos e catequese</h2></div>
+  <div class="cards3">
+    <article class="card"><span class="kicker">Nascer de novo</span><h3>Batismo</h3><p>Pelo Batismo, renascemos como filhos de Deus e somos incorporados à Igreja (CIC 1213). A Diocese informa que há curso de Batismo na paróquia. Pergunte à secretaria sobre a preparação, os documentos e as datas.</p><a class="more" href="#secretaria">Falar com a secretaria</a></article>
+    <article class="card"><span class="kicker">Crescer na fé</span><h3>Catequese</h3><p>A Eucaristia é a fonte e o ápice da vida cristã (CIC 1324). A Diocese lista pré-catequese, catequese infantil, catequese de Crisma, catequese de adultos e Escola da Fé. Peça à secretaria as turmas e os horários.</p><a class="more" href="#secretaria">Falar com a secretaria</a></article>
+    <article class="card"><span class="kicker">Uma aliança</span><h3>Matrimônio</h3><p>O Matrimônio é uma aliança para toda a vida que Cristo elevou, entre batizados, à dignidade de sacramento (CIC 1601). Se vocês vão se casar na Igreja, peçam à secretaria as orientações sobre preparação, documentos e datas.</p><a class="more" href="#secretaria">Falar com a secretaria</a></article>
+  </div>
+  <div class="photos3">
+
+
+
+  </div>
+  <p class="source">Fotografias publicadas na página da paróquia no Facebook, sem data informada.</p>
 </div>
 </section>
-<section id="secretaria" aria-labelledby="secretaria-titulo">
-<h2 id="secretaria-titulo">Secretaria paroquial</h2><p>Rua Visconde de Nacar, 46 · Real Parque, São Paulo<br>Terça a sábado, 8h–12h e 13h–17h<br><a href="tel:+551137584908">(11) 3758-4908</a></p>
-<a class="button" href="https://wa.me/551137584908">WhatsApp da secretaria</a>
-<p>Pároco: Pe. José Clodoaldo Ferreira Rodrigues</p><p class="source"><a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Cadastro diocesano</a> · consultado em 26/11/2026.</p>
+
+<section id="igreja" class="on-sky" aria-labelledby="igreja-titulo">
+<div class="wrap">
+  <div class="sec-head"><span class="kicker">Nossa história · desde 1960</span><h2 id="igreja-titulo">Uma paróquia no Real Parque</h2></div>
+  <div class="historia">
+    <div>
+      <p class="historia-lead">A comunidade se apresenta como Nossa Senhora da Providência e Santa Marta: duas padroeiras no nome. Sua história passa pela chegada dos Pavonianos a um Real Parque que ainda tinha poucas casas.</p>
+      <ol class="marcos">
+        <li><time datetime="1960-10-30">30 de outubro de 1960</time><h3>Criação da paróquia</h3><p>É a data oficial de criação registrada pela <a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Diocese</a>.</p></li>
+        <li><time datetime="1965">1965</time><h3>Chegam os Pavonianos</h3><p>Já presentes no Brooklin, os religiosos escolhem o Real Parque, que tinha um povo carente e humilde, segundo a <a href="https://web.archive.org/web/20231211060804/https://nossasenhoradaprovidencia.org.br/paroquia/">memória paroquial</a>.</p></li>
+        <li><time datetime="1970">Anos 1970 e 1980</time><h3>O bairro cresce</h3><p>Nos anos 70 havia poucas casas, fazendas e zona rural. Nos anos 80, a comunidade carente cresce e o bairro atrai também famílias de alta renda.</p></li>
+        <li><time datetime="1983">1983–2000</time><h3>Dezessete anos de serviço</h3><p>Pe. Roberto Camilatto foi pároco nesse período de grandes mudanças. Ele lembrava da convivência entre paroquianos ricos e pobres.</p></li>
+        <li><time datetime="2025-05-17">17 de maio de 2025</time><h3>Pastoral da Saúde</h3><p>O envio dos primeiros agentes dá início à <a href="https://dcl.org.br/noticias/diocese/paroquias/paroquia-nossa-senhora-da-providencia-implanta-pastoral-da-saude">Pastoral da Saúde</a> na comunidade.</p></li>
+      </ol>
+      <p class="fecho">«Aqui é a casa de Nossa Senhora e através dela você pode encontrar o seu filho, Jesus.»<cite>Antigo site da paróquia</cite></p>
+    </div>
+    <div class="stack">
+
+
+
+    </div>
+  </div>
+  <div class="gallery">
+
+
+  </div>
+  <p class="source">Fotografias: página da paróquia no Facebook, <a href="https://dcl.org.br/noticias/diocese/paroquias/dom-valdir-realiza-visita-pastoral-as-paroquias-da-forania-morumbi-e-empossa-novo-paroco-da-nossa-senhora-de-guadalupe">Diocese de Campo Limpo</a> e Pastoral da Saúde, via Diocese.</p>
+</div>
 </section>
-<section id="como-chegar" aria-labelledby="mapa-titulo">
-<h2 id="mapa-titulo">Como chegar</h2><p>Rua Visconde de Nacar, 46 · Real Parque, São Paulo</p>
-<iframe class="parish-map" title="Mapa da Paróquia Nossa Senhora da Providência no Real Parque" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Nacar%2C%2046%2C%20Real%20Parque%2C%20S%C3%A3o%20Paulo%2C%20SP&amp;z=16&amp;output=embed" loading="lazy"></iframe>
-<p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Visconde%20de%20Nacar%2C%2046%2C%20Real%20Parque%2C%20S%C3%A3o%20Paulo%2C%20SP">Traçar rota no Google Maps</a></p>
+
+<section id="padroeiro" aria-labelledby="padroeira-maria-titulo" class="patrona maria">
+<div class="wrap patrona-grid">
+  <figure><img src="img/providencia-pulzone.jpg" width="675" height="900" loading="lazy" alt="Maria abraça o Menino Jesus na pintura de Scipione Pulzone"><figcaption><cite>Mãe da Divina Providência</cite>, Scipione Pulzone, c. 1580</figcaption></figure>
+  <div>
+    <span class="kicker">Primeira padroeira · Festa paroquial em 20 de novembro</span>
+    <h2 id="padroeira-maria-titulo">Nossa Senhora da Providência</h2>
+    <p class="intro">O título de Mãe da Divina Providência está ligado à devoção dos Barnabitas em Roma. Estas são quatro passagens da vida de Maria, cada uma com sua virtude.</p>
+    <div class="virtues">
+      <article class="virtue"><span class="kicker">Anunciação</span><h4>Fé para dizer sim</h4><p>Maria acolhe o anúncio do anjo e se põe à disposição de Deus. A fé aqui toma a forma de uma resposta, mesmo sem conhecer todo o caminho. (<a href="https://bible.usccb.org/bible/luke/1">Lc 1,26–38</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> Antes de uma decisão, reze e pergunte qual é o primeiro passo fiel que você pode dar hoje.</p></article>
+      <article class="virtue"><span class="kicker">Visitação</span><h4>Caridade que toma a iniciativa</h4><p>Ao saber da gravidez de Isabel, Maria parte apressadamente e vai à sua casa. A caridade não espera que o outro venha pedir ajuda. (<a href="https://bible.usccb.org/bible/luke/1">Lc 1,39–56</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> Ligue para alguém que está passando por uma mudança e ofereça uma ajuda concreta.</p></article>
+      <article class="virtue"><span class="kicker">Bodas de Caná</span><h4>Atenção que se faz oração</h4><p>Maria percebe a falta do vinho, leva a necessidade a Jesus e orienta os serventes a fazer o que ele disser. (<a href="https://bible.usccb.org/bible/john/2">Jo 2,1–11</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> Reze por uma necessidade que alguém lhe contou e veja como pode ajudar sem chamar a atenção para si.</p></article>
+      <article class="virtue"><span class="kicker">Aos pés da cruz</span><h4>Fidelidade na dor</h4><p>Maria permanece junto à cruz. Ali, Jesus confia sua mãe ao discípulo amado e o discípulo à sua mãe. (<a href="https://bible.usccb.org/bible/john/19">Jo 19,25–27</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> Faça companhia a alguém que sofre, mesmo quando não houver nada que você possa resolver.</p></article>
+    </div>
+    <p class="invocacao">Nossa Senhora da Providência, rogai por nós.</p>
+  </div>
+</div>
+</section>
+
+<section aria-labelledby="padroeira-marta-titulo" class="patrona marta">
+<div class="wrap patrona-grid">
+  <figure><img src="img/marta-vermeer.jpg" width="900" height="1041" loading="lazy" alt="Marta traz o pão à mesa, enquanto Maria de Betânia ouve Jesus, na pintura de Vermeer"><figcaption><cite>Cristo na casa de Marta e Maria</cite>, Johannes Vermeer, c. 1655</figcaption></figure>
+  <div>
+    <span class="kicker">Segunda padroeira · Casa de Betânia</span>
+    <h2 id="padroeira-marta-titulo">Santa Marta</h2>
+    <p class="intro">Marta recebia Jesus em Betânia, com seus irmãos Maria e Lázaro. O Evangelho a mostra em quatro momentos, cada um com sua virtude.</p>
+    <div class="virtues">
+      <article class="virtue"><span class="kicker">Hospitalidade</span><h4>Acolher e aprender a parar</h4><p>Marta recebe Jesus em sua casa e se multiplica no serviço. Jesus a chama pelo nome e lembra que uma só coisa é necessária: ouvi-lo. (<a href="https://bible.usccb.org/bible/luke/10">Lc 10,38–42</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> Ao receber alguém em casa, sente-se por dez minutos para ouvi-lo antes de servir.</p></article>
+      <article class="virtue"><span class="kicker">Betânia, a dor</span><h4>Confiança que fala com franqueza</h4><p>Marta corre ao encontro de Jesus e diz que, se ele estivesse ali, seu irmão não teria morrido. E acrescenta que Deus lhe dará o que ele pedir. (<a href="https://bible.usccb.org/bible/john/11">Jo 11,20–22</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> Conte a Deus sua dor sem disfarçar e termine a oração com um pedido de confiança.</p></article>
+      <article class="virtue"><span class="kicker">Profissão de fé</span><h4>Fé que se confessa</h4><p>Diante da promessa de Jesus sobre a ressurreição, Marta responde que crê que ele é o Cristo, o Filho de Deus, que vinha ao mundo. (<a href="https://bible.usccb.org/bible/john/11">Jo 11,23–27</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> No domingo, reze o Credo devagar, pensando em uma situação difícil que você entrega a Deus.</p></article>
+      <article class="virtue"><span class="kicker">A ceia em Betânia</span><h4>Serviço sem alarde</h4><p>Seis dias antes da Páscoa, oferecem uma ceia a Jesus em Betânia, e Marta serve. Seu cuidado aparece nos gestos simples. (<a href="https://bible.usccb.org/bible/john/12">Jo 12,1–2</a>)</p><p class="imitar"><strong>Como imitá-la:</strong> Escolha uma tarefa escondida na comunidade, como arrumar ou preparar o café, e faça sem pedir reconhecimento.</p></article>
+    </div>
+    <p class="invocacao">Santa Marta, rogai por nós.</p>
+  </div>
+</div>
+</section>
+
+<section id="secretaria" class="on-walnut" aria-labelledby="secretaria-titulo">
+<div class="wrap">
+  <div class="sec-head"><span class="kicker">Fale conosco</span><h2 id="secretaria-titulo">Secretaria paroquial</h2></div>
+  <div class="secretaria">
+    <div>
+      <dl>
+        <dt>Endereço</dt><dd>Rua Visconde de Nacar, 46<br>Real Parque, São Paulo</dd>
+        <dt>Atende</dt><dd>Terça a sábado, 8h–12h e 13h–17h</dd>
+        <dt>Telefone</dt><dd><a href="tel:+551137584908">(11) 3758-4908</a></dd>
+        <dt>Pároco</dt><dd>Pe. José Clodoaldo Ferreira Rodrigues</dd>
+        <dt>Diácono</dt><dd>Paulo Roberto Possa</dd>
+      </dl>
+      <a class="button" href="https://wa.me/551137584908">WhatsApp da secretaria</a>
+      <p class="source"><a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Cadastro diocesano</a> · consultado em 26/11/2026.</p>
+    </div>
+    <div id="como-chegar">
+      <h3>Como chegar</h3>
+      <iframe class="parish-map" title="Mapa da Paróquia Nossa Senhora da Providência no Real Parque" src="https://maps.google.com/maps?q=Rua%20Visconde%20de%20Nacar%2C%2046%2C%20Real%20Parque%2C%20S%C3%A3o%20Paulo%2C%20SP&amp;z=16&amp;output=embed" loading="lazy"></iframe>
+      <p class="route"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Visconde%20de%20Nacar%2C%2046%2C%20Real%20Parque%2C%20S%C3%A3o%20Paulo%2C%20SP">Traçar rota no Google Maps</a></p>
+    </div>
+  </div>
+</div>
 </section>
 </main>
 <footer>
-Proposta por Vigília · Fotografias da matriz usadas para avaliação, sem licença de republicação confirmada.
+<div class="wrap">
+
+<div>
+Proposta por Vigília · Demonstração não oficial. Fotografias e marca da paróquia usadas para avaliação, sem licença de republicação confirmada.
 <details class="fontes"><summary>Fontes e créditos</summary>
 <ul>
-<li><a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Diocese de Campo Limpo</a> · endereço, criação, festa, clero, horários, serviços e canais paroquiais. Consulta em 26/11/2026. Fachada: imagem da ficha diocesana.</li>
-<li><a href="https://web.archive.org/web/20231211060804/https://nossasenhoradaprovidencia.org.br/paroquia/">Antigo site paroquial, arquivado em dezembro de 2023</a> · história e memória de Pe. Roberto Camilatto. O horário antigo não foi usado.</li>
+<li><a href="https://dcl.org.br/paroquias/paroquia-nossa-senhora-da-providencia">Diocese de Campo Limpo</a> · endereço, criação, festa, clero, horários, serviços e canais paroquiais. Consulta em 26/11/2026. Fachada angulada: imagem da ficha diocesana.</li>
+<li><a href="https://www.facebook.com/nsprovidenciarealparque/">Página da paróquia no Facebook</a> · foto da capa (fachada e painéis vazados) e fotos de catequistas, círio, velas e presbitério, sem data informada. Consulta em 26/11/2026; direitos a confirmar com a paróquia, que deve autorizar também a exibição de crianças.</li>
+<li><a href="https://web.archive.org/web/20231211060804/https://nossasenhoradaprovidencia.org.br/paroquia/">Antigo site paroquial, arquivado em dezembro de 2023</a> · logotipo (medalhão com a Virgem e o Menino), história e memória de Pe. Roberto Camilatto. O horário antigo não foi usado.</li>
 <li><a href="https://dcl.org.br/noticias/diocese/paroquias/dom-valdir-realiza-visita-pastoral-as-paroquias-da-forania-morumbi-e-empossa-novo-paroco-da-nossa-senhora-de-guadalupe">Visita pastoral (2026)</a> e <a href="https://dcl.org.br/noticias/diocese/paroquias/paroquia-nossa-senhora-da-providencia-implanta-pastoral-da-saude">envio da Pastoral da Saúde (2025)</a> · textos e imagens publicados pela Diocese de Campo Limpo; a foto do envio é creditada à Pastoral da Saúde.</li>
-<li><a href="https://commons.wikimedia.org/wiki/File:Our_Lady_of_Providence_Pulzone.jpg">Wikimedia Commons: <cite>Mãe da Divina Providência</cite></a> · pintura de Scipione Pulzone, c. 1580, domínio público (reprodução classificada como PD-Art).</li>
-<li><a href="https://www.vatican.va/archive/cathechism_po/index_new/indice_po.html">Catecismo da Igreja Católica</a> · §§ 1213, 1324, 1422 e 1601. Os gestos sugeridos na seção da padroeira são reflexões desta demonstração.</li>
-<li>Tipografia: EB Garamond, <a href="fonts/OFL.txt">SIL Open Font License</a>.</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Our_Lady_of_Providence_Pulzone.jpg">Wikimedia Commons: <cite>Mãe da Divina Providência</cite></a> · pintura de Scipione Pulzone, c. 1580, domínio público.</li>
+<li><a href="https://commons.wikimedia.org/wiki/File:Johannes_(Jan)_Vermeer_-_Christ_in_the_House_of_Martha_and_Mary_-_Google_Art_Project.jpg">Wikimedia Commons: <cite>Cristo na casa de Marta e Maria</cite></a> · pintura de Johannes Vermeer, National Galleries of Scotland, domínio público.</li>
+<li><a href="https://www.vatican.va/archive/cathechism_po/index_new/indice_po.html">Catecismo da Igreja Católica</a> · §§ 1213, 1324 e 1601. As passagens bíblicas ligam-se à <a href="https://bible.usccb.org/bible">Bíblia (USCCB)</a>. Os gestos sugeridos nas seções das padroeiras são reflexões desta demonstração.</li>
+<li>Tipografia: Barlow Condensed e Source Serif 4, <a href="fonts/OFL-BarlowCondensed.txt">SIL Open Font License</a> e <a href="fonts/OFL-SourceSerif4.txt">licença da Source Serif 4</a>.</li>
 </ul></details>
+</div>
+</div>
 </footer>
 <script>
 const dates=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
@@ -130,23 +202,21 @@ const shortDate=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',day:'2-digit',mo
 const weekday=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',weekday:'long'});
 const masses=['Não consta','19h','19h','19h','19h',dayAt(5).getUTCDate()<=7?'11h e 18h':'18h','9h, 11h e 18h30'];
 const weekLabel=document.getElementById('semana-datas');
-weekLabel.textContent=shortDate.format(monday)+' a '+shortDate.format(dayAt(6))+' · Horário habitual';
+weekLabel.textContent='Semana de '+shortDate.format(monday)+' a '+shortDate.format(dayAt(6))+' · Horário habitual';
 weekLabel.hidden=false;
 function fillSchedule(id,hours){
   document.getElementById(id).replaceChildren(...hours.flatMap(([i,time])=>{
     const day=dayAt(i), label=document.createElement('dt'), value=document.createElement('dd');
-    label.textContent=weekday.format(day)+' · '+shortDate.format(day);value.textContent=time;
+    label.textContent=weekday.format(day).replace('-feira','')+' · '+shortDate.format(day);value.textContent=time;
     if(+day===+today){label.className=value.className='schedule-today';label.setAttribute('aria-current','date');}
     return [label,value];
   }));
 }
 fillSchedule('missas-semana',masses.map((time,i)=>[i,time]));
 fillSchedule('confissoes-semana',[[3,'14h30–17h'],[4,'14h30–17h']]);
-
-const virtueTabs=document.querySelector('.virtue-tabs'), virtueButtons=[...virtueTabs.querySelectorAll('button')], virtuePanels=virtueButtons.map(b=>document.getElementById(b.getAttribute('aria-controls')));
-virtueButtons.forEach((b,i)=>{const virtue=virtuePanels[i].querySelector('h3').textContent;b.textContent=virtue.split(' ')[0];b.setAttribute('aria-label',virtue);b.addEventListener('click',()=>showVirtue(i));});
-function showVirtue(n){virtueButtons.forEach((b,i)=>{b.setAttribute('aria-pressed',String(i===n));virtuePanels[i].hidden=i!==n;});document.querySelector('.virtues').dataset.scene=n;}
-showVirtue(0);virtueTabs.hidden=false;
+const nav=document.querySelector('body > nav');
+const setNav=()=>document.documentElement.style.setProperty('--navh',nav.offsetHeight+'px');
+setNav();addEventListener('resize',setNav);addEventListener('load',setNav);document.fonts&&document.fonts.ready.then(setNav);
 </script>
 </body>
 </html>

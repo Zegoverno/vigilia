@@ -1,0 +1,227 @@
+/* Paróquia Nossa Senhora da Providência (Real Parque) · estilo v2
+   Tudo sai da própria matriz: reboco ocre da fachada, madeira escura das portas (cor lisa, sem textura),
+   cruz azul-marinho, paredes azul-claras da nave, concreto branco dos painéis vazados.
+   Letras: Barlow Condensed (a mesma família estreita do logotipo da paróquia) e Source Serif 4. */
+
+@font-face{font-family:"Barlow Condensed";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/barlowcondensed-normal-500.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/barlowcondensed-normal-600.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/barlowcondensed-normal-700.woff2) format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:400 700;font-style:normal;font-display:swap;src:url(fonts/sourceserif4-normal-400-700.woff2) format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:400 700;font-style:italic;font-display:swap;src:url(fonts/sourceserif4-italic-400-700.woff2) format("woff2")}
+
+:root{
+  --paper:#f8f5ee;      /* concreto branco da fachada */
+  --ochre:#c9a04a;      /* reboco ocre */
+  --ochre-soft:#ecdcae;
+  --ochre-dark:#8b6a22;
+  --walnut:#46281b;     /* portas */
+  --walnut-line:#6d4531;
+  --navy:#1d2a52;       /* cruz */
+  --navy-line:#3d4d82;
+  --sky:#c6d1e8;        /* paredes da nave */
+  --terra:#b66846;      /* terracota do logotipo */
+  --orange:#e67e1d;     /* camisetas da pastoral */
+  --ink:#251b16;
+  --navh:72px;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --text:"Source Serif 4",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.62 var(--text);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--terra)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:.6rem 1rem;z-index:100}
+.skip-link:focus{left:0}
+
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.045em;margin:0;line-height:1}
+small,.kicker{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:.95rem}
+p{margin:.7rem 0}
+
+/* faixa de demonstração */
+body > aside{background:var(--navy);color:#e9edf7;text-align:center;font:600 .82rem/1 var(--display);letter-spacing:.2em;text-transform:uppercase;padding:.55rem 1rem}
+
+/* menu fixo */
+body > nav{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:5px solid var(--ochre);display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:.55rem clamp(1rem,3vw,2.5rem);box-shadow:0 8px 14px -12px rgba(37,27,22,.55)}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--navy);flex:none}
+.brand img{width:48px;height:48px}
+.brand strong{font:700 1.3rem/.95 var(--display);text-transform:uppercase;letter-spacing:.05em}
+.brand strong span{display:block;font-weight:500;font-size:.82rem;letter-spacing:.2em;color:var(--terra)}
+.nav-links{display:flex;gap:clamp(.9rem,2vw,1.8rem)}
+.nav-links a{font:600 1.05rem/1 var(--display);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;color:var(--ink);padding:.5rem 0;border-bottom:3px solid transparent;white-space:nowrap}
+.nav-links a:hover{border-bottom-color:var(--ochre);color:var(--ink)}
+
+section,header,#como-chegar{scroll-margin-top:calc(var(--navh) + 10px)}
+
+/* capa: reboco ocre + a fachada */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);min-height:620px;background:var(--ochre)}
+.hero-text{padding:clamp(2rem,5vw,4.5rem) clamp(1.4rem,4.5vw,4.5rem);display:flex;flex-direction:column;justify-content:center;color:var(--walnut)}
+.hero-text .medalhao{width:132px;height:auto;margin:0 0 1.4rem;filter:drop-shadow(0 3px 6px rgba(70,40,27,.25))}
+.hero-text .kicker{color:var(--walnut)}
+.hero h1{font-size:clamp(3rem,6.6vw,5.9rem);line-height:.88;letter-spacing:.02em;margin:.5rem 0 .3rem;color:var(--navy)}
+.hero h1 em{display:block;font-style:normal;font-weight:500;font-size:.5em;letter-spacing:.16em;color:var(--walnut);margin-top:.5rem}
+.hero-lead{font-size:1.28rem;max-width:30ch;margin:1.1rem 0 .3rem}
+.hero-address{font:600 1.05rem/1.3 var(--display);letter-spacing:.1em;text-transform:uppercase;margin:0 0 1.5rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.button{display:inline-block;font:700 1.1rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;background:var(--navy);color:#fff;padding:1rem 1.5rem;border:2px solid var(--navy)}
+.button:hover{background:var(--walnut);border-color:var(--walnut);color:#fff}
+.button.ghost{background:transparent;color:var(--walnut);border-color:var(--walnut)}
+.button.ghost:hover{background:var(--walnut);color:#fff}
+.hero-photo{position:relative;margin:0;min-height:340px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:18% 40%}
+.hero-photo figcaption{position:absolute;left:0;bottom:0;background:var(--paper);padding:.7rem 1.2rem;font:600 .9rem/1.2 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--walnut)}
+
+/* seções: a "laje" da fachada */
+main > section{padding:clamp(2.6rem,6vw,5rem) clamp(1rem,4vw,3rem)}
+.wrap{max-width:1160px;margin:0 auto}
+.sec-head{display:flex;align-items:baseline;gap:1rem 1.6rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.sec-head h2{font-size:clamp(2.3rem,5vw,3.8rem);color:var(--navy);letter-spacing:.05em}
+.sec-head .kicker{color:var(--terra)}
+.sec-head::after{content:"";flex:1 1 80px;height:10px;background:currentColor;opacity:.18;min-width:60px;align-self:center}
+.on-ochre .sec-head h2,.on-ochre .sec-head .kicker{color:var(--walnut)}
+.on-ochre .sec-head::after{color:var(--walnut);opacity:.3}
+.on-walnut .sec-head h2{color:#fff}.on-walnut .sec-head .kicker{color:var(--ochre)}
+.on-walnut .sec-head::after{color:#fff}
+.note{font-size:.95rem;color:#5b4a42}
+.source{font-size:.9rem;color:#6a584f;margin-top:1.2rem}
+
+/* HORÁRIOS: cada painel é um caixotão liso, como as portas */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem}
+.coffer{position:relative;padding:1.6rem;color:#f6efe4}
+.coffer::before{content:"";position:absolute;inset:8px;border:1px solid;pointer-events:none;opacity:.55}
+.coffer.walnut{background:var(--walnut)}.coffer.walnut::before{border-color:var(--walnut-line);opacity:1}
+.coffer.navy{background:var(--navy)}.coffer.navy::before{border-color:var(--navy-line);opacity:1}
+.coffer h3{font-size:1.9rem;letter-spacing:.07em;color:var(--ochre);margin-bottom:1rem}
+.coffer dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:0}
+.coffer dt,.coffer dd{margin:0;padding:.62rem .8rem;border-top:1px solid rgba(255,255,255,.16)}
+.coffer dt{font:500 1.15rem/1.2 var(--display);letter-spacing:.09em;text-transform:uppercase;color:#e9dfd0}
+.coffer dd{font:700 1.45rem/1.1 var(--display);letter-spacing:.05em;text-align:right;color:#fff}
+.coffer .schedule-today{background:var(--ochre);color:var(--walnut);border-top-color:var(--ochre)}
+.coffer.navy .schedule-today{color:var(--navy)}
+.coffer dt.schedule-today::after{content:" · hoje";font-weight:700}
+.coffer .note,.coffer p{color:#e6dccd;font-size:.97rem}
+.coffer a{color:#fff}
+.coffer .adoracao{margin-top:1.2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.25)}
+.coffer .adoracao strong{font:700 1.3rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--ochre)}
+.week-label{font:600 1rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--walnut);margin:0 0 1.3rem}
+
+/* AGENDA: no reboco ocre */
+.on-ochre{background:var(--ochre);color:var(--walnut)}
+.on-ochre a{color:var(--navy)}
+.agenda{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}
+.agenda h3{font-size:1.7rem;color:var(--walnut);border-bottom:3px solid var(--walnut);padding-bottom:.5rem;margin-bottom:1rem}
+.agenda .vazio{background:var(--paper);padding:1.3rem 1.4rem;margin:0}
+.event{background:var(--paper);padding:1.1rem 1.3rem;margin:0 0 1rem;display:grid;gap:.15rem}
+.event time{font:600 .95rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.event h4{font-size:1.45rem;letter-spacing:.05em;color:var(--navy)}
+.event p{margin:.3rem 0 0;font-size:1rem}
+
+/* SACRAMENTOS */
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+.card{background:#fff;border-top:12px solid var(--c,var(--terra));padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column}
+.card .kicker{color:var(--c,var(--terra))}
+.card h3{font-size:2rem;color:var(--navy);margin:.35rem 0 .6rem;letter-spacing:.05em}
+.card p{font-size:1rem}
+.card .more{margin-top:auto;padding-top:.8rem;font:700 1rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase}
+.cards3 .card:nth-child(1){--c:var(--terra)}.cards3 .card:nth-child(2){--c:var(--ochre-dark)}.cards3 .card:nth-child(3){--c:var(--navy)}
+.photos3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:2rem}
+.photos3 figure,.gallery figure,.stack figure{margin:0;background:#fff;padding:0 0 .1rem}
+.photos3 figure{display:flex;flex-direction:column}
+.photos3 img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.photos3 + .source{margin-top:1.4rem}
+figcaption{font:600 .88rem/1.25 var(--display);letter-spacing:.1em;text-transform:uppercase;color:#5d4b41;padding:.55rem .7rem .6rem}
+.cta{margin-top:1.8rem}
+
+/* HISTÓRIA: azul das paredes da nave */
+.on-sky{background:var(--sky)}
+.historia{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+.historia-lead{font-size:1.2rem;max-width:46ch}
+.marcos{list-style:none;margin:1.6rem 0 0;padding:0;border-left:6px solid var(--navy)}
+.marcos li{padding:0 0 1.5rem 1.4rem;position:relative}
+.marcos li::before{content:"";position:absolute;left:-6px;top:.35rem;width:20px;height:6px;background:var(--navy)}
+.marcos time{font:700 1.15rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.marcos h3{font-size:1.65rem;letter-spacing:.05em;color:var(--navy);margin:.25rem 0 .1rem}
+.marcos p{margin:.25rem 0 0;font-size:1rem}
+.stack{display:grid;gap:1rem}
+.stack img{width:100%}
+.stack .apse img{aspect-ratio:4/3;object-fit:cover;object-position:50% 12%}
+.fecho{font-style:italic;font-size:1.25rem;border-left:6px solid var(--terra);padding:.2rem 0 .2rem 1.2rem;margin:1.6rem 0 0;max-width:40ch}
+.fecho cite{display:block;font:600 .9rem/1.3 var(--display);font-style:normal;letter-spacing:.12em;text-transform:uppercase;margin-top:.5rem}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:2.4rem}
+.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover}
+
+/* PADROEIRAS: duas, com o mesmo molde */
+.patrona{padding:clamp(2.6rem,6vw,5rem) clamp(1rem,4vw,3rem)}
+.patrona.maria{background:var(--paper)}
+.patrona.marta{background:var(--ochre-soft)}
+.patrona-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(1.4rem,3.5vw,3rem);align-items:start}
+.patrona figure{margin:0;background:#fff}
+.patrona figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.patrona h2{font-size:clamp(2.3rem,5vw,3.8rem);color:var(--navy);letter-spacing:.05em}
+.patrona .kicker{color:var(--terra);display:block;margin-bottom:.5rem}
+.patrona .intro{font-size:1.12rem;max-width:62ch}
+.virtues{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin-top:1.4rem}
+.virtue{background:#fff;border-top:10px solid var(--c);padding:1.1rem 1.3rem 1.3rem}
+.virtue .kicker{color:var(--c);font-size:.9rem}
+.virtue h4{font-size:1.5rem;letter-spacing:.05em;color:var(--navy);margin:.3rem 0 .4rem}
+.virtue p{font-size:.98rem;margin:.4rem 0}
+.virtue .imitar{background:var(--paper);border-left:4px solid var(--c);padding:.55rem .8rem;margin-top:.7rem}
+.virtue .imitar strong{font:700 1rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.virtues .virtue:nth-child(1){--c:var(--terra)}.virtues .virtue:nth-child(2){--c:var(--navy)}.virtues .virtue:nth-child(3){--c:var(--ochre-dark)}.virtues .virtue:nth-child(4){--c:var(--walnut)}
+.invocacao{font-style:italic;font-size:1.2rem;margin-top:1.4rem}
+
+/* SECRETARIA e mapa */
+.on-walnut{background:var(--walnut);color:#f3e9da}
+.on-walnut a{color:#fff}
+.secretaria{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(1.4rem,4vw,3rem);align-items:start}
+.secretaria dl{margin:0 0 1.4rem;display:grid;grid-template-columns:auto 1fr;gap:.2rem 1.2rem}
+.secretaria dt{font:600 1rem/1.6 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--ochre)}
+.secretaria dd{margin:0}
+.secretaria .button{background:var(--ochre);border-color:var(--ochre);color:var(--walnut)}
+.secretaria .button:hover{background:#fff;border-color:#fff;color:var(--walnut)}
+.secretaria h3{font-size:1.7rem;color:#fff;margin-bottom:.8rem;letter-spacing:.06em}
+.parish-map{width:100%;height:380px;border:0;background:#d9cfbf;display:block}
+.route{margin:.9rem 0 0}
+.on-walnut .source{color:#d8c9b3}
+
+footer{background:var(--navy);color:#dfe5f3;padding:2.4rem clamp(1rem,4vw,3rem) 3rem;font-size:.95rem}
+footer .wrap{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start}
+footer img{width:84px}
+footer a{color:#fff}
+footer .fontes summary{cursor:pointer;font:700 1.1rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;margin-top:.8rem}
+footer ul{padding-left:1.1rem;margin:.8rem 0 0}
+footer li{margin:.45rem 0}
+
+/* celular */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-photo{order:-1;min-height:0;aspect-ratio:4/3}
+  .hero-text .medalhao{width:96px}
+  .grid2,.agenda,.cards3,.historia,.patrona-grid,.secretaria{grid-template-columns:1fr}
+  .photos3{grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+  .patrona figure img{aspect-ratio:4/3;object-position:50% 22%}
+  .virtues{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  body > nav{flex-wrap:wrap;gap:.2rem .5rem;padding:.5rem .8rem 0}
+  .brand img{width:40px;height:40px}
+  .brand strong{font-size:1.1rem}
+  .nav-links{order:3;width:100%;overflow-x:auto;gap:1.1rem;padding:.1rem 0 .2rem;scrollbar-width:none}
+  .nav-links a{font-size:1rem;padding:.55rem 0}
+  .nav-links::-webkit-scrollbar{display:none}
+  .gallery{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  body{font-size:1.02rem}
+  .photos3{grid-template-columns:1fr}
+  .photos3 img{aspect-ratio:4/3}
+  .coffer{padding:1.3rem 1.1rem}
+  .coffer dt{font-size:1rem}
+  .coffer dd{font-size:1.25rem}
+  .secretaria dl{grid-template-columns:1fr}
+  .parish-map{height:300px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

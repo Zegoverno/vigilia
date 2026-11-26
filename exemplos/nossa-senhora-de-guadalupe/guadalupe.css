@@ -1,0 +1,260 @@
+@font-face{font-family:"Alegreya";src:url(fonts/alegreya-normal-400-800.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Alegreya";src:url(fonts/alegreya-italic-400-700.woff2) format("woff2");font-weight:400 700;font-style:italic;font-display:swap}
+@font-face{font-family:"Alegreya Sans";src:url(fonts/alegreyasans-normal-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Alegreya Sans";src:url(fonts/alegreyasans-normal-500.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Alegreya Sans";src:url(fonts/alegreyasans-normal-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Alegreya Sans";src:url(fonts/alegreyasans-italic-400.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+
+:root{
+  --ceu:#a9d3e6;      /* asas azuis da fachada */
+  --ceu-claro:#d7ebf4;
+  --petroleo:#1f4b59;  /* faixa e rodapé do site da paróquia */
+  --petroleo-2:#163944;
+  --ocre:#dba43d;      /* cartão da Reforma */
+  --ferrugem:#9a3e22;  /* painéis do altar */
+  --manto:#14695c;     /* manto de Guadalupe */
+  --rosa:#c46f62;
+  --creme:#f7f0de;
+  --papel:#fffaf0;
+  --tinta:#1c2c35;
+  --suave:#4b5d66;
+  --nav-h:68px;
+  --serif:"Alegreya",Georgia,"Times New Roman",serif;
+  --sans:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
+  --v:34px; /* fundo do V do telhado */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px)}
+body{margin:0;font:400 1.2rem/1.55 var(--serif);color:var(--tinta);background:var(--creme);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--petroleo);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{color:var(--ferrugem)}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.12;margin:0 0 .5em;text-wrap:balance}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--ferrugem);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--ocre);color:var(--tinta);padding:.6rem 1rem;z-index:200}
+.skip-link:focus{left:0}
+.rotulo{font:700 .82rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ferrugem);display:block;margin-bottom:.9rem}
+.wrap{width:min(1180px,100% - 2.4rem);margin-inline:auto}
+
+/* demonstração */
+.demo{background:var(--tinta);color:#f3e9d0;font:500 .82rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:.55rem 1rem}
+
+/* menu fixo */
+nav.menu{position:sticky;top:0;z-index:100;background:var(--petroleo);color:#fff;height:var(--nav-h);display:flex;align-items:center;gap:1.4rem;padding:0 max(1.2rem,calc((100% - 1180px)/2));border-bottom:4px solid var(--ocre)}
+nav.menu .marca{display:flex;align-items:center;gap:.7rem;color:#fff;text-decoration:none;flex:none}
+nav.menu .marca img{height:44px;width:auto;filter:invert(1) brightness(1.6);opacity:.95}
+nav.menu .marca strong{font:700 1.02rem/1.05 var(--serif);letter-spacing:.06em;text-transform:uppercase}
+nav.menu .marca strong small{display:block;font:500 .72rem/1.2 var(--sans);letter-spacing:.2em;opacity:.8;margin-top:.2rem}
+nav.menu ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:.2rem;overflow-x:auto;scrollbar-width:none}
+nav.menu ul::-webkit-scrollbar{display:none}
+nav.menu li a{display:block;color:#fff;text-decoration:none;font:700 .86rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;padding:.8rem .8rem;white-space:nowrap;border-radius:2px}
+nav.menu li a:hover{background:rgba(255,255,255,.12);color:#fff}
+
+/* o V do telhado em borboleta: cada seção entra pelo V */
+.faixa{position:relative;padding:calc(var(--v) + 3.6rem) 0 4.4rem;margin-top:calc(var(--v) * -1);clip-path:polygon(0 0,50% var(--v),100% 0,100% 100%,0 100%)}
+.faixa>.wrap>h2,.faixa .titulo h2{font-size:clamp(2.1rem,4.2vw,3.3rem);font-weight:700;letter-spacing:-.005em}
+.faixa.ceu{background:var(--ceu)}
+.faixa.creme{background:var(--creme)}
+.faixa.papel{background:var(--papel)}
+.faixa.petroleo{background:var(--petroleo);color:#f3efe2}
+.faixa.petroleo .rotulo{color:var(--ocre)}
+.faixa.petroleo a{color:#fff}
+.faixa.manto{background:var(--manto);color:#f7f1de}
+.faixa.manto .rotulo{color:#ffd88a}
+.titulo{max-width:46rem;margin-bottom:2.2rem}
+.titulo p{font-size:1.25rem;color:var(--suave)}
+.petroleo .titulo p,.manto .titulo p{color:rgba(255,255,255,.82)}
+
+.botao{display:inline-block;background:var(--ferrugem);color:#fff;font:700 .92rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:1.05rem 1.5rem;border:0;cursor:pointer;border-radius:2px}
+.botao:hover{background:#7d2f17;color:#fff}
+.botao.ocre{background:var(--ocre);color:var(--tinta)}
+.botao.ocre:hover{background:#c98f26;color:var(--tinta)}
+.botao.vazado{background:transparent;color:var(--petroleo);box-shadow:inset 0 0 0 2px var(--petroleo)}
+.botao.vazado:hover{background:var(--petroleo);color:#fff}
+.petroleo .botao.vazado,.manto .botao.vazado{color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)}
+.petroleo .botao.vazado:hover,.manto .botao.vazado:hover{background:#fff;color:var(--petroleo)}
+
+/* ---------- abertura ---------- */
+.abertura{position:relative;background:var(--petroleo-2)}
+.abertura>figure{margin:0;position:relative}
+.abertura>figure img{width:100%;height:clamp(300px,46vw,560px);object-fit:cover;object-position:50% 45%}
+.abertura>figure figcaption{position:absolute;right:1.2rem;bottom:calc(var(--v) + 1rem);font:500 .8rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(20,40,48,.72);padding:.45rem .7rem}
+.cartao{position:relative;background:var(--creme);margin-top:calc(var(--v) * -1);clip-path:polygon(0 0,50% var(--v),100% 0,100% 100%,0 100%);padding:calc(var(--v) + 2.4rem) 0 3.2rem}
+.cartao .wrap{display:grid;grid-template-columns:auto 1fr;gap:2.8rem;align-items:center}
+.cartao .selo{height:clamp(190px,24vw,290px);width:auto;filter:none;opacity:.92}
+.cartao h1{font-size:clamp(2.3rem,5.2vw,4.3rem);font-weight:800;letter-spacing:.015em;text-transform:uppercase;line-height:1;margin:0 0 .35em}
+.cartao h1 small{display:block;font:700 .9rem/1 var(--sans);letter-spacing:.3em;color:var(--ferrugem);margin-bottom:1.1rem}
+.cartao .frase{font:italic 400 clamp(1.5rem,2.4vw,2rem)/1.2 var(--serif);color:var(--petroleo);margin:0 0 .35rem}
+.cartao .frase-fonte{font:500 .8rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--suave);margin-bottom:1.6rem}
+.acoes{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.canto-nota{font:italic 400 .98rem/1.3 var(--sans);color:var(--suave);margin:.8rem 0 0}
+
+/* ---------- horários ---------- */
+.semana{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:.7rem}
+.dia{background:var(--papel);border-radius:3px;padding:1rem .9rem 1.1rem;display:flex;flex-direction:column;gap:.7rem;border-top:6px solid var(--petroleo)}
+.dia h3{font:700 .86rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:0;color:var(--petroleo)}
+.dia h3 span{display:block;font:500 .9rem/1 var(--sans);letter-spacing:.06em;margin-top:.35rem;color:var(--suave);text-transform:none}
+.dia .linha{margin:0;font:700 .72rem/1.1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ferrugem)}
+.dia .linha b{display:block;font:700 1.45rem/1.05 var(--serif);letter-spacing:0;text-transform:none;color:var(--tinta);margin-top:.25rem}
+.dia .linha b.sem{font:italic 400 1.02rem/1.2 var(--serif);color:var(--suave)}
+.dia.hoje{background:var(--ocre);border-top-color:var(--ferrugem);box-shadow:0 10px 0 -4px var(--ferrugem)}
+.dia.hoje h3{color:var(--tinta)}
+.dia.hoje .linha{color:#5b2412}
+.dia{position:relative}
+.dia.hoje::before{content:"Hoje";position:absolute;top:0;right:0;font:700 .7rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;background:var(--ferrugem);color:#fff;padding:.4rem .55rem}
+.horarios-extra{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:1.6rem}
+.horarios-extra article{background:rgba(255,255,255,.55);padding:1.3rem 1.4rem;border-left:6px solid var(--petroleo)}
+.horarios-extra h3{font-size:1.25rem;margin:0 0 .4rem}
+.horarios-extra p{margin:0;font-size:1.08rem;color:var(--tinta)}
+.nota{font:italic 400 1rem/1.4 var(--sans);color:var(--suave);margin:1.2rem 0 0}
+
+/* ---------- agenda ---------- */
+.agenda{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.agenda h3.col{font:700 .9rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--petroleo);border-bottom:3px solid var(--ocre);padding-bottom:.8rem;margin-bottom:1.2rem}
+.evento{display:grid;grid-template-columns:92px 1fr;gap:1.2rem;background:var(--papel);padding:1rem 1.1rem 1rem 1rem;margin-bottom:.9rem;border-radius:3px;align-items:start}
+.evento .data{background:var(--ocre);color:var(--tinta);text-align:center;padding:.7rem .3rem .65rem;border-radius:2px;display:flex;flex-direction:column;gap:.25rem}
+.evento .data b{font:800 1.9rem/1 var(--serif)}
+.evento .data span{font:700 .72rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.evento.antes .data{background:var(--ceu)}
+.evento small{font:700 .75rem/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ferrugem);display:block;margin-bottom:.3rem}
+.evento h4{font-size:1.3rem;margin:0 0 .3rem}
+.evento p{margin:0;font-size:1.05rem}
+.evento p a{white-space:nowrap}
+
+/* ---------- vida (faixa de fotos) ---------- */
+.vida .titulo{margin-bottom:1.6rem}
+.mosaico{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:260px 260px;gap:.7rem}
+.mosaico figure{margin:0;position:relative;overflow:hidden}
+.mosaico figure:first-child{grid-row:span 2}
+.mosaico img{width:100%;height:100%;object-fit:cover}
+.mosaico figcaption,.foto figcaption{font:500 .72rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.mosaico figcaption{position:absolute;left:0;bottom:0;background:rgba(15,34,42,.72);color:#fff;padding:.4rem .6rem}
+.vida .legenda-geral{margin:1rem 0 0;font:italic 400 1rem/1.3 var(--sans);color:rgba(255,255,255,.78)}
+
+/* ---------- sacramentos ---------- */
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.sacramento{background:var(--papel);display:flex;flex-direction:column;border-radius:3px;overflow:hidden}
+.sacramento img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.sacramento div{padding:1.5rem 1.6rem 1.7rem}
+.sacramento h3{font-size:1.9rem;margin:0 0 .5rem}
+.sacramento p{margin:0 0 1rem}
+.sacramento .cred{font:500 .72rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--suave);margin:0 0 .9rem}
+.sacramentos-cta{margin-top:2rem}
+
+/* ---------- história ---------- */
+.historia-lead{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;margin-bottom:3.4rem}
+.historia-lead p{font-size:1.4rem;line-height:1.45}
+.historia-lead figure{margin:0}
+.foto img{width:100%}
+.foto figcaption{margin-top:.55rem;color:var(--suave)}
+.marcos{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.marco{display:grid;grid-template-columns:150px 1fr 1fr;gap:2.2rem;align-items:start;padding:2.2rem 0;border-top:1px solid rgba(31,75,89,.28)}
+.marco time{font:800 2.7rem/1 var(--serif);color:var(--ferrugem);letter-spacing:-.01em}
+.marco time small{display:block;font:700 .72rem/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--suave);margin-top:.5rem}
+.marco h3{font-size:1.75rem;margin:0 0 .5rem}
+.marco p{margin:0 0 .8rem}
+.marco figure{margin:0}
+.marco figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.marco figcaption{margin-top:.5rem;font:500 .72rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--suave)}
+.pessoas{display:flex;gap:1.1rem;margin-top:1rem}
+.pessoa{margin:0;width:112px}
+.pessoa img{width:112px;height:140px;object-fit:cover;object-position:50% 20%;filter:grayscale(1) contrast(1.05)}
+.pessoa figcaption{margin-top:.35rem;font:500 .72rem/1.25 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--suave)}
+.igreja-hoje{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1rem}
+.igreja-hoje figure{margin:0}
+.igreja-hoje img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.igreja-hoje figcaption{margin-top:.5rem;font:500 .72rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--suave)}
+.fecho{font:italic 400 clamp(1.6rem,2.6vw,2.2rem)/1.2 var(--serif);color:var(--petroleo);margin:2.6rem 0 0;text-align:center}
+
+/* ---------- padroeira ---------- */
+.padroeira-topo{display:grid;grid-template-columns:260px 1fr 220px;gap:2.6rem;align-items:start;margin-bottom:3rem}
+.padroeira-topo figure{margin:0}
+.padroeira-topo figure img{width:100%;box-shadow:0 0 0 6px rgba(255,255,255,.18)}
+.padroeira-topo figcaption{margin-top:.6rem;font:500 .72rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.padroeira-topo h2{font-size:clamp(2.3rem,4.6vw,3.8rem);font-weight:800;margin:0 0 .6rem}
+.padroeira-topo .frase{font:italic 400 clamp(1.45rem,2.3vw,1.9rem)/1.25 var(--serif);color:#ffe3a6;margin:1.2rem 0 .3rem}
+.padroeira-topo .frase-fonte{font:500 .76rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.virtudes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.virtude{background:var(--papel);color:var(--tinta);display:flex;flex-direction:column;border-radius:3px;overflow:hidden;border-top:8px solid var(--cor)}
+.virtude header{padding:1.2rem 1.3rem .6rem;min-height:7.4rem}
+.virtude .n{font:700 .74rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--cor);display:block;margin-bottom:.5rem}
+.virtude h3{font-size:1.55rem;margin:0}
+.virtude blockquote{margin:.3rem 1.3rem .9rem;min-height:9.2rem;padding:.2rem 0 .2rem 1rem;border-left:3px solid var(--cor);font:italic 400 1.14rem/1.35 var(--serif)}
+.virtude blockquote cite{display:block;font:500 .7rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--suave);margin-top:.4rem}
+.virtude .corpo{padding:0 1.3rem 1rem;font-size:1.06rem;line-height:1.45}
+.virtude .corpo p{margin:0 0 .7rem}
+.virtude .imitar{margin-top:auto;background:color-mix(in srgb,var(--cor) 14%,#fff);padding:1rem 1.3rem 1.2rem;font-size:1.04rem;line-height:1.42}
+.virtude .imitar strong{display:block;font:700 .74rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--cor);margin-bottom:.4rem}
+.virtude .imitar p{margin:0}
+.v1{--cor:#14695c}.v2{--cor:#b9522f}.v3{--cor:#b07a14}.v4{--cor:#a53d5a}
+.invocacao{text-align:center;font:italic 400 1.6rem/1.2 var(--serif);margin:2.6rem 0 0;color:#ffe3a6}
+.padroeira-notas{max-width:46rem;margin:1rem auto 0;text-align:center;font:400 1rem/1.4 var(--sans);color:rgba(255,255,255,.82)}
+.padroeira-notas a{color:#fff}
+
+/* ---------- secretaria e mapa ---------- */
+.secretaria{display:grid;grid-template-columns:1fr 1.25fr;gap:2.8rem;align-items:start}
+.cartao-contato{background:var(--papel);padding:1.9rem 2rem;border-radius:3px;border-top:6px solid var(--ferrugem)}
+.cartao-contato h3{font-size:1.5rem;margin:0 0 .3rem}
+.cartao-contato p{margin:0 0 1rem}
+.cartao-contato .horas{display:grid;grid-template-columns:auto 1fr;gap:.2rem 1.2rem;margin:0 0 1.3rem}
+.cartao-contato .horas dt{font:700 .78rem/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ferrugem)}
+.cartao-contato .horas dd{margin:0}
+.cartao-contato .acoes{margin-bottom:1rem}
+.mapa h3{font-size:1.5rem;margin:0 0 .6rem}
+.parish-map{display:block;width:100%;height:380px;border:0;background:#cfe3ec;border-radius:3px}
+.mapa p{margin:.8rem 0 0}
+
+/* ---------- rodapé ---------- */
+footer{background:var(--petroleo-2);color:#d8e6ea;padding:3.4rem 0 3rem;font:400 1rem/1.5 var(--sans)}
+footer .wrap{display:grid;grid-template-columns:200px 1fr;gap:2.6rem}
+footer img.logo{width:190px;height:auto}
+footer h2{font:700 .8rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--ocre);margin:0 0 .9rem}
+footer ul{margin:0;padding-left:1.1rem}
+footer li{margin-bottom:.35rem}
+footer a{color:#fff}
+footer .aviso{margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.2);color:#b9ccd2}
+
+@media (max-width:1100px){
+  .virtude header,.virtude blockquote{min-height:0}
+  .semana{grid-template-columns:repeat(4,1fr)}
+  .virtudes{grid-template-columns:repeat(2,1fr)}
+  .marco{grid-template-columns:120px 1fr}
+  .marco>figure,.marco>.pessoas{grid-column:2}
+  .padroeira-topo{grid-template-columns:240px 1fr}
+  .padroeira-topo .jd{display:none}
+}
+@media (max-width:820px){
+  :root{--nav-h:104px;--v:22px}
+  body{font-size:1.14rem}
+  nav.menu{height:var(--nav-h);flex-wrap:wrap;align-content:center;gap:.2rem .8rem;padding:.4rem 1rem 0}
+  nav.menu .marca img{height:34px}
+  nav.menu .marca strong{font-size:.9rem}
+  nav.menu ul{margin:0;width:100%;order:3}
+  nav.menu li a{padding:.7rem .55rem;font-size:.8rem}
+  .faixa{padding:calc(var(--v) + 2.4rem) 0 3rem}
+  .cartao .wrap{grid-template-columns:1fr;gap:1.2rem;text-align:left}
+  .cartao .selo{height:150px}
+  .cartao{padding-bottom:2.4rem}
+  .semana{grid-template-columns:1fr 1fr}
+  .dia:nth-child(7){grid-column:span 2}
+  .horarios-extra,.cartazes,.duas,.agenda,.secretaria,.historia-lead{grid-template-columns:1fr}
+  .agenda{gap:2.2rem}
+  .mosaico{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .mosaico figure:first-child{grid-column:span 2;grid-row:auto}
+  .mosaico figure{aspect-ratio:4/3}
+  .mosaico figure:first-child{aspect-ratio:16/9}
+  .marco{grid-template-columns:1fr;gap:1rem}
+  .marco>figure,.marco>.pessoas{grid-column:1}
+  .igreja-hoje{grid-template-columns:1fr}
+  .padroeira-topo{grid-template-columns:1fr}
+  .padroeira-topo figure{max-width:240px}
+  .virtudes{grid-template-columns:1fr}
+  .virtude header,.virtude blockquote{min-height:0}
+  .padroeira-topo>div{order:-1}
+  footer .wrap{grid-template-columns:1fr}
+  .abertura>figure figcaption{right:.6rem;font-size:.68rem}
+  .evento{grid-template-columns:76px 1fr;gap:.9rem}
+  .evento .data b{font-size:1.5rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

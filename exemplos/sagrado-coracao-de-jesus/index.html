@@ -1,51 +1,267 @@
 <!doctype html>
-<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Paróquia Sagrado Coração de Jesus · Proposta Vigília</title>
-<meta name="description" content="Paróquia Sagrado Coração de Jesus, no Brooklin, Diocese de Santo Amaro: horários de missas e confissões, agenda, sacramentos e a história do padroeiro.">
-<meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#652f35">
-<link rel="icon" href="data:,">
-<link rel="preload" href="fonts/ebgaramond-latin.woff2" as="font" type="font/woff2" crossorigin>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paróquia Sagrado Coração de Jesus · Brooklin · Proposta Vigília</title>
+<meta name="description" content="Paróquia Sagrado Coração de Jesus, no Brooklin, Diocese de Santo Amaro: horários da semana, agenda, sacramentos, a história da matriz e a devoção ao padroeiro.">
+<meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#1c1315">
+
+<link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/sourcesans3-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="vitral.css?v=1"></head><body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<div class="aviso">Proposta Vigília · Demonstração não oficial</div>
+<nav class="menu" aria-label="Navegação principal"><div class="in">
+<a class="marca" href="#topo"><span>Sagrado Coração de Jesus</span></a>
+<div class="links"><a href="#horarios">Horários</a><a href="#agenda">Agenda</a><a href="#sacramentos">Sacramentos</a><a href="#comunidade">Comunidade</a><a href="#igreja">História</a><a href="#vitrais">Vitrais</a><a href="#padroeiro">Padroeiro</a><a href="#secretaria">Secretaria</a></div>
+</div></nav>
+
+<main id="conteudo">
+<header class="hero" id="topo">
+<div class="hero-txt">
+
+<h1><small>Paróquia</small>Sagrado Coração de Jesus</h1>
+<p class="lead">Sua casa de oração, no coração do Brooklin.</p>
+<p class="endereco">Av. Morumbi, 8825 · Brooklin, São Paulo · Diocese de Santo Amaro<br>Desde 1935 · 90 anos de história</p>
+<div class="acoes"><a class="btn" href="#horarios">Horários da semana</a><a class="mais" href="#como-chegar">Como chegar</a></div>
+</div>
+
+</header>
+
+<section class="pane" id="horarios"><div class="in">
+<span class="rotulo">Missas, confissões e encontros</span>
+<h2>Horários da semana</h2>
+<p id="semana-datas"></p>
+<div class="semana" id="semana" aria-live="polite"></div>
+<p class="legenda"><span class="ev ev-missa">Missa</span><span class="ev ev-conf">Confissões</span><span class="ev ev-escuta">Serviço de Escuta</span><span class="ev">Outros encontros</span></p>
+<div class="semana-info">
+<p><strong>Confissões:</strong> terça a sexta, a partir das 9h e das 14h30, por ordem de chegada (a diocese indica até 12h e 17h30).</p>
+<p><strong>A igreja fica aberta</strong> (segundo a diocese): segunda, 6h30–8h30; terça e quarta, 6h30–12h e 13h–21h30; quinta e sexta, 6h30–12h e 13h–18h; sábado, 7h–12h e 13h–18h; domingo, 6h–13h30 e 17h–20h.</p>
+<p><a class="mais" href="https://paroquiascj.com.br/horarios/">Agenda completa da paróquia</a> · consultada em 26/11/2026.</p>
+</div>
+</div></section>
+
+<section class="pane padres" id="padres"><div class="in">
+
+<blockquote><span class="rotulo">Palavra dos nossos padres</span>
+<p>Há um lugar para você aqui.</p>
+<p class="sub">Há uma missão que também é sua. Há uma comunidade que quer caminhar ao seu lado. Aqui, cada pessoa é chamada pelo nome, cada história é respeitada, cada família é valorizada.</p>
+<cite>Padre Hércules e Padre Oswaldo</cite></blockquote>
+<div class="padres-dois">
+<article><span class="papel">Pároco desde 31/01/2024</span><h3>Padre Hércules Alves de Souza</h3><p>Nascido em Recife em 1962, ordenado em 1995. Mestre em Direito Canônico pela Pontifícia Universidade Lateranense, em Roma.</p></article>
+<article><span class="papel">Vigário paroquial desde 31/01/2024</span><h3>Padre Oswaldo Gerolin Filho</h3><p>Nascido em Assis em 1957, ordenado em 1984. Já serviu aqui de 1998 a 2004. É pianista formado pelo Conservatório de Assis.</p></article>
+</div>
+</div></section>
+
+<section class="pane" id="agenda"><div class="in">
+<span class="rotulo">Participe</span>
+<h2>Agenda da paróquia</h2>
+<div class="agenda-cols">
+<div class="proximos"><h3>Próximos encontros</h3><ol id="agenda-proximos"></ol></div>
+<div class="passado"><h3>Já aconteceu</h3><ol id="agenda-passado"></ol></div>
+</div>
+</div></section>
+
+<section class="pane" id="sacramentos"><div class="in">
+<span class="rotulo">Sacramentos</span>
+<h2>Batismo, Crisma e Matrimônio</h2>
+<p class="lead">Para os grandes passos da vida cristã, a secretaria orienta sobre preparação, documentos e datas.</p>
+<div class="cartoes">
+<article class="cartao"><h3>Batismo</h3><p>Pelo Batismo, nascemos para a vida em Cristo e passamos a fazer parte da Igreja (Mt 28,19; CIC 1213). O Plantão do Batismo recebe a inscrição no curso de preparação e agenda a celebração. O último curso de 2026 é em 29 de novembro; o último batizado do ano, em 5 de dezembro.</p><a class="mais" href="https://paroquiascj.com.br/pastoral-do-batismo/">Pastoral do Batismo</a></article>
+<article class="cartao"><h3>Crisma</h3><p>Pela Confirmação, os batizados se unem mais perfeitamente à Igreja e recebem uma força especial do Espírito Santo (CIC 1285). A Catequese da Crisma prepara jovens e adultos para este sacramento.</p><a class="mais" href="https://paroquiascj.com.br/pastoral-da-crisma/">Pastoral da Crisma</a></article>
+<article class="cartao"><h3>Matrimônio</h3><p>No Matrimônio, os esposos batizados firmam uma aliança para toda a vida, elevada por Cristo à dignidade de sacramento (Mt 19,4–6; CIC 1601). Se vocês vão se casar na Igreja, a secretaria orienta sobre a preparação, as datas e os documentos.</p><a class="mais" href="https://paroquiascj.com.br/pastoral-familiar/">Pastoral Familiar</a></article>
+</div>
+<p class="acao"><a class="btn" href="#secretaria">Falar com a secretaria</a></p>
+</div></section>
+
+<section class="pane" id="comunidade"><div class="in">
+<span class="rotulo">Pastorais e movimentos</span>
+<h2>Uma paróquia de muitas mãos</h2>
+<p class="lead">Cada pastoral tem uma missão e uma identidade. Quem quer servir é só procurar a secretaria. Estas são as bandeiras dos 90 anos, do acervo da própria paróquia.</p>
+<ul class="bandeiras" id="bandeiras">
+<li><a href="https://paroquiascj.com.br/pastoral-social-2/"><span>Pastoral Social</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-servico-de-escuta/"><span>Serviço de Escuta</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-da-saude/"><span>Pastoral da Saúde</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-do-batismo/"><span>Pastoral do Batismo</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-da-catequese/"><span>Catequese Infantil</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-da-crisma/"><span>Pastoral da Crisma</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-da-juventude/"><span>Pastoral da Juventude</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-da-musica/"><span>Pastoral da Música</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-da-liturgia/"><span>Pastoral da Liturgia</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-da-acolhida/"><span>Pastoral da Acolhida</span></a></li>
+<li><a href="https://paroquiascj.com.br/grupo-de-oracao/"><span>Grupo de Oração</span></a></li>
+<li><a href="https://paroquiascj.com.br/pastoral-de-festas-e-eventos/"><span>Festas e Eventos</span></a></li>
+</ul>
+<p><a class="mais" href="https://paroquiascj.com.br/pastorais-e-movimentos/">Ver todas as pastorais e movimentos</a></p>
+</div></section>
+
+<section class="pane" id="missao"><div class="in">
+<div><span class="rotulo">Formação e missão</span>
+<h2>Escola Missionária da Fé</h2>
+<p class="lead">Um curso paroquial de formação cristã para leigos: Bíblia, doutrina, sacramentos, liturgia, história da Igreja, moral e espiritualidade.</p>
+<dl><dt>Duração</dt><dd>2 anos, 16 matérias</dd><dt>Encontros</dt><dd>Quartas, das 20h às 22h</dd><dt>Começou</dt><dd>4 de março, com 71 alunos em duas turmas</dd></dl>
+<p>Os padres Hércules e Oswaldo também conduzem as Missões Populares, levando a Palavra de Deus às casas, aos condomínios e às famílias do bairro.</p>
+<a class="btn" href="https://paroquiascj.com.br/escola-missionaria-da-fe/">Conhecer a Escola</a></div>
+<div class="fotos"></div>
+</div></section>
+
+<section class="pane" id="igreja"><div class="in">
+<div class="hist-topo"><div><span class="rotulo">Nossa história · Brooklin</span>
+<h2>Uma capela em um terreno triangular</h2>
+<p class="lead">Julio Klaunig ofereceu ao bairro um terreno em forma de triângulo para uma escola ou um posto policial. O povo pediu uma igreja. Com trabalho, quermesses e rifas, a capela se ergueu: em cada tijolo, o carinho de gente simples. Anos depois, a matriz foi por muito tempo o prédio mais alto do Brooklin.</p></div>
+</div>
+<ol class="marcos">
+<li><time>1927</time><h3>A primeira capela</h3><p>Inaugurada em 27 de maio. O padre Geraldo de Proença Sigaud, do Verbo Divino, vinha a pé celebrar a missa dominical.</p></li>
+<li><time>1935</time><h3>Nasce a paróquia</h3><p>Em 28 de junho, Dom Duarte Leopoldo e Silva eleva a capela a paróquia. O primeiro vigário foi o padre Alberto Staub.</p></li>
+<li><time>1948</time><h3>Chegam os padres do PIME</h3><p>Luiz Gargioni e Carlos Acquiani conquistam crianças e jovens com jogos de futebol e fundam o Colégio Meninópolis.</p></li>
+<li><time>1954</time><h3>A pedra fundamental</h3><p>Lançada em 31 de outubro, na festa de Cristo Rei, para a campanha da nova matriz.</p></li>
+<li><time>1956</time><h3>A nova igreja</h3><p>Em 25 de março, Dom Paulo Rolim Loureiro benze a igreja e a abre ao culto. Seguem os altares, os vitrais, o piso e os bancos.</p></li>
+<li><time>1957</time><h3>O Cristo de bronze</h3><p>Em abril, catorze famílias doam a imagem do Sagrado Coração, obra do escultor Francisco Busacca.</p></li>
+<li><time>1958</time><h3>Festa de inauguração</h3><p>Em 15 de junho, grandes festividades. A igreja só ficaria completamente pronta em 1959.</p></li>
+<li><time>1989</time><h3>Diocese de Santo Amaro</h3><p>Com a criação da diocese, a paróquia passa a fazer parte dela.</p></li>
+<li><time>2025</time><h3>90 anos</h3><p>A comunidade celebra nove décadas de fé, família e serviço no coração do Brooklin.</p></li>
+</ol>
+</div></section>
+
+<section class="pane" id="vitrais"><div class="in">
+<span class="rotulo">A entrada da igreja</span>
+<h2>Vitrais: uma catequese em vidro</h2>
+<p class="lead">As portas de entrada e saída têm seis duplas de vitrais, de 0,80 × 1,60 m, que mostram as Bem-aventuranças do Sermão da Montanha (Mt 5,1–12). Embaixo, outros seis vitrais, de cerca de 0,60 × 0,80 m, trazem símbolos da fé.</p>
+<div class="tira" tabindex="0" role="group" aria-label="Vitrais das Bem-aventuranças, rolagem horizontal"></div>
+<div class="tira" tabindex="0" role="group" aria-label="Vitrais com símbolos da fé, rolagem horizontal"></div>
+<p class="dica">Em telas pequenas, arraste as faixas para os lados.</p>
+<ul class="bem-aventurancas">
+<li><h3>Pobres e pacificadores</h3><p>Mãos abertas: quem se reconhece dependente de Deus. A ponte: quem constrói a paz.</p><q>Bem-aventurados os pobres em espírito… os pacificadores. (Mt 5,3.9)</q></li>
+<li><h3>Aflitos</h3><p>Uma mulher em lágrimas, de mãos cruzadas ao peito: os que sofrem.</p><q>Bem-aventurados os que choram, porque serão consolados. (Mt 5,4)</q></li>
+<li><h3>Mansos</h3><p>Uma cesta de pães e peixes: a confiança serena e a partilha.</p><q>Bem-aventurados os mansos, porque possuirão a terra. (Mt 5,5)</q></li>
+<li><h3>Justiça</h3><p>A balança: o anseio por equilíbrio e retidão diante de Deus e dos homens.</p><q>Bem-aventurados os que têm fome e sede de justiça. (Mt 5,6)</q></li>
+<li><h3>Misericordiosos</h3><p>A fachada de um hospital: cuidar, perdoar, visitar, consolar e servir.</p><q>Bem-aventurados os misericordiosos, porque alcançarão misericórdia. (Mt 5,7)</q></li>
+<li><h3>Puros e perseguidos</h3><p>O lírio: o coração limpo. As mãos presas: quem é perseguido por testemunhar a fé.</p><q>Bem-aventurados os puros de coração… os perseguidos por causa da justiça. (Mt 5,8.10)</q></li>
+</ul>
+<ul class="simbolos">
+<li><b>Fonte da Vida</b>Símbolo do Batismo</li><li><b>Arca da Aliança</b>Promessa de salvação</li><li><b>Sepulcro vazio e estandarte</b>Cristo venceu a morte</li><li><b>Paixão do Senhor</b>Os instrumentos da crucifixão</li><li><b>Sagrado Coração de Jesus</b>Amor que se oferece</li><li><b>Símbolos marianos</b>Maria, Mãe do Rosário</li>
+</ul>
+</div></section>
+
+<section class="pane" id="padroeiro"><div class="in">
+<div class="estatua">
+<div class="detalhes">
 
 
-<link rel="stylesheet" href="broadsheet.css?v=sticky-nav">
-<a class="skip-link" href="#conteudo">Ir para o conteúdo</a><aside>Proposta Vigília · Demonstração não oficial</aside>
-<nav aria-label="Navegação principal"><strong>Sagrado Coração de Jesus</strong><div><a href="#horarios">Horários</a><a href="#agenda">Agenda</a><a href="#sacramentos">Sacramentos</a><a href="#igreja">História</a><a href="#padroeiro">Padroeiro</a><a href="#secretaria">Secretaria</a></div></nav>
-<main id="conteudo"><header><div><small>Brooklin · Diocese de Santo Amaro</small><h1>Paróquia Sagrado Coração de Jesus</h1><p class="hero-lead">Uma igreja no Brooklin, da primeira capela à matriz da Avenida Morumbi.</p><p class="hero-address">Av. Morumbi, 8825 · São Paulo</p><div class="hero-actions"><a class="button" href="#horarios">Horários das missas</a><a href="#como-chegar">Como chegar</a></div></div><figure class="temple"><img src="presbiterio.jpg" alt="O presbitério da matriz com a imagem de Cristo ao centro"></figure><span class="caption">A matriz do Sagrado Coração de Jesus</span></header>
-<section id="horarios"><h2>Horários da semana</h2><p id="semana-datas"></p><div class="grid"><article><h3>Missas</h3><dl id="missas-semana"></dl><p class="schedule-note"><a href="https://paroquiascj.com.br/horarios/">Agenda e horários da paróquia</a> · consulta em 26/11/2026.</p></article><article><h3>Confissões</h3><p>Terça a sexta, às 9h e às 14h30, segundo a agenda paroquial.</p><p class="schedule-note">A secretaria orienta sobre agendamento e mudanças em feriados.</p></article></div></section>
-<section id="agenda"><small>Participe</small><h2>Agenda da paróquia</h2><div class="agenda-columns"><div><h3>Próximos encontros</h3><p id="encontro">Consulte a <a href="https://paroquiascj.com.br/horarios/">agenda da comunidade</a>.</p></div><div><h3>Arquivo</h3><details><summary>Memória da comunidade</summary><p><a href="https://paroquiascj.com.br/semana-da-familia-10-a-16-de-agosto/">Semana da Família · 10 a 16 de agosto</a></p></details></div></div></section>
-<section id="sacramentos" aria-labelledby="sacramentos-titulo">
-<h2 id="sacramentos-titulo">Batismo e matrimônio</h2>
-<div class="grid"><article><h3>Batismo</h3><p>Pelo Batismo, nascemos para a vida em Cristo e passamos a fazer parte da Igreja (Mt 28,19; CIC 1213). Para batizar seu filho, pergunte à secretaria sobre a preparação de pais e padrinhos, os documentos e as datas.</p></article>
-<article><h3>Matrimônio</h3><p>No Matrimônio, os esposos batizados firmam uma aliança para toda a vida, elevada por Cristo à dignidade de sacramento (Mt 19,4–6; CIC 1601). Se vocês vão se casar na Igreja, a secretaria pode orientar sobre a preparação, as datas e os documentos.</p></article></div>
-<a class="button" href="#secretaria">Falar com a secretaria</a>
-</section>
-<section id="igreja"><small>Nossa história · Brooklin</small><h2>Uma capela em um terreno triangular</h2><p class="historia-lead">Quando Julio Klaunig cedeu um terreno ao bairro, pensava-se em uma escola ou posto policial. Os moradores pediram uma igreja. Com trabalho, rifas e quermesses, ergueram a primeira capela.</p><ol class="marcos"><li><time>1927</time><h3>A primeira capela</h3><p>A capela abriu em 27 de maio. O padre Geraldo de Proença Sigaud ia a pé celebrar a missa de domingo.</p></li><li><time>1935</time><h3>Nasce a paróquia</h3><p>Dom Duarte Leopoldo e Silva criou a paróquia em 28 de junho. O primeiro vigário foi o padre Alberto Staub.</p></li><li><time>1954–1956</time><h3>Uma nova matriz</h3><p>A pedra fundamental foi lançada na festa de Cristo Rei de 1954. Em março de 1956, a nova igreja foi aberta ao culto.</p></li><li><time>1957</time><h3>Um presente de catorze famílias</h3><p>As famílias doaram a imagem de Cristo de braços abertos. A escultura de Francisco Busacca tem 2,50 metros e é revestida de bronze.</p></li></ol><div class="photo-triptych"><figure><a href="capela-antiga.jpg"><img src="capela-antiga.jpg" alt="A primeira capela do Brooklin"></a><figcaption>A primeira capela do Brooklin</figcaption></figure><figure><a href="placa-doadores.jpg"><img src="placa-doadores.jpg" alt="A placa com os nomes dos doadores"></a><figcaption>A placa com os nomes dos doadores</figcaption></figure><figure><a href="vitrais-bem-aventurancas.jpg"><img src="vitrais-bem-aventurancas.jpg" alt="Os vitrais da porta de entrada"></a><figcaption>Os vitrais da porta de entrada</figcaption></figure></div><p class="source"><a href="https://paroquiascj.com.br/historia/">História contada pela paróquia</a></p></section>
-<section id="padroeiro" class="virtues"><figure class="saint-image"><img src="sagrado-coracao-escultura.jpg" alt="Cristo de braços abertos, obra de Francisco Busacca"><figcaption>A imagem doada à matriz em abril de 1957.</figcaption></figure><div class="virtue-body"><small>Nosso padroeiro</small><h2>Sagrado Coração de Jesus</h2><p>No coração humano de Jesus, a Igreja contempla o amor com que ele amou cada pessoa (CIC 478).</p><div class="virtue-tabs" hidden><button aria-controls="virt-1">01</button><button aria-controls="virt-2">02</button><button aria-controls="virt-3">03</button></div><div class="virtue-pages">
-<article id="virt-1"><small>À margem do lago · Mc 6,30–34</small><h3>Compaixão pela multidão</h3><p>Jesus procurava um lugar de descanso com os discípulos. Ao encontrar o povo à espera, teve compaixão e começou a ensinar.</p><p><strong>Como imitá-lo:</strong> Reserve tempo para escutar quem precisa falar, mesmo quando não estava nos seus planos.</p></article>
-<article id="virt-2"><small>Betânia · Jo 11,32–36</small><h3>Proximidade no luto</h3><p>Diante de Maria e dos que choravam a morte de Lázaro, Jesus também chorou.</p><p><strong>Como imitá-lo:</strong> Faça companhia a quem perdeu alguém, sem exigir que a pessoa fale ou se console depressa.</p></article>
-<article id="virt-3"><small>Na ceia · Jo 13,3–15</small><h3>Humildade no serviço</h3><p>Jesus se levantou da mesa, tomou uma toalha e lavou os pés dos discípulos.</p><p><strong>Como imitá-lo:</strong> Assuma hoje uma tarefa de casa que costuma ficar para outra pessoa.</p></article></div><p class="patron-notes"><a href="https://paroquiascj.com.br/imagem-do-sagrado-coracao-de-jesus/">Conheça a imagem da matriz</a></p></div></section>
-<section id="secretaria"><h2>Secretaria paroquial</h2><p>Terça a sexta, 7h30–12h e 13h–17h30.<br>Sábado, 8h–12h e 13h–17h.</p><a class="button" href="tel:+551155615158">Ligar: (11) 5561-5158</a></section>
-<section id="como-chegar"><h2>Como chegar</h2><p>Avenida Morumbi, 8825 · Brooklin, São Paulo</p><iframe class="parish-map" title="Mapa da matriz na Avenida Morumbi" loading="lazy" src="https://maps.google.com/maps?q=Avenida+Morumbi+8825+Brooklin+Sao+Paulo&amp;z=16&amp;output=embed"></iframe><p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Avenida+Morumbi+8825+Brooklin+Sao+Paulo">Traçar rota no Google Maps</a></p></section></main>
-<footer><p>Proposta Vigília · Demonstração não oficial</p><p>Fotografias do acervo paroquial, em avaliação. <a href="FONTES.md">Fontes e créditos</a> · <a href="https://paroquiascj.com.br/">Site oficial da paróquia</a></p></footer>
+
+
+</div></div>
+<div class="texto"><span class="rotulo">Nosso padroeiro</span>
+<h2>Sagrado Coração de Jesus</h2>
+<p class="lead">No coração humano de Jesus, a Igreja contempla o amor com que ele amou cada pessoa (CIC 478). A imagem de bronze de 2,50 m, doada em 1957, abraça quem entra na matriz e abençoa quem sai.</p>
+<ul class="fatos">
+<li><b>Em 1672</b>São João Eudes celebra pela primeira vez a festa do Sagrado Coração.</li>
+<li><b>Em 1673</b>Santa Margarida Maria Alacoque recebe as revelações que espalham a devoção. Entre elas, o pedido de comungar nas primeiras sextas-feiras.</li>
+<li><b>Nas sextas</b>A paróquia convida a visitar Jesus no sacrário. Na primeira sexta do mês há Adoração ao Santíssimo, às 8h.</li>
+</ul>
+<div class="virtudes"><h3 class="sub">Quatro passagens, quatro virtudes</h3>
+<div class="abas" id="abas" hidden></div>
+<div id="virtudes">
+<article class="virtude" id="v1"><small>Mt 11,28–30 · O convite</small><h4>Mansidão e descanso</h4><p>Jesus chama os cansados e sobrecarregados: «Aprendei de mim, que sou manso e humilde de coração, e achareis descanso para as vossas almas.»</p><p class="imitar"><strong>Como imitá-lo:</strong> Na próxima conversa difícil, respire antes de responder e responda com brandura.</p></article>
+<article class="virtude" id="v2"><small>À margem do lago · Mc 6,30–34</small><h4>Compaixão pela multidão</h4><p>Jesus procurava um lugar de descanso com os discípulos. Ao encontrar o povo à espera, teve compaixão e começou a ensinar.</p><p class="imitar"><strong>Como imitá-lo:</strong> Reserve tempo para escutar quem precisa falar, mesmo quando não estava nos seus planos.</p></article>
+<article class="virtude" id="v3"><small>Betânia · Jo 11,32–36</small><h4>Proximidade no luto</h4><p>Diante de Maria e dos que choravam a morte de Lázaro, Jesus também chorou.</p><p class="imitar"><strong>Como imitá-lo:</strong> Faça companhia a quem perdeu alguém, sem exigir que a pessoa fale ou se console depressa.</p></article>
+<article class="virtude" id="v4"><small>Na ceia · Jo 13,3–15</small><h4>Humildade no serviço</h4><p>Jesus se levantou da mesa, tomou uma toalha e lavou os pés dos discípulos.</p><p class="imitar"><strong>Como imitá-lo:</strong> Assuma hoje uma tarefa de casa que costuma ficar para outra pessoa.</p></article>
+</div></div>
+<p class="nota-fonte"><a class="mais" href="https://paroquiascj.com.br/devocao-ao-sagrado-coracao-de-jesus/">A devoção ao Sagrado Coração</a> · <a class="mais" href="https://paroquiascj.com.br/imagem-do-sagrado-coracao-de-jesus/">A imagem da matriz</a></p>
+</div>
+</div></section>
+
+<section class="pane" id="secretaria"><div class="in">
+<span class="rotulo">Atendimento</span>
+<h2>Secretaria paroquial</h2>
+<div class="contato">
+<div class="dados">
+<div><h3>Horário</h3><p>Terça a sexta, 7h30–12h e 13h–17h30.<br>Sábado, 8h–12h e 13h–17h.</p></div>
+<div><h3>Telefone</h3><a class="tel" href="tel:+551155615158">(11) 5561-5158</a></div>
+<div><h3>E-mail</h3><p><a href="mailto:coracaodejesus004@gmail.com">coracaodejesus004@gmail.com</a></p></div>
+<div><h3>Bazar beneficente</h3><p>Rua Pássaros e Flores, 344. Terças e quintas, das 9h às 14h. Doações na secretaria.</p></div>
+</div>
+<div class="mapa" id="como-chegar"><iframe title="Mapa da matriz na Avenida Morumbi" loading="lazy" src="https://maps.google.com/maps?q=Avenida+Morumbi+8825+Brooklin+Sao+Paulo&amp;z=16&amp;output=embed"></iframe></div>
+</div>
+<p class="rota"><strong>Avenida Morumbi, 8825 · Brooklin, São Paulo.</strong> <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Avenida+Morumbi+8825+Brooklin+Sao+Paulo">Traçar rota no Google Maps</a></p>
+</div></section>
+</main>
+
+<footer><div class="in"><div>
+<p class="nao-oficial">Proposta Vigília · Demonstração não oficial. Esta página não é o site da paróquia e nada nela foi enviado à paróquia.</p>
+<p>Fotografias, bandeiras e marca do acervo da Paróquia Sagrado Coração de Jesus (<a href="https://paroquiascj.com.br/">paroquiascj.com.br</a>), exibidas para avaliação, com crédito; direitos ainda pendentes. Horários: agenda da paróquia e Diocese de Santo Amaro, consultados em 26/11/2026.</p>
+<ul>
+<li>Marca e presbitério, escultura de Busacca, placa e assinatura: <a href="https://paroquiascj.com.br/imagem-do-sagrado-coracao-de-jesus/">paroquiascj.com.br/imagem-do-sagrado-coracao-de-jesus</a></li>
+<li>Primeira capela: <a href="https://paroquiascj.com.br/historia/">paroquiascj.com.br/historia</a></li>
+<li>Vitrais: <a href="https://paroquiascj.com.br/vitrais-as-portas-de-entrada-da-igreja/">paroquiascj.com.br/vitrais-as-portas-de-entrada-da-igreja</a></li>
+<li>Padre Hércules e Padre Oswaldo: <a href="https://paroquiascj.com.br/nossos-padres/">paroquiascj.com.br/nossos-padres</a></li>
+<li>Bandeiras das pastorais: <a href="https://paroquiascj.com.br/pastorais-e-movimentos/">paroquiascj.com.br/pastorais-e-movimentos</a></li>
+<li>Escola Missionária da Fé: <a href="https://paroquiascj.com.br/escola-missionaria-da-fe/">paroquiascj.com.br/escola-missionaria-da-fe</a></li>
+<li>Fontes completas e licenças das fontes tipográficas (Fraunces e Source Sans 3, OFL):  · </li>
+</ul></div></div></footer>
+
 <script>
-const dates=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
-const datePart=(key)=>Number(dates.find(p=>p.type===key).value);
-const today=new Date(Date.UTC(datePart('year'),datePart('month')-1,datePart('day')));
-const monday=new Date(today);monday.setUTCDate(today.getUTCDate()-(today.getUTCDay()+6)%7);
-const dayAt=(n)=>new Date(monday.getTime()+n*86400000);
-const shortDate=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',day:'2-digit',month:'2-digit'});
-const weekday=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',weekday:'long'});
-const target=monday.toISOString().slice(0,10)==='2026-11-23';
-const masses=['7h','7h',target?'7h e 8h30':'7h, 8h30 e 19h30','7h','7h',target?'16h':'Confirmar na agenda',target?'7h30, 9h30 e 11h30':'7h30, 9h30, 11h30 e 18h'];
-if(Date.now()<Date.parse('2026-11-29T09:00:00-03:00'))document.getElementById('encontro').insertAdjacentHTML('afterbegin','<strong>29 de novembro · 9h</strong><br>Último curso de preparação para o Batismo de 2026.<br>');
-const weekLabel=document.getElementById('semana-datas');
-weekLabel.textContent=shortDate.format(monday)+' a '+shortDate.format(dayAt(6))+(target?' · Agenda paroquial':' · Horário habitual');
-weekLabel.hidden=false;
-const list=document.getElementById('missas-semana');
-list.replaceChildren(...masses.flatMap((hours,i)=>{const day=dayAt(i), label=document.createElement('dt'), value=document.createElement('dd');label.textContent=weekday.format(day)+' · '+shortDate.format(day);value.textContent=hours;if(+day===+today){label.className=value.className='schedule-today';label.setAttribute('aria-current','date');}return[label,value];}));
+const CAL={"2026-11-26":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-11-27":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-11-28":[["09:00","Plantão do Batismo"],["10:00","Serviço de Escuta"],["13:30","Círculo das Viúvas e Viúvos"],["16:00","Missa"]],"2026-11-29":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:00","Curso de preparação para o Batismo (último de 2026)"],["09:30","Missa das crianças"],["11:30","Missa"]],"2026-11-30":[["07:00","Missa"]],"2026-12-01":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2026-12-02":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2026-12-03":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-04":[["07:00","Missa"],["08:00","Adoração ao Santíssimo"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-05":[["","Não há plantão do Batismo"],["10:00","Batizado (último de 2026)"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2026-12-06":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2026-12-07":[["07:00","Missa"]],"2026-12-08":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2026-12-09":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2026-12-10":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-11":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-12":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2026-12-13":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2026-12-14":[["07:00","Missa"]],"2026-12-15":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2026-12-16":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2026-12-17":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-18":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-19":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2026-12-20":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2026-12-21":[["07:00","Missa"]],"2026-12-22":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2026-12-23":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2026-12-24":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-25":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2026-12-26":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2026-12-27":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2026-12-28":[["07:00","Missa"]],"2026-12-29":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2026-12-30":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2026-12-31":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-01":[["07:00","Missa"],["08:00","Adoração ao Santíssimo"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-02":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-01-03":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2027-01-04":[["07:00","Missa"]],"2027-01-05":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2027-01-06":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2027-01-07":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-08":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-09":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-01-10":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2027-01-11":[["07:00","Missa"]],"2027-01-12":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2027-01-13":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2027-01-14":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-15":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-16":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-01-17":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2027-01-18":[["07:00","Missa"]],"2027-01-19":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2027-01-20":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2027-01-21":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-22":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-23":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-01-24":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2027-01-25":[["07:00","Missa"]],"2027-01-26":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2027-01-27":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2027-01-28":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-29":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-01-30":[["","Férias pastorais"],["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-01-31":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"]],"2027-02-01":[["07:00","Missa"]],"2027-02-02":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2027-02-03":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2027-02-04":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-02-05":[["07:00","Missa"],["08:00","Adoração ao Santíssimo"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-02-06":[["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-02-07":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2027-02-08":[["07:00","Missa"]],"2027-02-09":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2027-02-10":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2027-02-11":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-02-12":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-02-13":[["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-02-14":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2027-02-15":[["07:00","Missa"]],"2027-02-16":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]],"2027-02-17":[["07:00","Missa"],["08:30","Missa da Saúde"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Missa da Esperança"]],"2027-02-18":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-02-19":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"]],"2027-02-20":[["10:00","Serviço de Escuta"],["16:00","Missa"]],"2027-02-21":[["06:45","Terço em honra a São José"],["07:30","Missa"],["09:30","Missa das crianças"],["11:30","Missa"],["18:00","Missa"]],"2027-02-22":[["07:00","Missa"]],"2027-02-23":[["07:00","Missa"],["09:00","Confissões"],["09:00","Serviço de Escuta"],["13:00","Serviço de Escuta"],["14:30","Confissões"],["19:30","Grupo de Oração"]]};
+const PAT={
+1:[['07:00','Missa']],
+2:[['07:00','Missa'],['09:00','Confissões'],['09:00','Serviço de Escuta'],['13:00','Serviço de Escuta'],['14:30','Confissões'],['19:30','Grupo de Oração']],
+3:[['07:00','Missa'],['08:30','Missa da Saúde'],['09:00','Confissões'],['09:00','Serviço de Escuta'],['13:00','Serviço de Escuta'],['14:30','Confissões'],['19:30','Missa da Esperança']],
+4:[['07:00','Missa'],['09:00','Confissões'],['09:00','Serviço de Escuta'],['13:00','Serviço de Escuta'],['14:30','Confissões']],
+5:[['07:00','Missa'],['09:00','Confissões'],['09:00','Serviço de Escuta'],['13:00','Serviço de Escuta'],['14:30','Confissões']],
+6:[['10:00','Serviço de Escuta'],['16:00','Missa']],
+0:[['07:30','Missa'],['09:30','Missa das crianças'],['11:30','Missa'],['18:00','Missa']]};
+// dias já passados da semana de 23/11 (a agenda online só lista a partir de 26/11)
+const PASSADO={'2026-11-23':PAT[1],'2026-11-24':PAT[2],'2026-11-25':PAT[3].filter(e=>e[0]!=='19:30')};
+const calDates=Object.keys(CAL).sort(), calIni=calDates[0], calFim=calDates[calDates.length-1];
+const iso=d=>d.toISOString().slice(0,10);
+const partes=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+const pv=k=>Number(partes.find(p=>p.type===k).value);
+const hoje=new Date(Date.UTC(pv('year'),pv('month')-1,pv('day')));
+const segunda=new Date(hoje);segunda.setUTCDate(hoje.getUTCDate()-(hoje.getUTCDay()+6)%7);
+const em=n=>new Date(segunda.getTime()+n*86400000);
+const fCurta=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',day:'2-digit',month:'2-digit'});
+const fDia=new Intl.DateTimeFormat('pt-BR',{timeZone:'UTC',weekday:'long'});
+const classe=n=>/^Missa/.test(n)?'ev-missa':/^Confiss/.test(n)?'ev-conf':/Escuta/.test(n)?'ev-escuta':'';
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let habitual=false;
+const semana=document.getElementById('semana');
+semana.innerHTML=[0,1,2,3,4,5,6].map(i=>{
+  const d=em(i),k=iso(d);let ev=CAL[k];
+  const datado=Boolean(ev);
+  if(!ev){ev=PASSADO[k]||PAT[d.getUTCDay()];habitual=true;}
+  const notas=ev.filter(e=>!e[0]),lista=ev.filter(e=>e[0]).sort((a,b)=>a[0].localeCompare(b[0]));
+  const eHoje=+d===+hoje,passou=d<hoje;
+  const nome=fDia.format(d).replace('-feira','');
+  return `<article class="dia${eHoje?' hoje':''}${passou?' passou':''}"${eHoje?' aria-current="date"':''}><header><h3>${nome}${eHoje?'<span class="tag">hoje</span>':''}</h3><time datetime="${k}">${fCurta.format(d)}</time></header><div>${datado?'':'<p class="nota-dia">Horário de referência · confirme na secretaria</p>'}${notas.map(n=>`<p class="nota-dia">${esc(n[1])}</p>`).join('')}<ul>${lista.map(e=>`<li><b>${e[0].replace(/^0/,'').replace(':00','h').replace(':','h')}</b><span class="ev ${classe(e[1])}">${esc(e[1])}</span></li>`).join('')}</ul></div></article>`;
+}).join('');
+const sd=document.getElementById('semana-datas');
+sd.textContent=fCurta.format(segunda)+' a '+fCurta.format(em(6))+(habitual?' · inclui horários de referência (confirme na secretaria)':' · agenda da paróquia');
 
-const virtueTabs=document.querySelector('.virtue-tabs'), virtueButtons=[...virtueTabs.querySelectorAll('button')], virtuePanels=virtueButtons.map(b=>document.getElementById(b.getAttribute('aria-controls')));
-virtueButtons.forEach((b,i)=>{const virtue=virtuePanels[i].querySelector('h3').textContent;b.textContent=virtue.split(' ')[0];b.setAttribute('aria-label',virtue);b.addEventListener('click',()=>showVirtue(i));});
-function showVirtue(n){virtueButtons.forEach((b,i)=>{b.setAttribute('aria-pressed',String(i===n));virtuePanels[i].hidden=i!==n;});document.querySelector('.virtues').dataset.scene=n;}
-showVirtue(0);virtueTabs.hidden=false;
+// agenda: próximos e anteriores, cada item com data, título, detalhe e ligação
+const A=[
+['2026-11-28','Plantão do Batismo','Sábado, 9h · inscrição no curso e agendamento da celebração','https://paroquiascj.com.br/horarios/'],
+['2026-11-28','Círculo das Viúvas e Viúvos','Sábado, 13h30 · Pastoral das Viúvas e Viúvos','https://paroquiascj.com.br/grupo-de-viuvos/'],
+['2026-11-29','Último curso de preparação para o Batismo de 2026','Domingo, 9h','https://paroquiascj.com.br/horarios/'],
+['2026-12-05','Último batizado de 2026','Sábado, 10h','https://paroquiascj.com.br/horarios/'],
+['2026-12-07','Mutirão da Faxina de Natal','Segunda, a partir das 8h · café da manhã, oração e muita alegria','https://paroquiascj.com.br/agende-se-mutirao-da-faxina-de-natal-%f0%9f%a7%b9/'],
+['2026-11-22','Cristo Rei do Universo','Solenidade · Santa Missa solene às 18h','https://paroquiascj.com.br/cristo-rei-do-universo-solenidade/'],
+['2026-11-17','Ação de graças pelo Padre Oswaldo','42 anos de sacerdócio · Missa às 19h30 e confraternização no Salão Paroquial','https://paroquiascj.com.br/uma-vida-dedicada-a-deus-uma-missao-que-e-bencao-para-nossa-comunidade/'],
+['2026-11-05','O Bazar, em casa nova','Rua Pássaros e Flores, 344 · terças e quintas, 9h–14h','https://paroquiascj.com.br/bazar/'],
+['2026-08-10','Semana da Família','10 a 16 de agosto','https://paroquiascj.com.br/semana-da-familia-10-a-16-de-agosto/'],
+['2026-03-04','Começa a Escola Missionária da Fé','71 alunos em duas turmas','https://paroquiascj.com.br/escola-missionaria-da-fe/']];
+const meses=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+const item=a=>{const [y,m,d]=a[0].split('-');return `<li class="item"><div class="data"><b>${+d}</b><small>${meses[m-1]}</small></div><div><h4>${esc(a[1])}</h4><p>${esc(a[2])}</p><a href="${a[3]}">Saiba mais</a></div></li>`;};
+const hojeIso=iso(hoje);
+const prox=A.filter(a=>a[0]>=hojeIso).sort((a,b)=>a[0].localeCompare(b[0]));
+const pass=A.filter(a=>a[0]<hojeIso).sort((a,b)=>b[0].localeCompare(a[0])).slice(0,5);
+document.getElementById('agenda-proximos').innerHTML=prox.length?prox.map(item).join(''):'<li class="vazio">Nada marcado por enquanto. Veja a <a href="https://paroquiascj.com.br/horarios/">agenda da paróquia</a>.</li>';
+document.getElementById('agenda-passado').innerHTML=pass.map(item).join('');
 
-</script></html>
+// passagens do padroeiro
+const abas=document.getElementById('abas'),vs=[...document.querySelectorAll('#virtudes .virtude')];
+vs.forEach((v,i)=>{const b=document.createElement('button');b.type='button';b.textContent=v.querySelector('h4').textContent.split(' ')[0];b.setAttribute('aria-label',v.querySelector('h4').textContent);b.setAttribute('aria-controls',v.id);b.addEventListener('click',()=>mostra(i));abas.append(b);});
+function mostra(n){[...abas.children].forEach((b,i)=>b.setAttribute('aria-pressed',String(i===n)));vs.forEach((v,i)=>v.hidden=i!==n);}
+mostra(0);abas.hidden=false;
+
+// o menu fixo informa a sua altura, para as âncoras não cobrirem os títulos
+const menu=document.querySelector('nav.menu'),medida=()=>document.documentElement.style.setProperty('--nav',menu.offsetHeight+'px');
+medida();addEventListener('resize',medida);document.fonts&&document.fonts.ready.then(medida);
+</script></body></html>
