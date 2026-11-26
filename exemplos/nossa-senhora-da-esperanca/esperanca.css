@@ -323,5 +323,3 @@ footer .creditos p{break-inside:avoid}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .sec-grid>div{min-width:0}
 .contato a,.contato span{overflow-wrap:anywhere}
-
-.hero .maquete{margin:0}.hero .maquete img{width:100%;height:auto}.hero .maquete figcaption,.hero .maquete a{color:inherit}.projeto:not(:has(figure)){grid-template-columns:1fr}

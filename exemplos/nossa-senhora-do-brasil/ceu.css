@@ -172,7 +172,7 @@ p{margin:0 0 14px}
 .numeros span{display:block;font-size:13.5px;line-height:1.3;color:var(--suave);margin-top:6px}
 
 /* padroeira: o mesmo céu da capela-mor, escurecido */
-.bloco.ceu{background:linear-gradient(rgba(14,36,71,.82),rgba(14,36,71,.9)),url(img/capela-mor-ceu.jpg) center/cover;color:#e8eef8;border-top:5px double var(--ouro)}
+.bloco.ceu{background:linear-gradient(rgba(14,36,71,.82),rgba(14,36,71,.9)),url(img/ceu-fundo.jpg) center/cover;color:#e8eef8;border-top:5px double var(--ouro)}
 .padroeira-topo{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:center;margin-bottom:46px}
 .padroeira-foto{margin:0 auto;max-width:360px}
 .padroeira-foto img{width:100%;aspect-ratio:3/4;object-fit:cover;border:8px solid var(--estuque);outline:2px solid var(--ouro);outline-offset:2px}
