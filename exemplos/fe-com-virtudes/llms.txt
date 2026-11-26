@@ -8,6 +8,8 @@ URLs relativas à raiz desta demonstração. Os catálogos JSON contêm os itens
 
 - [Página inicial](./)
 - [Biblioteca](caminhos/biblioteca/)
+- [Índice temático de São Josemaria](caminhos/biblioteca/temas/)
+- [Fim dos tempos](caminhos/biblioteca/fim-dos-tempos/)
 - [Blog do Pe. Paulo](caminhos/blog/)
 - [Mais leituras](caminhos/leituras/)
 
